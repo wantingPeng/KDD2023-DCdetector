@@ -5,7 +5,16 @@ from einops import rearrange
 from .attn import DAC_structure, AttentionLayer
 from .embed import DataEmbedding, TokenEmbedding
 from .RevIN import RevIN
-from tkinter import _flatten
+# 使用自定义flatten函数替代tkinter._flatten
+def _flatten(lst):
+    """展平嵌套列表"""
+    result = []
+    for item in lst:
+        if isinstance(item, (list, tuple)):
+            result.extend(_flatten(item))
+        else:
+            result.append(item)
+    return result
 
 
 class Encoder(nn.Module):
