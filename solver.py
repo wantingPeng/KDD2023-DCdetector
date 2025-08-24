@@ -192,6 +192,7 @@ class Solver(object):
         self.model.load_state_dict(
             torch.load(
                 os.path.join(str(self.model_save_path), str(self.data_path) + '_checkpoint.pth')))
+        print(os.path.join(str(self.model_save_path), str(self.data_path) + '_checkpoint.pth'))
         self.model.eval()
         temperature = 50
 

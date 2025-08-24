@@ -10,7 +10,7 @@ export PYTHONPATH="${PYTHONPATH}:."
 # 运行训练和测试
 python run_custom_dataset.py \
     --dataset Custom \
-    --data_path "" \
+    --data_path "ALLcontact_noSegment" \
     --win_size 60 \
     --input_c 27 \
     --output_c 27 \
