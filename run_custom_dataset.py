@@ -49,8 +49,19 @@ def main():
                        help='模型维度')
     parser.add_argument('--e_layers', type=int, default=3, 
                        help='编码器层数')
-    parser.add_argument('--patch_size', type=list, default=[3,4,5], 
-                       help='补丁大小列表')
+    def parse_list(arg):
+        try:
+            if arg.startswith('[') and arg.endswith(']'):
+                # 移除方括号并按逗号分割
+                return [int(item.strip()) for item in arg[1:-1].split(',')]
+            else:
+                # 尝试按逗号分割
+                return [int(item.strip()) for item in arg.split(',')]
+        except:
+            return [3, 4, 5]  # 默认值
+    
+    parser.add_argument('--patch_size', type=parse_list, default=[3,4,5], 
+                       help='补丁大小列表，格式为[3,4,5]或3,4,5')
     parser.add_argument('--d_ff', type=int, default=512, 
                        help='前馈网络维度')
     parser.add_argument('--dropout', type=float, default=0.0, 

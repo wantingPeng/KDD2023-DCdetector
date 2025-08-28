@@ -20,5 +20,13 @@ python run_custom_dataset.py \
     --patience 3 \
     --anormly_ratio 2.0 \
     --mode train \
-    --index 0
+    --index 0 \
+    --patch_size 3,6,10 \
+    --n_heads 4 \
+    --d_model 256 \
+    --e_layers 3 \
+    --d_ff 512 \
+    --dropout 0.0 \
+    --activation gelu \
+    --output_attention True
 
