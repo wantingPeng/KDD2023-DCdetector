@@ -10,19 +10,19 @@ export PYTHONPATH="${PYTHONPATH}:."
 # 运行训练和测试
 python run_custom_dataset.py \
     --dataset Custom \
-    --data_path "ALLcontact_noSegment" \
+    --data_path "dataset/pca/pc_features_20_contact.parquet" \
     --win_size 60 \
-    --input_c 27 \
-    --output_c 27 \
+    --input_c 20 \
+    --output_c 20 \
     --batch_size 64 \
     --lr 1e-4 \
-    --num_epochs 3 \
+    --num_epochs 1 \
     --patience 3 \
-    --anormly_ratio 2.0 \
+    --anormly_ratio 2 \
     --mode train \
     --index 0 \
     --patch_size 3,6,10 \
-    --n_heads 4 \
+    --n_heads 8 \
     --d_model 256 \
     --e_layers 3 \
     --d_ff 512 \

@@ -24,7 +24,7 @@ def adjust_learning_rate(optimizer, epoch, lr_):
             param_group['lr'] = lr
 
 class EarlyStopping:
-    def __init__(self, patience=7, verbose=False, dataset_name='', delta=0):
+    def __init__(self, patience=7, verbose=False, dataset_name='', delta=0, metadata=None):
         self.patience = patience
         self.verbose = verbose
         self.counter = 0
@@ -35,6 +35,7 @@ class EarlyStopping:
         self.val_loss2_min = np.inf
         self.delta = delta
         self.dataset = dataset_name
+        self.metadata = metadata if isinstance(metadata, dict) else None
 
     def __call__(self, val_loss, val_loss2, model, path):
         score = -val_loss
@@ -54,7 +55,17 @@ class EarlyStopping:
             self.counter = 0
 
     def save_checkpoint(self, val_loss, val_loss2, model, path):
-        torch.save(model.state_dict(), os.path.join(path, str(self.dataset) + '_checkpoint.pth'))
+        ckpt_path = os.path.join(path, str(self.dataset) + '_checkpoint.pth')
+        torch.save(model.state_dict(), ckpt_path)
+        # 同名保存运行参数配置（JSON）
+        if self.metadata is not None:
+            try:
+                import json
+                cfg_path = os.path.join(path, str(self.dataset) + '_checkpoint.json')
+                with open(cfg_path, 'w', encoding='utf-8') as f:
+                    json.dump(self.metadata, f, ensure_ascii=False, indent=2)
+            except Exception:
+                pass
         self.val_loss_min = val_loss
         self.val_loss2_min = val_loss2
 
@@ -65,11 +76,22 @@ class Solver(object):
     def __init__(self, config):
 
         self.__dict__.update(Solver.DEFAULTS, **config)
+        # 保存原始运行配置，便于直接落盘
+        try:
+            self.run_config = dict(config)
+        except Exception:
+            self.run_config = None
 
-        self.train_loader = get_loader_segment(self.index, 'dataset/'+self.data_path, batch_size=self.batch_size, win_size=self.win_size, mode='train', dataset=self.dataset, )
-        self.vali_loader = get_loader_segment(self.index, 'dataset/'+self.data_path, batch_size=self.batch_size, win_size=self.win_size, mode='val', dataset=self.dataset)
-        self.test_loader = get_loader_segment(self.index, 'dataset/'+self.data_path, batch_size=self.batch_size, win_size=self.win_size, mode='test', dataset=self.dataset)
-        self.thre_loader = get_loader_segment(self.index, 'dataset/'+self.data_path, batch_size=self.batch_size, win_size=self.win_size, mode='thre', dataset=self.dataset)
+        # 生成安全的检查点文件名前缀，避免将路径嵌入文件名导致多级目录
+        base_name = os.path.splitext(os.path.basename(str(self.data_path)))[0]
+        self.checkpoint_stem = ''.join([c if (str(c).isalnum() or c in ('-', '_')) else '_' for c in base_name])
+
+        # 直接使用传入的 data_path（对于 Custom 数据集应为Parquet文件路径）
+        data_source = self.data_path
+        self.train_loader = get_loader_segment(self.index, data_source, batch_size=self.batch_size, win_size=self.win_size, mode='train', dataset=self.dataset)
+        self.vali_loader = get_loader_segment(self.index, data_source, batch_size=self.batch_size, win_size=self.win_size, mode='val', dataset=self.dataset)
+        self.test_loader = get_loader_segment(self.index, data_source, batch_size=self.batch_size, win_size=self.win_size, mode='test', dataset=self.dataset)
+        self.thre_loader = get_loader_segment(self.index, data_source, batch_size=self.batch_size, win_size=self.win_size, mode='thre', dataset=self.dataset)
 
         self.build_model()
         
@@ -129,7 +151,8 @@ class Solver(object):
         path = self.model_save_path
         if not os.path.exists(path):
             os.makedirs(path)
-        early_stopping = EarlyStopping(patience=5, verbose=True, dataset_name=self.data_path)
+        # 直接保存原始运行配置
+        early_stopping = EarlyStopping(patience=5, verbose=True, dataset_name=self.checkpoint_stem, metadata=self.run_config)
         train_steps = len(self.train_loader)
 
         for epoch in range(self.num_epochs):
@@ -189,10 +212,9 @@ class Solver(object):
 
             
     def test(self):
-        self.model.load_state_dict(
-            torch.load(
-                os.path.join(str(self.model_save_path), str(self.data_path) + '_checkpoint.pth')))
-        print(os.path.join(str(self.model_save_path), str(self.data_path) + '_checkpoint.pth'))
+        ckpt_path = os.path.join(str(self.model_save_path), str(self.checkpoint_stem) + '_checkpoint.pth')
+        self.model.load_state_dict(torch.load(ckpt_path))
+        print(ckpt_path)
         self.model.eval()
         temperature = 50
 
@@ -338,10 +360,9 @@ class Solver(object):
         precision, recall, f_score, support = precision_recall_fscore_support(gt, pred, average='binary')
         print("Accuracy : {:0.4f}, Precision : {:0.4f}, Recall : {:0.4f}, F-score : {:0.4f} ".format(accuracy, precision, recall, f_score))
         
-        if self.data_path == 'UCR' or 'UCR_AUG':
-            import csv
-            with open('result/'+self.data_path+'.csv', 'a+') as f:
-                writer = csv.writer(f)
-                writer.writerow(matrix)
-
+    
         return accuracy, precision, recall, f_score
+
+    def _export_run_config(self):
+        # 保留以兼容调用，但优先使用 self.run_config
+        return self.run_config
