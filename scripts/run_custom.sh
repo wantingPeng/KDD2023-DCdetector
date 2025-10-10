@@ -10,10 +10,10 @@ export PYTHONPATH="${PYTHONPATH}:."
 # 运行训练和测试
 python run_custom_dataset.py \
     --dataset Custom \
-    --data_path "dataset/pca/pc_features_20_contact.parquet" \
+    --data_path "dataset/downsampleData_scratch_1minut/contact/contact_cleaned_1minut_20250928_172122.parquet" \
     --win_size 60 \
-    --input_c 20 \
-    --output_c 20 \
+    --input_c 27 \
+    --output_c 27 \
     --batch_size 64 \
     --lr 1e-4 \
     --num_epochs 1 \
