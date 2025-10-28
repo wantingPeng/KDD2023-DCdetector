@@ -7,6 +7,9 @@ source venv/bin/activate
 # 设置Python路径
 export PYTHONPATH="${PYTHONPATH}:."
 
+# 仅禁用 numba/stumpy 的 CUDA 使用，避免导入时显存错误；不影响 PyTorch 使用 GPU
+export NUMBA_DISABLE_CUDA=1
+
 # 运行训练和测试
 python run_custom_dataset.py \
     --dataset Custom \
@@ -18,7 +21,7 @@ python run_custom_dataset.py \
     --lr 1e-4 \
     --num_epochs 1 \
     --patience 3 \
-    --anormly_ratio 2 \
+    --anormly_ratio 3 \
     --mode train \
     --index 0 \
     --patch_size 3,6,10 \
@@ -26,7 +29,6 @@ python run_custom_dataset.py \
     --d_model 256 \
     --e_layers 3 \
     --d_ff 512 \
-    --dropout 0.0 \
     --activation gelu \
-    --output_attention True
-
+    --output_attention True \
+    #--checkpoint_dir "checkpoints/contact_cleaned_1minut_20250928_172122_checkpoint_2025-10-28_07-57-01" 

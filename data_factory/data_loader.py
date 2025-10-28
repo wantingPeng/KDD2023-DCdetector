@@ -539,9 +539,9 @@ class CustomSegLoader(object):
         orig_train_ratio = _ratio(train_df)
         orig_val_ratio = _ratio(val_df)
         orig_test_ratio = _ratio(test_df)
-
+        downsample=True
         # 训练集重采样到 20% 异常占比：通过随机下采样正常样本，保持时间顺序
-        if 'anomaly_label' in train_df.columns:
+        if downsample :
             target_ratio = 0.20
             num_anom_cur = int(train_df['anomaly_label'].sum())
             num_norm_cur = int((1 - train_df['anomaly_label']).sum())
@@ -555,7 +555,7 @@ class CustomSegLoader(object):
                     # 恢复按时间顺序
                     if 'TimeStamp' in train_df.columns:
                         train_df = train_df.sort_values(by='TimeStamp').reset_index(drop=True)
-
+                    print("按时间排序")
         # 删除 TimeStamp 列
         for d in (train_df, val_df, test_df):
             if 'TimeStamp' in d.columns:

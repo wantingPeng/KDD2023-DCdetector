@@ -80,6 +80,8 @@ def main():
                        help='数据集索引')
     parser.add_argument('--model_save_path', type=str, default='checkpoints/', 
                        help='模型保存路径')
+    parser.add_argument('--checkpoint_dir', type=str, default='',
+                       help='仅测试模式下使用：已保存模型的目录路径，目录内应包含model.pth/config.json')
     
     args = parser.parse_args()
     
@@ -102,6 +104,9 @@ def main():
         logger.info("测试完成!")
     else:
         logger.info("开始测试模型...")
+        # 若提供了checkpoint目录，则优先使用
+        if getattr(args, 'checkpoint_dir', ''):
+            solver.latest_checkpoint_dir = args.checkpoint_dir
         solver.test()
         logger.info("测试完成!")
 
