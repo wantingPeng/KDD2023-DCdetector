@@ -13,15 +13,15 @@ export NUMBA_DISABLE_CUDA=1
 # 运行训练和测试
 python run_custom_dataset.py \
     --dataset Custom \
-    --data_path "dataset/downsampleData_scratch_1minut/contact/contact_cleaned_1minut_20250928_172122.parquet" \
-    --win_size 60 \
-    --input_c 27 \
-    --output_c 27 \
+    --data_path "dataset/downsampleData_scratch_1minut/pcb/pcb_cleaned_1minut_20250928_161509.parquet" \
+    --win_size 30 \
+    --input_c 31 \
+    --output_c 31 \
     --batch_size 64 \
     --lr 1e-4 \
     --num_epochs 1 \
     --patience 3 \
-    --anormly_ratio 3 \
+    --anormly_ratio 2 \
     --mode train \
     --index 0 \
     --patch_size 3,6,10 \
@@ -31,4 +31,4 @@ python run_custom_dataset.py \
     --d_ff 512 \
     --activation gelu \
     --output_attention True \
-    #--checkpoint_dir "checkpoints/contact_cleaned_1minut_20250928_172122_checkpoint_2025-10-28_07-57-01" 
+    #--checkpoint_dir "checkpoints/Ring_cleaned_1minut_20250928_170147_checkpoint_2025-10-28_09-46-19"

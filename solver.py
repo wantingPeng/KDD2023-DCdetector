@@ -160,6 +160,7 @@ class Solver(object):
             prior_loss = prior_loss / len(prior)
 
             loss_1.append((prior_loss - series_loss).item())
+            loss_2.append((prior_loss + series_loss).item())
 
         return np.average(loss_1), np.average(loss_2)
 
@@ -219,7 +220,7 @@ class Solver(object):
                 loss.backward()
                 self.optimizer.step()
 
-            vali_loss1, vali_loss2 = self.vali(self.test_loader)
+            vali_loss1, vali_loss2 = self.vali(self.vali_loader)
 
             print(
                 "Epoch: {0}, Cost time: {1:.3f}s ".format(
@@ -284,7 +285,7 @@ class Solver(object):
 
         # (2) find the threshold
         attens_energy = []
-        for i, (input_data, labels) in enumerate(self.thre_loader):
+        for i, (input_data, labels) in enumerate(self.test_loader):
             input = input_data.float().to(self.device)
             series, prior = self.model(input)
             series_loss = 0.0
@@ -320,7 +321,7 @@ class Solver(object):
         # (3) evaluation on the test set
         test_labels = []
         attens_energy = []
-        for i, (input_data, labels) in enumerate(self.thre_loader):
+        for i, (input_data, labels) in enumerate(self.test_loader):
             input = input_data.float().to(self.device)
             series, prior = self.model(input)
             series_loss = 0.0

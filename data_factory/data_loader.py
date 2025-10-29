@@ -502,7 +502,13 @@ class SWATSegLoader(Dataset):
 class CustomSegLoader(object):
     """
     Custom SegLoader that loads from a single Parquet file, sorts by TimeStamp,
-    splits into train/val/test by 70/15/15, rebalances train anomalies to 20%.
+    splits into train/val/test by 70/15/15.
+    
+    可通过修改类内参数控制训练集异常处理策略：
+    - downsample=False: 是否通过下采样正常样本，将训练集异常比例调整到20%
+    - onlyNormalData=True: 是否仅保留训练集中的正常数据（过滤掉所有异常标签）
+    
+    注意：验证集和测试集始终保持原始分布，不受这两个参数影响。
     """
     def __init__(self, data_path, win_size, step, mode="train"):
         self.mode = mode
@@ -539,9 +545,17 @@ class CustomSegLoader(object):
         orig_train_ratio = _ratio(train_df)
         orig_val_ratio = _ratio(val_df)
         orig_test_ratio = _ratio(test_df)
-        downsample=True
+        
+        # 控制参数
+        downsample = False  # 是否通过下采样调整异常比例到20%
+        onlyNormalData = True  # 是否仅保留训练集中的正常数据（标签=0）
+        
+        # 参数冲突检查
+        if downsample and onlyNormalData:
+            print("[警告] downsample 和 onlyNormalData 同时为True，将先下采样再过滤异常，最终训练集将只包含正常数据")
+        
         # 训练集重采样到 20% 异常占比：通过随机下采样正常样本，保持时间顺序
-        if downsample :
+        if downsample:
             target_ratio = 0.20
             num_anom_cur = int(train_df['anomaly_label'].sum())
             num_norm_cur = int((1 - train_df['anomaly_label']).sum())
@@ -556,6 +570,18 @@ class CustomSegLoader(object):
                     if 'TimeStamp' in train_df.columns:
                         train_df = train_df.sort_values(by='TimeStamp').reset_index(drop=True)
                     print("按时间排序")
+        
+        # 仅保留训练集中的正常数据（过滤掉所有异常标签）
+        if onlyNormalData:
+            if 'anomaly_label' in train_df.columns:
+                num_before = len(train_df)
+                num_anom_before = int(train_df['anomaly_label'].sum())
+                # 只保留标签为0的数据
+                train_df = train_df[train_df['anomaly_label'] == 0].copy()
+                train_df = train_df.reset_index(drop=True)
+                num_after = len(train_df)
+                print(f"[onlyNormalData=True] 训练集过滤异常数据: {num_before} 行 -> {num_after} 行 (移除 {num_anom_before} 个异常样本)")
+        
         # 删除 TimeStamp 列
         for d in (train_df, val_df, test_df):
             if 'TimeStamp' in d.columns:
@@ -614,8 +640,6 @@ class CustomSegLoader(object):
         elif self.mode == 'val':
             return (self.val.shape[0] - self.win_size) // self.step + 1
         elif self.mode == 'test':
-            return (self.test.shape[0] - self.win_size) // self.step + 1
-        else:  # thre模式
             return (self.test.shape[0] - self.win_size) // self.win_size + 1
 
     def __getitem__(self, index):
@@ -630,16 +654,11 @@ class CustomSegLoader(object):
             return np.float32(self.val[index:index + self.win_size]), \
                    np.float32(self.val_labels[index:index + self.win_size])
         elif self.mode == 'test':
-            # 测试模式：返回测试数据窗口和对应标签
-            index = index * self.step
-            return np.float32(self.test[index:index + self.win_size]), \
-                   np.float32(self.test_labels[index:index + self.win_size])
-        else:  # thre模式
-            # threshold模式：用于计算阈值，使用测试数据
+            # 测试模式：返回测试数据窗口和对应标签（无重叠窗口）
             index = index * self.win_size
             return np.float32(self.test[index:index + self.win_size]), \
                    np.float32(self.test_labels[index:index + self.win_size])
-
+ 
         
 def get_loader_segment(index, data_path, batch_size, win_size=100, step=100, mode='train', dataset='KDD'):
     if (dataset == 'SMD'):
