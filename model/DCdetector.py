@@ -75,7 +75,6 @@ class DCdetector(nn.Module):
         # Instance Normalization Operation
         x = dish_layer(x, 'norm')
         x_ori = self.embedding_window_size(x)
-        
         # Mutil-scale Patching Operation 
         for patch_index, patchsize in enumerate(self.patch_size):
             x_patch_size, x_patch_num = x, x

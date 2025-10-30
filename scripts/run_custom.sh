@@ -13,22 +13,22 @@ export NUMBA_DISABLE_CUDA=1
 # 运行训练和测试
 python run_custom_dataset.py \
     --dataset Custom \
-    --data_path "dataset/downsampleData_scratch_1minut/pcb/pcb_cleaned_1minut_20250928_161509.parquet" \
+    --data_path "dataset/downsampleData_scratch_1minut/contact/contact_cleaned_1minut_20250928_172122.parquet" \
     --win_size 30 \
-    --input_c 31 \
-    --output_c 31 \
-    --batch_size 64 \
+    --input_c 27 \
+    --output_c 27 \
+    --batch_size 32 \
     --lr 1e-4 \
     --num_epochs 1 \
     --patience 3 \
-    --anormly_ratio 2 \
+    --anormly_ratio 3.0 \
     --mode train \
     --index 0 \
     --patch_size 3,6,10 \
-    --n_heads 8 \
+    --n_heads 3 \
     --d_model 256 \
     --e_layers 3 \
     --d_ff 512 \
     --activation gelu \
     --output_attention True \
-    #--checkpoint_dir "checkpoints/Ring_cleaned_1minut_20250928_170147_checkpoint_2025-10-28_09-46-19"
+    #--checkpoint_dir "checkpoints/pcb_cleaned_1minut_20250928_161509_checkpoint_2025-10-28_08-51-23"
