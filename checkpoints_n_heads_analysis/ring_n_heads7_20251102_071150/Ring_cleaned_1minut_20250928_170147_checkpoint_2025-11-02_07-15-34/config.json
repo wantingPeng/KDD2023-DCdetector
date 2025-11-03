@@ -1,0 +1,29 @@
+{
+  "dataset": "Custom",
+  "data_path": "dataset/downsampleData_scratch_1minut/ring/Ring_cleaned_1minut_20250928_170147.parquet",
+  "win_size": 30,
+  "input_c": 28,
+  "output_c": 28,
+  "batch_size": 32,
+  "lr": 0.0001,
+  "num_epochs": 1,
+  "patience": 3,
+  "anormly_ratio": 3.0,
+  "n_heads": 7,
+  "d_model": 256,
+  "e_layers": 3,
+  "patch_size": [
+    3,
+    6,
+    10
+  ],
+  "d_ff": 512,
+  "dropout": 0.0,
+  "activation": "gelu",
+  "output_attention": true,
+  "loss_fuc": "MSE",
+  "mode": "train",
+  "index": 0,
+  "model_save_path": "checkpoints_n_heads_analysis/ring_n_heads7_20251102_071150",
+  "checkpoint_dir": ""
+}

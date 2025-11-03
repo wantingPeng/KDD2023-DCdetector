@@ -1,0 +1,2413 @@
+/home/wanting/KDD2023-DCdetector/venv/lib/python3.12/site-packages/tsfresh/__init__.py:12: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+2025-11-02 08:56:29,145 - INFO - 开始使用自定义数据集运行DCdetector...
+2025-11-02 08:56:29,145 - INFO - 数据集: Custom
+2025-11-02 08:56:29,145 - INFO - 输入特征维度: 27
+2025-11-02 08:56:29,145 - INFO - 窗口大小: 30
+2025-11-02 08:56:29,145 - INFO - 批次大小: 32
+2025-11-02 08:56:30,570 - INFO - 开始训练模型...
+[onlyNormalData=True] 训练集过滤异常数据: 377158 行 -> 339888 行 (移除 37270 个异常样本)
+数据加载自: dataset/downsampleData_scratch_1minut/contact/contact_cleaned_1minut_20250928_172122.parquet
+训练集形状: (339888, 27)
+验证集形状: (80820, 27)
+测试集形状: (80820, 27)
+特征维度: 27
+异常比例（行级）:
+- 训练集: 原始 9.88% -> 现有 0.00%
+- 验证集: 5.85%
+- 测试集: 5.06%
+[onlyNormalData=True] 训练集过滤异常数据: 377158 行 -> 339888 行 (移除 37270 个异常样本)
+数据加载自: dataset/downsampleData_scratch_1minut/contact/contact_cleaned_1minut_20250928_172122.parquet
+训练集形状: (339888, 27)
+验证集形状: (80820, 27)
+测试集形状: (80820, 27)
+特征维度: 27
+异常比例（行级）:
+- 训练集: 原始 9.88% -> 现有 0.00%
+- 验证集: 5.85%
+- 测试集: 5.06%
+[onlyNormalData=True] 训练集过滤异常数据: 377158 行 -> 339888 行 (移除 37270 个异常样本)
+数据加载自: dataset/downsampleData_scratch_1minut/contact/contact_cleaned_1minut_20250928_172122.parquet
+训练集形状: (339888, 27)
+验证集形状: (80820, 27)
+测试集形状: (80820, 27)
+特征维度: 27
+异常比例（行级）:
+- 训练集: 原始 9.88% -> 现有 0.00%
+- 验证集: 5.85%
+- 测试集: 5.06%
+[onlyNormalData=True] 训练集过滤异常数据: 377158 行 -> 339888 行 (移除 37270 个异常样本)
+数据加载自: dataset/downsampleData_scratch_1minut/contact/contact_cleaned_1minut_20250928_172122.parquet
+训练集形状: (339888, 27)
+验证集形状: (80820, 27)
+测试集形状: (80820, 27)
+特征维度: 27
+异常比例（行级）:
+- 训练集: 原始 9.88% -> 现有 0.00%
+- 验证集: 5.85%
+- 测试集: 5.06%
+	speed: 0.0109s/iter; left time: 114.6218s
+	speed: 0.0080s/iter; left time: 83.2873s
+	speed: 0.0079s/iter; left time: 81.7553s
+	speed: 0.0079s/iter; left time: 80.7907s
+	speed: 0.0078s/iter; left time: 79.0891s
+	speed: 0.0078s/iter; left time: 78.4381s
+	speed: 0.0078s/iter; left time: 77.7596s
+	speed: 0.0078s/iter; left time: 77.0134s
+	speed: 0.0078s/iter; left time: 76.2082s
+	speed: 0.0078s/iter; left time: 75.4652s
+	speed: 0.0079s/iter; left time: 74.7605s
+	speed: 0.0078s/iter; left time: 73.9079s
+	speed: 0.0078s/iter; left time: 73.1653s
+	speed: 0.0078s/iter; left time: 72.2443s
+	speed: 0.0078s/iter; left time: 71.5289s
+	speed: 0.0079s/iter; left time: 70.8617s
+	speed: 0.0079s/iter; left time: 70.0727s
+	speed: 0.0078s/iter; left time: 69.2161s
+	speed: 0.0079s/iter; left time: 68.4818s
+	speed: 0.0079s/iter; left time: 67.7583s
+	speed: 0.0079s/iter; left time: 67.4563s
+	speed: 0.0079s/iter; left time: 66.7262s
+	speed: 0.0079s/iter; left time: 65.5179s
+	speed: 0.0079s/iter; left time: 64.6701s
+	speed: 0.0079s/iter; left time: 63.9449s
+	speed: 0.0079s/iter; left time: 63.0485s
+	speed: 0.0079s/iter; left time: 62.3450s
+	speed: 0.0078s/iter; left time: 61.3577s
+	speed: 0.0079s/iter; left time: 60.6458s
+	speed: 0.0079s/iter; left time: 59.8432s
+	speed: 0.0079s/iter; left time: 59.2465s
+	speed: 0.0079s/iter; left time: 58.5112s
+	speed: 0.0079s/iter; left time: 57.6750s
+	speed: 0.0079s/iter; left time: 56.7838s
+	speed: 0.0079s/iter; left time: 56.0167s
+	speed: 0.0079s/iter; left time: 55.1439s
+	speed: 0.0079s/iter; left time: 54.3836s
+	speed: 0.0079s/iter; left time: 53.6898s
+	speed: 0.0079s/iter; left time: 52.8517s
+	speed: 0.0079s/iter; left time: 52.0782s
+	speed: 0.0079s/iter; left time: 51.2898s
+	speed: 0.0079s/iter; left time: 50.4201s
+	speed: 0.0079s/iter; left time: 49.7056s
+	speed: 0.0079s/iter; left time: 48.8655s
+	speed: 0.0079s/iter; left time: 48.1485s
+	speed: 0.0079s/iter; left time: 47.3363s
+	speed: 0.0079s/iter; left time: 46.6592s
+	speed: 0.0079s/iter; left time: 45.8584s
+	speed: 0.0079s/iter; left time: 45.0272s
+	speed: 0.0079s/iter; left time: 44.2842s
+	speed: 0.0079s/iter; left time: 43.4354s
+	speed: 0.0079s/iter; left time: 42.8501s
+	speed: 0.0079s/iter; left time: 41.9354s
+	speed: 0.0079s/iter; left time: 41.1360s
+	speed: 0.0079s/iter; left time: 40.2792s
+	speed: 0.0079s/iter; left time: 39.5039s
+	speed: 0.0079s/iter; left time: 38.8689s
+	speed: 0.0079s/iter; left time: 38.0664s
+	speed: 0.0079s/iter; left time: 37.2793s
+	speed: 0.0079s/iter; left time: 36.5416s
+	speed: 0.0079s/iter; left time: 35.7407s
+	speed: 0.0079s/iter; left time: 34.9569s
+	speed: 0.0079s/iter; left time: 34.1554s
+	speed: 0.0079s/iter; left time: 33.4011s
+	speed: 0.0079s/iter; left time: 32.6049s
+	speed: 0.0079s/iter; left time: 31.7793s
+	speed: 0.0079s/iter; left time: 30.9905s
+	speed: 0.0079s/iter; left time: 30.1834s
+	speed: 0.0079s/iter; left time: 29.3974s
+	speed: 0.0079s/iter; left time: 28.6365s
+	speed: 0.0079s/iter; left time: 27.8505s
+	speed: 0.0079s/iter; left time: 27.0547s
+	speed: 0.0079s/iter; left time: 26.2777s
+	speed: 0.0079s/iter; left time: 25.4846s
+	speed: 0.0079s/iter; left time: 24.6728s
+	speed: 0.0079s/iter; left time: 23.8465s
+	speed: 0.0079s/iter; left time: 23.0667s
+	speed: 0.0079s/iter; left time: 22.2813s
+	speed: 0.0079s/iter; left time: 21.4532s
+	speed: 0.0079s/iter; left time: 20.6265s
+	speed: 0.0079s/iter; left time: 19.8274s
+	speed: 0.0078s/iter; left time: 18.9811s
+	speed: 0.0078s/iter; left time: 18.1983s
+	speed: 0.0078s/iter; left time: 17.4188s
+	speed: 0.0079s/iter; left time: 16.6503s
+	speed: 0.0079s/iter; left time: 15.8673s
+	speed: 0.0079s/iter; left time: 15.0938s
+	speed: 0.0078s/iter; left time: 14.2917s
+	speed: 0.0079s/iter; left time: 13.5326s
+	speed: 0.0079s/iter; left time: 12.7562s
+	speed: 0.0079s/iter; left time: 12.0452s
+	speed: 0.0079s/iter; left time: 11.1709s
+	speed: 0.0079s/iter; left time: 10.3943s
+	speed: 0.0079s/iter; left time: 9.6014s
+	speed: 0.0079s/iter; left time: 8.8036s
+	speed: 0.0078s/iter; left time: 8.0081s
+	speed: 0.0079s/iter; left time: 7.2301s
+	speed: 0.0078s/iter; left time: 6.4445s
+	speed: 0.0079s/iter; left time: 5.6603s
+	speed: 0.0079s/iter; left time: 4.8762s
+	speed: 0.0079s/iter; left time: 4.0923s
+	speed: 0.0078s/iter; left time: 3.3046s
+	speed: 0.0079s/iter; left time: 2.5199s
+	speed: 0.0079s/iter; left time: 1.7352s
+	speed: 0.0079s/iter; left time: 0.9511s
+	speed: 0.0079s/iter; left time: 0.1650s
+2025-11-02 08:58:01,810 - INFO - 训练完成!
+2025-11-02 08:58:01,810 - INFO - 开始测试模型...
+Epoch: 1, Cost time: 91.220s 
+Loading checkpoint from: checkpoints_e_layers_analysis/contact_e_layers1_20251102_085627/contact_cleaned_1minut_20250928_172122_checkpoint_2025-11-02_08-58-01/model.pth
+Threshold : 0.5243023878335954
+2025-11-02 08:58:44,727 - INFO - 测试完成!
+pa_accuracy           : 0.9563
+pa_precision          : 0.5552
+pa_recall             : 0.7002
+pa_f_score            : 0.6193
+MCC_score             : 0.6010
+Affiliation precision : 0.5457
+Affiliation recall    : 0.8674
+R_AUC_ROC             : 0.6711
+R_AUC_PR              : 0.5441
+VUS_ROC               : 0.6786
+VUS_PR                : 0.5461
+Accuracy : 0.9563, Precision : 0.5552, Recall : 0.7002, F-score : 0.6193 
+Test results saved to: checkpoints_e_layers_analysis/contact_e_layers1_20251102_085627/contact_cleaned_1minut_20250928_172122_checkpoint_2025-11-02_08-58-01/result.json
+/home/wanting/KDD2023-DCdetector/venv/lib/python3.12/site-packages/tsfresh/__init__.py:12: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+2025-11-02 08:58:46,975 - INFO - 开始使用自定义数据集运行DCdetector...
+2025-11-02 08:58:46,975 - INFO - 数据集: Custom
+2025-11-02 08:58:46,975 - INFO - 输入特征维度: 27
+2025-11-02 08:58:46,975 - INFO - 窗口大小: 30
+2025-11-02 08:58:46,975 - INFO - 批次大小: 32
+2025-11-02 08:58:48,402 - INFO - 开始训练模型...
+[onlyNormalData=True] 训练集过滤异常数据: 377158 行 -> 339888 行 (移除 37270 个异常样本)
+数据加载自: dataset/downsampleData_scratch_1minut/contact/contact_cleaned_1minut_20250928_172122.parquet
+训练集形状: (339888, 27)
+验证集形状: (80820, 27)
+测试集形状: (80820, 27)
+特征维度: 27
+异常比例（行级）:
+- 训练集: 原始 9.88% -> 现有 0.00%
+- 验证集: 5.85%
+- 测试集: 5.06%
+[onlyNormalData=True] 训练集过滤异常数据: 377158 行 -> 339888 行 (移除 37270 个异常样本)
+数据加载自: dataset/downsampleData_scratch_1minut/contact/contact_cleaned_1minut_20250928_172122.parquet
+训练集形状: (339888, 27)
+验证集形状: (80820, 27)
+测试集形状: (80820, 27)
+特征维度: 27
+异常比例（行级）:
+- 训练集: 原始 9.88% -> 现有 0.00%
+- 验证集: 5.85%
+- 测试集: 5.06%
+[onlyNormalData=True] 训练集过滤异常数据: 377158 行 -> 339888 行 (移除 37270 个异常样本)
+数据加载自: dataset/downsampleData_scratch_1minut/contact/contact_cleaned_1minut_20250928_172122.parquet
+训练集形状: (339888, 27)
+验证集形状: (80820, 27)
+测试集形状: (80820, 27)
+特征维度: 27
+异常比例（行级）:
+- 训练集: 原始 9.88% -> 现有 0.00%
+- 验证集: 5.85%
+- 测试集: 5.06%
+[onlyNormalData=True] 训练集过滤异常数据: 377158 行 -> 339888 行 (移除 37270 个异常样本)
+数据加载自: dataset/downsampleData_scratch_1minut/contact/contact_cleaned_1minut_20250928_172122.parquet
+训练集形状: (339888, 27)
+验证集形状: (80820, 27)
+测试集形状: (80820, 27)
+特征维度: 27
+异常比例（行级）:
+- 训练集: 原始 9.88% -> 现有 0.00%
+- 验证集: 5.85%
+- 测试集: 5.06%
+	speed: 0.0195s/iter; left time: 204.7783s
+	speed: 0.0165s/iter; left time: 171.8977s
+	speed: 0.0165s/iter; left time: 170.0112s
+	speed: 0.0164s/iter; left time: 167.8832s
+	speed: 0.0164s/iter; left time: 166.3493s
+	speed: 0.0164s/iter; left time: 164.6470s
+	speed: 0.0164s/iter; left time: 162.8713s
+	speed: 0.0164s/iter; left time: 161.1103s
+	speed: 0.0164s/iter; left time: 159.6580s
+	speed: 0.0164s/iter; left time: 158.0308s
+	speed: 0.0164s/iter; left time: 156.4516s
+	speed: 0.0164s/iter; left time: 154.8710s
+	speed: 0.0164s/iter; left time: 153.3092s
+	speed: 0.0164s/iter; left time: 151.4160s
+	speed: 0.0164s/iter; left time: 149.9825s
+	speed: 0.0164s/iter; left time: 148.3637s
+	speed: 0.0164s/iter; left time: 146.7233s
+	speed: 0.0164s/iter; left time: 145.1034s
+	speed: 0.0164s/iter; left time: 143.3625s
+	speed: 0.0164s/iter; left time: 141.5533s
+	speed: 0.0164s/iter; left time: 139.8785s
+	speed: 0.0164s/iter; left time: 138.3448s
+	speed: 0.0164s/iter; left time: 136.7435s
+	speed: 0.0164s/iter; left time: 135.2059s
+	speed: 0.0165s/iter; left time: 133.6787s
+	speed: 0.0165s/iter; left time: 132.1315s
+	speed: 0.0165s/iter; left time: 130.5755s
+	speed: 0.0165s/iter; left time: 129.0181s
+	speed: 0.0165s/iter; left time: 127.3470s
+	speed: 0.0165s/iter; left time: 125.4827s
+	speed: 0.0165s/iter; left time: 123.8818s
+	speed: 0.0165s/iter; left time: 122.2123s
+	speed: 0.0165s/iter; left time: 120.6063s
+	speed: 0.0165s/iter; left time: 118.7910s
+	speed: 0.0166s/iter; left time: 118.4982s
+	speed: 0.0165s/iter; left time: 115.5494s
+	speed: 0.0164s/iter; left time: 113.5930s
+	speed: 0.0164s/iter; left time: 111.9622s
+	speed: 0.0164s/iter; left time: 110.3344s
+	speed: 0.0164s/iter; left time: 108.9114s
+	speed: 0.0164s/iter; left time: 106.9741s
+	speed: 0.0164s/iter; left time: 105.2646s
+	speed: 0.0164s/iter; left time: 103.6871s
+	speed: 0.0164s/iter; left time: 102.1579s
+	speed: 0.0164s/iter; left time: 100.5411s
+	speed: 0.0164s/iter; left time: 99.0156s
+	speed: 0.0164s/iter; left time: 97.3769s
+	speed: 0.0164s/iter; left time: 95.7515s
+	speed: 0.0164s/iter; left time: 93.9247s
+	speed: 0.0165s/iter; left time: 92.5997s
+	speed: 0.0164s/iter; left time: 90.6682s
+	speed: 0.0164s/iter; left time: 89.0479s
+	speed: 0.0164s/iter; left time: 87.4525s
+	speed: 0.0164s/iter; left time: 85.7886s
+	speed: 0.0164s/iter; left time: 84.1420s
+	speed: 0.0164s/iter; left time: 82.4964s
+	speed: 0.0164s/iter; left time: 80.9056s
+	speed: 0.0164s/iter; left time: 79.2351s
+	speed: 0.0164s/iter; left time: 77.6289s
+	speed: 0.0164s/iter; left time: 75.9041s
+	speed: 0.0164s/iter; left time: 74.2963s
+	speed: 0.0164s/iter; left time: 72.6478s
+	speed: 0.0164s/iter; left time: 70.9732s
+	speed: 0.0164s/iter; left time: 69.3259s
+	speed: 0.0164s/iter; left time: 67.7291s
+	speed: 0.0164s/iter; left time: 66.0572s
+	speed: 0.0164s/iter; left time: 64.4319s
+	speed: 0.0164s/iter; left time: 62.7255s
+	speed: 0.0164s/iter; left time: 61.0989s
+	speed: 0.0164s/iter; left time: 59.4253s
+	speed: 0.0165s/iter; left time: 58.1382s
+	speed: 0.0166s/iter; left time: 56.8746s
+	speed: 0.0165s/iter; left time: 54.6625s
+	speed: 0.0165s/iter; left time: 53.0660s
+	speed: 0.0165s/iter; left time: 51.4564s
+	speed: 0.0164s/iter; left time: 49.5779s
+	speed: 0.0164s/iter; left time: 47.9389s
+	speed: 0.0164s/iter; left time: 46.3891s
+	speed: 0.0164s/iter; left time: 44.6757s
+	speed: 0.0164s/iter; left time: 43.0965s
+	speed: 0.0164s/iter; left time: 41.4045s
+	speed: 0.0168s/iter; left time: 40.6428s
+	speed: 0.0165s/iter; left time: 38.2548s
+	speed: 0.0164s/iter; left time: 36.5051s
+	speed: 0.0164s/iter; left time: 34.8872s
+	speed: 0.0165s/iter; left time: 33.3678s
+	speed: 0.0165s/iter; left time: 31.6499s
+	speed: 0.0165s/iter; left time: 29.9819s
+	speed: 0.0165s/iter; left time: 28.3682s
+	speed: 0.0165s/iter; left time: 26.7292s
+	speed: 0.0164s/iter; left time: 25.0196s
+	speed: 0.0164s/iter; left time: 23.3457s
+	speed: 0.0164s/iter; left time: 21.6996s
+	speed: 0.0164s/iter; left time: 20.0677s
+	speed: 0.0164s/iter; left time: 18.4147s
+	speed: 0.0164s/iter; left time: 16.7720s
+	speed: 0.0164s/iter; left time: 15.1354s
+	speed: 0.0164s/iter; left time: 13.4922s
+	speed: 0.0164s/iter; left time: 11.8587s
+	speed: 0.0164s/iter; left time: 10.2039s
+	speed: 0.0166s/iter; left time: 8.6498s
+	speed: 0.0164s/iter; left time: 6.9155s
+	speed: 0.0164s/iter; left time: 5.2770s
+	speed: 0.0165s/iter; left time: 3.6536s
+	speed: 0.0164s/iter; left time: 1.9872s
+	speed: 0.0164s/iter; left time: 0.3451s
+2025-11-02 09:01:57,541 - INFO - 训练完成!
+2025-11-02 09:01:57,541 - INFO - 开始测试模型...
+Epoch: 1, Cost time: 189.117s 
+Loading checkpoint from: checkpoints_e_layers_analysis/contact_e_layers3_20251102_085845/contact_cleaned_1minut_20250928_172122_checkpoint_2025-11-02_09-01-57/model.pth
+Threshold : 0.907394289970398
+2025-11-02 09:03:02,820 - INFO - 测试完成!
+pa_accuracy           : 0.9554
+pa_precision          : 0.5477
+pa_recall             : 0.6936
+pa_f_score            : 0.6121
+MCC_score             : 0.5934
+Affiliation precision : 0.5398
+Affiliation recall    : 0.8774
+R_AUC_ROC             : 0.6701
+R_AUC_PR              : 0.5405
+VUS_ROC               : 0.6785
+VUS_PR                : 0.5437
+Accuracy : 0.9554, Precision : 0.5477, Recall : 0.6936, F-score : 0.6121 
+Test results saved to: checkpoints_e_layers_analysis/contact_e_layers3_20251102_085845/contact_cleaned_1minut_20250928_172122_checkpoint_2025-11-02_09-01-57/result.json
+/home/wanting/KDD2023-DCdetector/venv/lib/python3.12/site-packages/tsfresh/__init__.py:12: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+2025-11-02 09:03:05,066 - INFO - 开始使用自定义数据集运行DCdetector...
+2025-11-02 09:03:05,066 - INFO - 数据集: Custom
+2025-11-02 09:03:05,066 - INFO - 输入特征维度: 27
+2025-11-02 09:03:05,066 - INFO - 窗口大小: 30
+2025-11-02 09:03:05,066 - INFO - 批次大小: 32
+2025-11-02 09:03:06,527 - INFO - 开始训练模型...
+[onlyNormalData=True] 训练集过滤异常数据: 377158 行 -> 339888 行 (移除 37270 个异常样本)
+数据加载自: dataset/downsampleData_scratch_1minut/contact/contact_cleaned_1minut_20250928_172122.parquet
+训练集形状: (339888, 27)
+验证集形状: (80820, 27)
+测试集形状: (80820, 27)
+特征维度: 27
+异常比例（行级）:
+- 训练集: 原始 9.88% -> 现有 0.00%
+- 验证集: 5.85%
+- 测试集: 5.06%
+[onlyNormalData=True] 训练集过滤异常数据: 377158 行 -> 339888 行 (移除 37270 个异常样本)
+数据加载自: dataset/downsampleData_scratch_1minut/contact/contact_cleaned_1minut_20250928_172122.parquet
+训练集形状: (339888, 27)
+验证集形状: (80820, 27)
+测试集形状: (80820, 27)
+特征维度: 27
+异常比例（行级）:
+- 训练集: 原始 9.88% -> 现有 0.00%
+- 验证集: 5.85%
+- 测试集: 5.06%
+[onlyNormalData=True] 训练集过滤异常数据: 377158 行 -> 339888 行 (移除 37270 个异常样本)
+数据加载自: dataset/downsampleData_scratch_1minut/contact/contact_cleaned_1minut_20250928_172122.parquet
+训练集形状: (339888, 27)
+验证集形状: (80820, 27)
+测试集形状: (80820, 27)
+特征维度: 27
+异常比例（行级）:
+- 训练集: 原始 9.88% -> 现有 0.00%
+- 验证集: 5.85%
+- 测试集: 5.06%
+[onlyNormalData=True] 训练集过滤异常数据: 377158 行 -> 339888 行 (移除 37270 个异常样本)
+数据加载自: dataset/downsampleData_scratch_1minut/contact/contact_cleaned_1minut_20250928_172122.parquet
+训练集形状: (339888, 27)
+验证集形状: (80820, 27)
+测试集形状: (80820, 27)
+特征维度: 27
+异常比例（行级）:
+- 训练集: 原始 9.88% -> 现有 0.00%
+- 验证集: 5.85%
+- 测试集: 5.06%
+	speed: 0.0282s/iter; left time: 296.3873s
+	speed: 0.0253s/iter; left time: 263.5946s
+	speed: 0.0252s/iter; left time: 260.3475s
+	speed: 0.0254s/iter; left time: 259.4070s
+	speed: 0.0252s/iter; left time: 254.8786s
+	speed: 0.0252s/iter; left time: 252.3108s
+	speed: 0.0252s/iter; left time: 249.7747s
+	speed: 0.0253s/iter; left time: 248.7030s
+	speed: 0.0252s/iter; left time: 244.8493s
+	speed: 0.0254s/iter; left time: 243.9795s
+	speed: 0.0257s/iter; left time: 244.4744s
+	speed: 0.0253s/iter; left time: 238.2733s
+	speed: 0.0253s/iter; left time: 235.5986s
+	speed: 0.0252s/iter; left time: 232.7154s
+	speed: 0.0252s/iter; left time: 230.0589s
+	speed: 0.0252s/iter; left time: 227.1764s
+	speed: 0.0253s/iter; left time: 225.9548s
+	speed: 0.0253s/iter; left time: 222.8839s
+	speed: 0.0252s/iter; left time: 219.8268s
+	speed: 0.0253s/iter; left time: 218.4436s
+	speed: 0.0254s/iter; left time: 216.1429s
+	speed: 0.0252s/iter; left time: 212.4828s
+	speed: 0.0252s/iter; left time: 209.7606s
+	speed: 0.0252s/iter; left time: 207.1920s
+	speed: 0.0252s/iter; left time: 204.8703s
+	speed: 0.0252s/iter; left time: 202.3960s
+	speed: 0.0252s/iter; left time: 199.5746s
+	speed: 0.0252s/iter; left time: 197.1888s
+	speed: 0.0252s/iter; left time: 194.8649s
+	speed: 0.0252s/iter; left time: 192.0399s
+	speed: 0.0252s/iter; left time: 189.5763s
+	speed: 0.0252s/iter; left time: 186.9236s
+	speed: 0.0252s/iter; left time: 184.5406s
+	speed: 0.0252s/iter; left time: 182.0541s
+	speed: 0.0252s/iter; left time: 179.5214s
+	speed: 0.0252s/iter; left time: 177.0167s
+	speed: 0.0252s/iter; left time: 174.6483s
+	speed: 0.0252s/iter; left time: 171.6457s
+	speed: 0.0252s/iter; left time: 169.5162s
+	speed: 0.0252s/iter; left time: 166.5231s
+	speed: 0.0252s/iter; left time: 164.3182s
+	speed: 0.0252s/iter; left time: 161.5772s
+	speed: 0.0252s/iter; left time: 159.0211s
+	speed: 0.0252s/iter; left time: 156.8255s
+	speed: 0.0252s/iter; left time: 154.5335s
+	speed: 0.0252s/iter; left time: 151.6098s
+	speed: 0.0254s/iter; left time: 150.2201s
+	speed: 0.0252s/iter; left time: 146.8781s
+	speed: 0.0252s/iter; left time: 144.1486s
+	speed: 0.0252s/iter; left time: 141.7476s
+	speed: 0.0252s/iter; left time: 139.1280s
+	speed: 0.0252s/iter; left time: 136.6657s
+	speed: 0.0252s/iter; left time: 134.1638s
+	speed: 0.0257s/iter; left time: 134.0997s
+	speed: 0.0252s/iter; left time: 128.7966s
+	speed: 0.0251s/iter; left time: 126.1999s
+	speed: 0.0251s/iter; left time: 123.6450s
+	speed: 0.0253s/iter; left time: 121.9200s
+	speed: 0.0251s/iter; left time: 118.6721s
+	speed: 0.0251s/iter; left time: 116.0416s
+	speed: 0.0251s/iter; left time: 113.6950s
+	speed: 0.0251s/iter; left time: 110.9919s
+	speed: 0.0251s/iter; left time: 108.5511s
+	speed: 0.0251s/iter; left time: 106.0371s
+	speed: 0.0251s/iter; left time: 103.3773s
+	speed: 0.0252s/iter; left time: 101.1576s
+	speed: 0.0253s/iter; left time: 99.1948s
+	speed: 0.0251s/iter; left time: 96.0493s
+	speed: 0.0252s/iter; left time: 93.6292s
+	speed: 0.0252s/iter; left time: 91.0832s
+	speed: 0.0252s/iter; left time: 88.5935s
+	speed: 0.0251s/iter; left time: 86.0195s
+	speed: 0.0251s/iter; left time: 83.5105s
+	speed: 0.0251s/iter; left time: 80.9826s
+	speed: 0.0251s/iter; left time: 78.4792s
+	speed: 0.0253s/iter; left time: 76.4381s
+	speed: 0.0251s/iter; left time: 73.4147s
+	speed: 0.0251s/iter; left time: 70.8904s
+	speed: 0.0251s/iter; left time: 68.3885s
+	speed: 0.0251s/iter; left time: 65.9018s
+	speed: 0.0251s/iter; left time: 63.3957s
+	speed: 0.0252s/iter; left time: 60.9530s
+	speed: 0.0251s/iter; left time: 58.3662s
+	speed: 0.0251s/iter; left time: 55.8568s
+	speed: 0.0252s/iter; left time: 53.3516s
+	speed: 0.0252s/iter; left time: 50.8321s
+	speed: 0.0252s/iter; left time: 48.3543s
+	speed: 0.0252s/iter; left time: 45.8287s
+	speed: 0.0252s/iter; left time: 43.3194s
+	speed: 0.0252s/iter; left time: 40.8060s
+	speed: 0.0252s/iter; left time: 38.2759s
+	speed: 0.0251s/iter; left time: 35.7140s
+	speed: 0.0251s/iter; left time: 33.2116s
+	speed: 0.0251s/iter; left time: 30.6850s
+	speed: 0.0251s/iter; left time: 28.1714s
+	speed: 0.0251s/iter; left time: 25.6599s
+	speed: 0.0251s/iter; left time: 23.1439s
+	speed: 0.0251s/iter; left time: 20.6297s
+	speed: 0.0251s/iter; left time: 18.1158s
+	speed: 0.0251s/iter; left time: 15.6057s
+	speed: 0.0251s/iter; left time: 13.0873s
+	speed: 0.0251s/iter; left time: 10.5638s
+	speed: 0.0251s/iter; left time: 8.0538s
+	speed: 0.0251s/iter; left time: 5.5519s
+	speed: 0.0252s/iter; left time: 3.0509s
+	speed: 0.0252s/iter; left time: 0.5282s
+2025-11-02 09:07:55,770 - INFO - 训练完成!
+2025-11-02 09:07:55,770 - INFO - 开始测试模型...
+Epoch: 1, Cost time: 289.213s 
+Loading checkpoint from: checkpoints_e_layers_analysis/contact_e_layers5_20251102_090303/contact_cleaned_1minut_20250928_172122_checkpoint_2025-11-02_09-07-55/model.pth
+Threshold : 0.9795114994049072
+2025-11-02 09:09:25,240 - INFO - 测试完成!
+pa_accuracy           : 0.9547
+pa_precision          : 0.5434
+pa_recall             : 0.6703
+pa_f_score            : 0.6002
+MCC_score             : 0.5801
+Affiliation precision : 0.5385
+Affiliation recall    : 0.8620
+R_AUC_ROC             : 0.6659
+R_AUC_PR              : 0.5346
+VUS_ROC               : 0.6736
+VUS_PR                : 0.5372
+Accuracy : 0.9547, Precision : 0.5434, Recall : 0.6703, F-score : 0.6002 
+Test results saved to: checkpoints_e_layers_analysis/contact_e_layers5_20251102_090303/contact_cleaned_1minut_20250928_172122_checkpoint_2025-11-02_09-07-55/result.json
+/home/wanting/KDD2023-DCdetector/venv/lib/python3.12/site-packages/tsfresh/__init__.py:12: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+2025-11-02 09:09:27,486 - INFO - 开始使用自定义数据集运行DCdetector...
+2025-11-02 09:09:27,486 - INFO - 数据集: Custom
+2025-11-02 09:09:27,486 - INFO - 输入特征维度: 27
+2025-11-02 09:09:27,486 - INFO - 窗口大小: 30
+2025-11-02 09:09:27,486 - INFO - 批次大小: 32
+2025-11-02 09:09:28,918 - INFO - 开始训练模型...
+[onlyNormalData=True] 训练集过滤异常数据: 377158 行 -> 339888 行 (移除 37270 个异常样本)
+数据加载自: dataset/downsampleData_scratch_1minut/contact/contact_cleaned_1minut_20250928_172122.parquet
+训练集形状: (339888, 27)
+验证集形状: (80820, 27)
+测试集形状: (80820, 27)
+特征维度: 27
+异常比例（行级）:
+- 训练集: 原始 9.88% -> 现有 0.00%
+- 验证集: 5.85%
+- 测试集: 5.06%
+[onlyNormalData=True] 训练集过滤异常数据: 377158 行 -> 339888 行 (移除 37270 个异常样本)
+数据加载自: dataset/downsampleData_scratch_1minut/contact/contact_cleaned_1minut_20250928_172122.parquet
+训练集形状: (339888, 27)
+验证集形状: (80820, 27)
+测试集形状: (80820, 27)
+特征维度: 27
+异常比例（行级）:
+- 训练集: 原始 9.88% -> 现有 0.00%
+- 验证集: 5.85%
+- 测试集: 5.06%
+[onlyNormalData=True] 训练集过滤异常数据: 377158 行 -> 339888 行 (移除 37270 个异常样本)
+数据加载自: dataset/downsampleData_scratch_1minut/contact/contact_cleaned_1minut_20250928_172122.parquet
+训练集形状: (339888, 27)
+验证集形状: (80820, 27)
+测试集形状: (80820, 27)
+特征维度: 27
+异常比例（行级）:
+- 训练集: 原始 9.88% -> 现有 0.00%
+- 验证集: 5.85%
+- 测试集: 5.06%
+[onlyNormalData=True] 训练集过滤异常数据: 377158 行 -> 339888 行 (移除 37270 个异常样本)
+数据加载自: dataset/downsampleData_scratch_1minut/contact/contact_cleaned_1minut_20250928_172122.parquet
+训练集形状: (339888, 27)
+验证集形状: (80820, 27)
+测试集形状: (80820, 27)
+特征维度: 27
+异常比例（行级）:
+- 训练集: 原始 9.88% -> 现有 0.00%
+- 验证集: 5.85%
+- 测试集: 5.06%
+	speed: 0.0367s/iter; left time: 385.6945s
+	speed: 0.0339s/iter; left time: 353.2375s
+	speed: 0.0339s/iter; left time: 349.8917s
+	speed: 0.0338s/iter; left time: 345.8498s
+	speed: 0.0339s/iter; left time: 343.3520s
+	speed: 0.0337s/iter; left time: 337.8454s
+	speed: 0.0338s/iter; left time: 335.6754s
+	speed: 0.0338s/iter; left time: 332.1195s
+	speed: 0.0338s/iter; left time: 328.7447s
+	speed: 0.0339s/iter; left time: 325.9664s
+	speed: 0.0339s/iter; left time: 322.9018s
+	speed: 0.0338s/iter; left time: 318.1919s
+	speed: 0.0338s/iter; left time: 314.7605s
+	speed: 0.0339s/iter; left time: 312.3942s
+	speed: 0.0340s/iter; left time: 309.8823s
+	speed: 0.0339s/iter; left time: 305.6021s
+	speed: 0.0338s/iter; left time: 301.9494s
+	speed: 0.0339s/iter; left time: 299.0648s
+	speed: 0.0339s/iter; left time: 295.5362s
+	speed: 0.0338s/iter; left time: 291.8185s
+	speed: 0.0338s/iter; left time: 288.0729s
+	speed: 0.0340s/iter; left time: 286.1324s
+	speed: 0.0339s/iter; left time: 281.8306s
+	speed: 0.0339s/iter; left time: 278.3831s
+	speed: 0.0339s/iter; left time: 275.1915s
+	speed: 0.0339s/iter; left time: 271.8122s
+	speed: 0.0339s/iter; left time: 268.6080s
+	speed: 0.0339s/iter; left time: 264.8149s
+	speed: 0.0338s/iter; left time: 260.9581s
+	speed: 0.0338s/iter; left time: 257.4690s
+	speed: 0.0339s/iter; left time: 254.8927s
+	speed: 0.0339s/iter; left time: 251.4118s
+	speed: 0.0339s/iter; left time: 248.0055s
+	speed: 0.0338s/iter; left time: 244.1382s
+	speed: 0.0337s/iter; left time: 240.1056s
+	speed: 0.0337s/iter; left time: 236.9491s
+	speed: 0.0338s/iter; left time: 233.6788s
+	speed: 0.0339s/iter; left time: 231.0172s
+	speed: 0.0339s/iter; left time: 227.6817s
+	speed: 0.0339s/iter; left time: 224.1989s
+	speed: 0.0339s/iter; left time: 221.1074s
+	speed: 0.0338s/iter; left time: 216.8970s
+	speed: 0.0337s/iter; left time: 213.1075s
+	speed: 0.0338s/iter; left time: 210.3601s
+	speed: 0.0338s/iter; left time: 206.7737s
+	speed: 0.0338s/iter; left time: 203.2290s
+	speed: 0.0338s/iter; left time: 200.1978s
+	speed: 0.0336s/iter; left time: 195.7078s
+	speed: 0.0337s/iter; left time: 193.0494s
+	speed: 0.0337s/iter; left time: 189.3547s
+	speed: 0.0336s/iter; left time: 185.2554s
+	speed: 0.0338s/iter; left time: 183.1467s
+	speed: 0.0338s/iter; left time: 180.0529s
+	speed: 0.0338s/iter; left time: 176.5298s
+	speed: 0.0339s/iter; left time: 173.8137s
+	speed: 0.0337s/iter; left time: 169.0268s
+	speed: 0.0337s/iter; left time: 165.7792s
+	speed: 0.0336s/iter; left time: 162.1874s
+	speed: 0.0338s/iter; left time: 159.4219s
+	speed: 0.0339s/iter; left time: 156.4830s
+	speed: 0.0337s/iter; left time: 152.2443s
+	speed: 0.0338s/iter; left time: 149.4994s
+	speed: 0.0338s/iter; left time: 146.0999s
+	speed: 0.0337s/iter; left time: 142.3574s
+	speed: 0.0336s/iter; left time: 138.6501s
+	speed: 0.0336s/iter; left time: 135.2165s
+	speed: 0.0337s/iter; left time: 132.1424s
+	speed: 0.0338s/iter; left time: 129.0250s
+	speed: 0.0339s/iter; left time: 126.0481s
+	speed: 0.0338s/iter; left time: 122.5425s
+	speed: 0.0338s/iter; left time: 118.8567s
+	speed: 0.0338s/iter; left time: 115.6871s
+	speed: 0.0338s/iter; left time: 112.2359s
+	speed: 0.0338s/iter; left time: 108.7528s
+	speed: 0.0339s/iter; left time: 105.7168s
+	speed: 0.0338s/iter; left time: 102.1087s
+	speed: 0.0338s/iter; left time: 98.8319s
+	speed: 0.0337s/iter; left time: 95.0068s
+	speed: 0.0338s/iter; left time: 91.9563s
+	speed: 0.0338s/iter; left time: 88.4717s
+	speed: 0.0336s/iter; left time: 84.7973s
+	speed: 0.0338s/iter; left time: 81.7354s
+	speed: 0.0338s/iter; left time: 78.3497s
+	speed: 0.0338s/iter; left time: 75.1721s
+	speed: 0.0338s/iter; left time: 71.5902s
+	speed: 0.0338s/iter; left time: 68.2135s
+	speed: 0.0337s/iter; left time: 64.6548s
+	speed: 0.0335s/iter; left time: 61.0101s
+	speed: 0.0339s/iter; left time: 58.3447s
+	speed: 0.0336s/iter; left time: 54.4347s
+	speed: 0.0337s/iter; left time: 51.2449s
+	speed: 0.0338s/iter; left time: 47.9732s
+	speed: 0.0340s/iter; left time: 44.8558s
+	speed: 0.0338s/iter; left time: 41.2691s
+	speed: 0.0337s/iter; left time: 37.8078s
+	speed: 0.0337s/iter; left time: 34.4444s
+	speed: 0.0336s/iter; left time: 30.9697s
+	speed: 0.0334s/iter; left time: 27.4320s
+	speed: 0.0336s/iter; left time: 24.1982s
+	speed: 0.0337s/iter; left time: 20.9440s
+	speed: 0.0336s/iter; left time: 17.5027s
+	speed: 0.0338s/iter; left time: 14.2372s
+	speed: 0.0339s/iter; left time: 10.8684s
+	speed: 0.0335s/iter; left time: 7.4115s
+	speed: 0.0335s/iter; left time: 4.0500s
+	speed: 0.0335s/iter; left time: 0.7040s
+2025-11-02 09:15:56,427 - INFO - 训练完成!
+2025-11-02 09:15:56,427 - INFO - 开始测试模型...
+Epoch: 1, Cost time: 387.484s 
+Loading checkpoint from: checkpoints_e_layers_analysis/contact_e_layers7_20251102_090925/contact_cleaned_1minut_20250928_172122_checkpoint_2025-11-02_09-15-56/model.pth
+Threshold : 0.9925093787908558
+2025-11-02 09:17:49,975 - INFO - 测试完成!
+pa_accuracy           : 0.9550
+pa_precision          : 0.5452
+pa_recall             : 0.6809
+pa_f_score            : 0.6055
+MCC_score             : 0.5860
+Affiliation precision : 0.5310
+Affiliation recall    : 0.8690
+R_AUC_ROC             : 0.6681
+R_AUC_PR              : 0.5382
+VUS_ROC               : 0.6745
+VUS_PR                : 0.5392
+Accuracy : 0.9550, Precision : 0.5452, Recall : 0.6809, F-score : 0.6055 
+Test results saved to: checkpoints_e_layers_analysis/contact_e_layers7_20251102_090925/contact_cleaned_1minut_20250928_172122_checkpoint_2025-11-02_09-15-56/result.json
+/home/wanting/KDD2023-DCdetector/venv/lib/python3.12/site-packages/tsfresh/__init__.py:12: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+2025-11-02 09:17:52,256 - INFO - 开始使用自定义数据集运行DCdetector...
+2025-11-02 09:17:52,256 - INFO - 数据集: Custom
+2025-11-02 09:17:52,256 - INFO - 输入特征维度: 28
+2025-11-02 09:17:52,256 - INFO - 窗口大小: 30
+2025-11-02 09:17:52,256 - INFO - 批次大小: 32
+2025-11-02 09:17:53,884 - INFO - 开始训练模型...
+[onlyNormalData=True] 训练集过滤异常数据: 408309 行 -> 390335 行 (移除 17974 个异常样本)
+数据加载自: dataset/downsampleData_scratch_1minut/ring/Ring_cleaned_1minut_20250928_170147.parquet
+训练集形状: (390335, 28)
+验证集形状: (87495, 28)
+测试集形状: (87495, 28)
+特征维度: 28
+异常比例（行级）:
+- 训练集: 原始 4.40% -> 现有 0.00%
+- 验证集: 2.97%
+- 测试集: 4.20%
+[onlyNormalData=True] 训练集过滤异常数据: 408309 行 -> 390335 行 (移除 17974 个异常样本)
+数据加载自: dataset/downsampleData_scratch_1minut/ring/Ring_cleaned_1minut_20250928_170147.parquet
+训练集形状: (390335, 28)
+验证集形状: (87495, 28)
+测试集形状: (87495, 28)
+特征维度: 28
+异常比例（行级）:
+- 训练集: 原始 4.40% -> 现有 0.00%
+- 验证集: 2.97%
+- 测试集: 4.20%
+[onlyNormalData=True] 训练集过滤异常数据: 408309 行 -> 390335 行 (移除 17974 个异常样本)
+数据加载自: dataset/downsampleData_scratch_1minut/ring/Ring_cleaned_1minut_20250928_170147.parquet
+训练集形状: (390335, 28)
+验证集形状: (87495, 28)
+测试集形状: (87495, 28)
+特征维度: 28
+异常比例（行级）:
+- 训练集: 原始 4.40% -> 现有 0.00%
+- 验证集: 2.97%
+- 测试集: 4.20%
+[onlyNormalData=True] 训练集过滤异常数据: 408309 行 -> 390335 行 (移除 17974 个异常样本)
+数据加载自: dataset/downsampleData_scratch_1minut/ring/Ring_cleaned_1minut_20250928_170147.parquet
+训练集形状: (390335, 28)
+验证集形状: (87495, 28)
+测试集形状: (87495, 28)
+特征维度: 28
+异常比例（行级）:
+- 训练集: 原始 4.40% -> 现有 0.00%
+- 验证集: 2.97%
+- 测试集: 4.20%
+	speed: 0.0111s/iter; left time: 134.0530s
+	speed: 0.0081s/iter; left time: 97.1635s
+	speed: 0.0081s/iter; left time: 96.2460s
+	speed: 0.0080s/iter; left time: 94.8966s
+	speed: 0.0080s/iter; left time: 94.1254s
+	speed: 0.0080s/iter; left time: 93.3535s
+	speed: 0.0081s/iter; left time: 92.6520s
+	speed: 0.0081s/iter; left time: 92.0197s
+	speed: 0.0081s/iter; left time: 91.2318s
+	speed: 0.0081s/iter; left time: 90.4082s
+	speed: 0.0081s/iter; left time: 89.5529s
+	speed: 0.0081s/iter; left time: 88.7187s
+	speed: 0.0081s/iter; left time: 87.9155s
+	speed: 0.0081s/iter; left time: 87.1066s
+	speed: 0.0081s/iter; left time: 86.3406s
+	speed: 0.0081s/iter; left time: 85.4362s
+	speed: 0.0081s/iter; left time: 84.5473s
+	speed: 0.0081s/iter; left time: 83.7362s
+	speed: 0.0081s/iter; left time: 82.9216s
+	speed: 0.0081s/iter; left time: 82.4757s
+	speed: 0.0081s/iter; left time: 81.5459s
+	speed: 0.0081s/iter; left time: 80.7608s
+	speed: 0.0081s/iter; left time: 79.9501s
+	speed: 0.0081s/iter; left time: 79.1778s
+	speed: 0.0081s/iter; left time: 78.3290s
+	speed: 0.0081s/iter; left time: 77.4194s
+	speed: 0.0081s/iter; left time: 76.6760s
+	speed: 0.0081s/iter; left time: 75.9836s
+	speed: 0.0081s/iter; left time: 75.1562s
+	speed: 0.0081s/iter; left time: 74.4086s
+	speed: 0.0081s/iter; left time: 73.6343s
+	speed: 0.0081s/iter; left time: 72.7075s
+	speed: 0.0080s/iter; left time: 71.5813s
+	speed: 0.0080s/iter; left time: 70.7449s
+	speed: 0.0080s/iter; left time: 69.9572s
+	speed: 0.0080s/iter; left time: 69.1348s
+	speed: 0.0080s/iter; left time: 68.3409s
+	speed: 0.0080s/iter; left time: 67.4747s
+	speed: 0.0081s/iter; left time: 66.8960s
+	speed: 0.0081s/iter; left time: 66.2770s
+	speed: 0.0081s/iter; left time: 65.6047s
+	speed: 0.0081s/iter; left time: 64.8790s
+	speed: 0.0081s/iter; left time: 63.7880s
+	speed: 0.0081s/iter; left time: 62.8693s
+	speed: 0.0081s/iter; left time: 62.1699s
+	speed: 0.0081s/iter; left time: 61.3763s
+	speed: 0.0081s/iter; left time: 60.5737s
+	speed: 0.0080s/iter; left time: 59.5048s
+	speed: 0.0081s/iter; left time: 58.7552s
+	speed: 0.0081s/iter; left time: 58.0425s
+	speed: 0.0081s/iter; left time: 57.3598s
+	speed: 0.0081s/iter; left time: 56.5150s
+	speed: 0.0081s/iter; left time: 55.7556s
+	speed: 0.0081s/iter; left time: 54.9770s
+	speed: 0.0081s/iter; left time: 54.0953s
+	speed: 0.0081s/iter; left time: 53.1589s
+	speed: 0.0081s/iter; left time: 52.3296s
+	speed: 0.0081s/iter; left time: 51.5288s
+	speed: 0.0081s/iter; left time: 50.7574s
+	speed: 0.0081s/iter; left time: 50.0595s
+	speed: 0.0081s/iter; left time: 49.2655s
+	speed: 0.0081s/iter; left time: 48.4809s
+	speed: 0.0081s/iter; left time: 47.6590s
+	speed: 0.0081s/iter; left time: 46.8741s
+	speed: 0.0081s/iter; left time: 46.1120s
+	speed: 0.0081s/iter; left time: 45.3331s
+	speed: 0.0081s/iter; left time: 44.4900s
+	speed: 0.0081s/iter; left time: 43.6999s
+	speed: 0.0081s/iter; left time: 42.7680s
+	speed: 0.0081s/iter; left time: 41.8649s
+	speed: 0.0081s/iter; left time: 41.0609s
+	speed: 0.0081s/iter; left time: 40.2727s
+	speed: 0.0081s/iter; left time: 39.4932s
+	speed: 0.0081s/iter; left time: 38.6810s
+	speed: 0.0081s/iter; left time: 37.8630s
+	speed: 0.0081s/iter; left time: 37.0969s
+	speed: 0.0081s/iter; left time: 36.2913s
+	speed: 0.0081s/iter; left time: 35.4739s
+	speed: 0.0081s/iter; left time: 34.6640s
+	speed: 0.0081s/iter; left time: 33.8758s
+	speed: 0.0081s/iter; left time: 33.0754s
+	speed: 0.0081s/iter; left time: 32.3336s
+	speed: 0.0081s/iter; left time: 31.5228s
+	speed: 0.0081s/iter; left time: 30.7449s
+	speed: 0.0081s/iter; left time: 29.7717s
+	speed: 0.0080s/iter; left time: 28.9346s
+	speed: 0.0080s/iter; left time: 28.1287s
+	speed: 0.0080s/iter; left time: 27.3383s
+	speed: 0.0080s/iter; left time: 26.5455s
+	speed: 0.0081s/iter; left time: 25.7559s
+	speed: 0.0081s/iter; left time: 24.9538s
+	speed: 0.0081s/iter; left time: 24.1540s
+	speed: 0.0081s/iter; left time: 23.3579s
+	speed: 0.0081s/iter; left time: 22.5620s
+	speed: 0.0081s/iter; left time: 21.7976s
+	speed: 0.0081s/iter; left time: 20.9156s
+	speed: 0.0081s/iter; left time: 20.1196s
+	speed: 0.0080s/iter; left time: 19.2980s
+	speed: 0.0080s/iter; left time: 18.4983s
+	speed: 0.0081s/iter; left time: 17.7077s
+	speed: 0.0081s/iter; left time: 16.9154s
+	speed: 0.0081s/iter; left time: 16.1318s
+	speed: 0.0081s/iter; left time: 15.3185s
+	speed: 0.0081s/iter; left time: 14.5357s
+	speed: 0.0081s/iter; left time: 13.7344s
+	speed: 0.0081s/iter; left time: 12.9782s
+	speed: 0.0081s/iter; left time: 12.0714s
+	speed: 0.0081s/iter; left time: 11.3146s
+	speed: 0.0081s/iter; left time: 10.4951s
+	speed: 0.0081s/iter; left time: 9.6965s
+	speed: 0.0081s/iter; left time: 8.8963s
+	speed: 0.0081s/iter; left time: 8.0902s
+	speed: 0.0081s/iter; left time: 7.2726s
+	speed: 0.0081s/iter; left time: 6.4501s
+	speed: 0.0081s/iter; left time: 5.6584s
+	speed: 0.0081s/iter; left time: 4.8494s
+	speed: 0.0081s/iter; left time: 4.0248s
+	speed: 0.0081s/iter; left time: 3.2161s
+	speed: 0.0081s/iter; left time: 2.4093s
+	speed: 0.0081s/iter; left time: 1.6025s
+	speed: 0.0081s/iter; left time: 0.7934s
+2025-11-02 09:19:40,497 - INFO - 训练完成!
+2025-11-02 09:19:40,497 - INFO - 开始测试模型...
+Epoch: 1, Cost time: 106.593s 
+Loading checkpoint from: checkpoints_e_layers_analysis/ring_e_layers1_20251102_091750/Ring_cleaned_1minut_20250928_170147_checkpoint_2025-11-02_09-19-40/model.pth
+Threshold : 0.8167062228917941
+2025-11-02 09:20:26,665 - INFO - 测试完成!
+pa_accuracy           : 0.9555
+pa_precision          : 0.4780
+pa_recall             : 0.6286
+pa_f_score            : 0.5430
+MCC_score             : 0.5255
+Affiliation precision : 0.5367
+Affiliation recall    : 0.8170
+R_AUC_ROC             : 0.6531
+R_AUC_PR              : 0.4771
+VUS_ROC               : 0.6604
+VUS_PR                : 0.4793
+Accuracy : 0.9555, Precision : 0.4780, Recall : 0.6286, F-score : 0.5430 
+Test results saved to: checkpoints_e_layers_analysis/ring_e_layers1_20251102_091750/Ring_cleaned_1minut_20250928_170147_checkpoint_2025-11-02_09-19-40/result.json
+/home/wanting/KDD2023-DCdetector/venv/lib/python3.12/site-packages/tsfresh/__init__.py:12: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+2025-11-02 09:20:28,938 - INFO - 开始使用自定义数据集运行DCdetector...
+2025-11-02 09:20:28,938 - INFO - 数据集: Custom
+2025-11-02 09:20:28,938 - INFO - 输入特征维度: 28
+2025-11-02 09:20:28,938 - INFO - 窗口大小: 30
+2025-11-02 09:20:28,938 - INFO - 批次大小: 32
+2025-11-02 09:20:30,534 - INFO - 开始训练模型...
+[onlyNormalData=True] 训练集过滤异常数据: 408309 行 -> 390335 行 (移除 17974 个异常样本)
+数据加载自: dataset/downsampleData_scratch_1minut/ring/Ring_cleaned_1minut_20250928_170147.parquet
+训练集形状: (390335, 28)
+验证集形状: (87495, 28)
+测试集形状: (87495, 28)
+特征维度: 28
+异常比例（行级）:
+- 训练集: 原始 4.40% -> 现有 0.00%
+- 验证集: 2.97%
+- 测试集: 4.20%
+[onlyNormalData=True] 训练集过滤异常数据: 408309 行 -> 390335 行 (移除 17974 个异常样本)
+数据加载自: dataset/downsampleData_scratch_1minut/ring/Ring_cleaned_1minut_20250928_170147.parquet
+训练集形状: (390335, 28)
+验证集形状: (87495, 28)
+测试集形状: (87495, 28)
+特征维度: 28
+异常比例（行级）:
+- 训练集: 原始 4.40% -> 现有 0.00%
+- 验证集: 2.97%
+- 测试集: 4.20%
+[onlyNormalData=True] 训练集过滤异常数据: 408309 行 -> 390335 行 (移除 17974 个异常样本)
+数据加载自: dataset/downsampleData_scratch_1minut/ring/Ring_cleaned_1minut_20250928_170147.parquet
+训练集形状: (390335, 28)
+验证集形状: (87495, 28)
+测试集形状: (87495, 28)
+特征维度: 28
+异常比例（行级）:
+- 训练集: 原始 4.40% -> 现有 0.00%
+- 验证集: 2.97%
+- 测试集: 4.20%
+[onlyNormalData=True] 训练集过滤异常数据: 408309 行 -> 390335 行 (移除 17974 个异常样本)
+数据加载自: dataset/downsampleData_scratch_1minut/ring/Ring_cleaned_1minut_20250928_170147.parquet
+训练集形状: (390335, 28)
+验证集形状: (87495, 28)
+测试集形状: (87495, 28)
+特征维度: 28
+异常比例（行级）:
+- 训练集: 原始 4.40% -> 现有 0.00%
+- 验证集: 2.97%
+- 测试集: 4.20%
+	speed: 0.0198s/iter; left time: 239.1846s
+	speed: 0.0168s/iter; left time: 201.7289s
+	speed: 0.0168s/iter; left time: 199.3610s
+	speed: 0.0167s/iter; left time: 197.3764s
+	speed: 0.0167s/iter; left time: 195.5567s
+	speed: 0.0167s/iter; left time: 194.0472s
+	speed: 0.0167s/iter; left time: 192.4578s
+	speed: 0.0167s/iter; left time: 190.8496s
+	speed: 0.0167s/iter; left time: 189.2264s
+	speed: 0.0168s/iter; left time: 187.5985s
+	speed: 0.0167s/iter; left time: 185.8071s
+	speed: 0.0168s/iter; left time: 184.5399s
+	speed: 0.0168s/iter; left time: 182.5454s
+	speed: 0.0167s/iter; left time: 180.7103s
+	speed: 0.0168s/iter; left time: 179.4011s
+	speed: 0.0168s/iter; left time: 177.6586s
+	speed: 0.0168s/iter; left time: 176.1327s
+	speed: 0.0167s/iter; left time: 174.0648s
+	speed: 0.0168s/iter; left time: 172.8647s
+	speed: 0.0167s/iter; left time: 170.6856s
+	speed: 0.0168s/iter; left time: 169.2482s
+	speed: 0.0168s/iter; left time: 167.6026s
+	speed: 0.0168s/iter; left time: 165.8999s
+	speed: 0.0167s/iter; left time: 163.9194s
+	speed: 0.0167s/iter; left time: 162.3730s
+	speed: 0.0168s/iter; left time: 161.2194s
+	speed: 0.0168s/iter; left time: 159.3916s
+	speed: 0.0168s/iter; left time: 157.7821s
+	speed: 0.0168s/iter; left time: 156.0305s
+	speed: 0.0168s/iter; left time: 154.3968s
+	speed: 0.0167s/iter; left time: 152.0378s
+	speed: 0.0167s/iter; left time: 150.3607s
+	speed: 0.0167s/iter; left time: 148.8152s
+	speed: 0.0168s/iter; left time: 147.4271s
+	speed: 0.0168s/iter; left time: 145.8980s
+	speed: 0.0168s/iter; left time: 144.3550s
+	speed: 0.0168s/iter; left time: 142.7459s
+	speed: 0.0168s/iter; left time: 140.8962s
+	speed: 0.0168s/iter; left time: 139.1385s
+	speed: 0.0167s/iter; left time: 137.2211s
+	speed: 0.0167s/iter; left time: 135.6408s
+	speed: 0.0168s/iter; left time: 134.0101s
+	speed: 0.0167s/iter; left time: 132.2736s
+	speed: 0.0167s/iter; left time: 130.5675s
+	speed: 0.0168s/iter; left time: 129.0421s
+	speed: 0.0168s/iter; left time: 127.4296s
+	speed: 0.0168s/iter; left time: 125.7128s
+	speed: 0.0168s/iter; left time: 124.0251s
+	speed: 0.0168s/iter; left time: 122.3628s
+	speed: 0.0168s/iter; left time: 120.8879s
+	speed: 0.0168s/iter; left time: 118.9291s
+	speed: 0.0168s/iter; left time: 117.2473s
+	speed: 0.0168s/iter; left time: 115.5967s
+	speed: 0.0168s/iter; left time: 113.8930s
+	speed: 0.0167s/iter; left time: 112.1369s
+	speed: 0.0168s/iter; left time: 110.7984s
+	speed: 0.0167s/iter; left time: 108.7032s
+	speed: 0.0167s/iter; left time: 107.1349s
+	speed: 0.0168s/iter; left time: 105.7281s
+	speed: 0.0168s/iter; left time: 104.0465s
+	speed: 0.0167s/iter; left time: 102.1223s
+	speed: 0.0168s/iter; left time: 100.5620s
+	speed: 0.0168s/iter; left time: 98.8633s
+	speed: 0.0168s/iter; left time: 97.1193s
+	speed: 0.0167s/iter; left time: 95.4017s
+	speed: 0.0167s/iter; left time: 93.7628s
+	speed: 0.0168s/iter; left time: 92.1427s
+	speed: 0.0168s/iter; left time: 90.5200s
+	speed: 0.0167s/iter; left time: 88.6633s
+	speed: 0.0167s/iter; left time: 87.0162s
+	speed: 0.0167s/iter; left time: 85.3397s
+	speed: 0.0167s/iter; left time: 83.6221s
+	speed: 0.0167s/iter; left time: 81.9655s
+	speed: 0.0167s/iter; left time: 80.3526s
+	speed: 0.0167s/iter; left time: 78.4875s
+	speed: 0.0167s/iter; left time: 76.9766s
+	speed: 0.0168s/iter; left time: 75.3962s
+	speed: 0.0168s/iter; left time: 73.7380s
+	speed: 0.0168s/iter; left time: 72.0678s
+	speed: 0.0168s/iter; left time: 70.4549s
+	speed: 0.0167s/iter; left time: 68.6195s
+	speed: 0.0168s/iter; left time: 66.9807s
+	speed: 0.0168s/iter; left time: 65.2934s
+	speed: 0.0168s/iter; left time: 63.6232s
+	speed: 0.0168s/iter; left time: 61.9660s
+	speed: 0.0167s/iter; left time: 60.2478s
+	speed: 0.0168s/iter; left time: 58.6183s
+	speed: 0.0168s/iter; left time: 56.9392s
+	speed: 0.0168s/iter; left time: 55.3158s
+	speed: 0.0167s/iter; left time: 53.5353s
+	speed: 0.0168s/iter; left time: 51.9243s
+	speed: 0.0168s/iter; left time: 50.2618s
+	speed: 0.0168s/iter; left time: 48.5635s
+	speed: 0.0168s/iter; left time: 46.9389s
+	speed: 0.0168s/iter; left time: 45.2551s
+	speed: 0.0168s/iter; left time: 43.5930s
+	speed: 0.0168s/iter; left time: 41.8476s
+	speed: 0.0167s/iter; left time: 40.1097s
+	speed: 0.0167s/iter; left time: 38.4601s
+	speed: 0.0168s/iter; left time: 36.8620s
+	speed: 0.0168s/iter; left time: 35.1627s
+	speed: 0.0167s/iter; left time: 33.4505s
+	speed: 0.0167s/iter; left time: 31.7248s
+	speed: 0.0168s/iter; left time: 30.1698s
+	speed: 0.0167s/iter; left time: 28.4323s
+	speed: 0.0167s/iter; left time: 26.7566s
+	speed: 0.0168s/iter; left time: 25.1310s
+	speed: 0.0167s/iter; left time: 23.4040s
+	speed: 0.0168s/iter; left time: 21.7515s
+	speed: 0.0167s/iter; left time: 20.0234s
+	speed: 0.0168s/iter; left time: 18.3974s
+	speed: 0.0168s/iter; left time: 16.7276s
+	speed: 0.0167s/iter; left time: 15.0304s
+	speed: 0.0168s/iter; left time: 13.3687s
+	speed: 0.0168s/iter; left time: 11.7107s
+	speed: 0.0167s/iter; left time: 10.0077s
+	speed: 0.0168s/iter; left time: 8.3424s
+	speed: 0.0167s/iter; left time: 6.6636s
+	speed: 0.0168s/iter; left time: 4.9939s
+	speed: 0.0168s/iter; left time: 3.3174s
+	speed: 0.0167s/iter; left time: 1.6391s
+2025-11-02 09:24:10,493 - INFO - 训练完成!
+2025-11-02 09:24:10,493 - INFO - 开始测试模型...
+Epoch: 1, Cost time: 219.938s 
+Loading checkpoint from: checkpoints_e_layers_analysis/ring_e_layers3_20251102_092027/Ring_cleaned_1minut_20250928_170147_checkpoint_2025-11-02_09-24-10/model.pth
+Threshold : 0.9929060935974121
+2025-11-02 09:25:23,193 - INFO - 测试完成!
+pa_accuracy           : 0.9556
+pa_precision          : 0.4791
+pa_recall             : 0.6376
+pa_f_score            : 0.5471
+MCC_score             : 0.5301
+Affiliation precision : 0.5473
+Affiliation recall    : 0.8176
+R_AUC_ROC             : 0.6525
+R_AUC_PR              : 0.4765
+VUS_ROC               : 0.6607
+VUS_PR                : 0.4795
+Accuracy : 0.9556, Precision : 0.4791, Recall : 0.6376, F-score : 0.5471 
+Test results saved to: checkpoints_e_layers_analysis/ring_e_layers3_20251102_092027/Ring_cleaned_1minut_20250928_170147_checkpoint_2025-11-02_09-24-10/result.json
+/home/wanting/KDD2023-DCdetector/venv/lib/python3.12/site-packages/tsfresh/__init__.py:12: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+2025-11-02 09:25:25,439 - INFO - 开始使用自定义数据集运行DCdetector...
+2025-11-02 09:25:25,439 - INFO - 数据集: Custom
+2025-11-02 09:25:25,439 - INFO - 输入特征维度: 28
+2025-11-02 09:25:25,439 - INFO - 窗口大小: 30
+2025-11-02 09:25:25,439 - INFO - 批次大小: 32
+2025-11-02 09:25:27,038 - INFO - 开始训练模型...
+[onlyNormalData=True] 训练集过滤异常数据: 408309 行 -> 390335 行 (移除 17974 个异常样本)
+数据加载自: dataset/downsampleData_scratch_1minut/ring/Ring_cleaned_1minut_20250928_170147.parquet
+训练集形状: (390335, 28)
+验证集形状: (87495, 28)
+测试集形状: (87495, 28)
+特征维度: 28
+异常比例（行级）:
+- 训练集: 原始 4.40% -> 现有 0.00%
+- 验证集: 2.97%
+- 测试集: 4.20%
+[onlyNormalData=True] 训练集过滤异常数据: 408309 行 -> 390335 行 (移除 17974 个异常样本)
+数据加载自: dataset/downsampleData_scratch_1minut/ring/Ring_cleaned_1minut_20250928_170147.parquet
+训练集形状: (390335, 28)
+验证集形状: (87495, 28)
+测试集形状: (87495, 28)
+特征维度: 28
+异常比例（行级）:
+- 训练集: 原始 4.40% -> 现有 0.00%
+- 验证集: 2.97%
+- 测试集: 4.20%
+[onlyNormalData=True] 训练集过滤异常数据: 408309 行 -> 390335 行 (移除 17974 个异常样本)
+数据加载自: dataset/downsampleData_scratch_1minut/ring/Ring_cleaned_1minut_20250928_170147.parquet
+训练集形状: (390335, 28)
+验证集形状: (87495, 28)
+测试集形状: (87495, 28)
+特征维度: 28
+异常比例（行级）:
+- 训练集: 原始 4.40% -> 现有 0.00%
+- 验证集: 2.97%
+- 测试集: 4.20%
+[onlyNormalData=True] 训练集过滤异常数据: 408309 行 -> 390335 行 (移除 17974 个异常样本)
+数据加载自: dataset/downsampleData_scratch_1minut/ring/Ring_cleaned_1minut_20250928_170147.parquet
+训练集形状: (390335, 28)
+验证集形状: (87495, 28)
+测试集形状: (87495, 28)
+特征维度: 28
+异常比例（行级）:
+- 训练集: 原始 4.40% -> 现有 0.00%
+- 验证集: 2.97%
+- 测试集: 4.20%
+	speed: 0.0288s/iter; left time: 348.2004s
+	speed: 0.0255s/iter; left time: 306.4787s
+	speed: 0.0255s/iter; left time: 303.3193s
+	speed: 0.0255s/iter; left time: 301.2729s
+	speed: 0.0255s/iter; left time: 298.3441s
+	speed: 0.0255s/iter; left time: 295.8805s
+	speed: 0.0255s/iter; left time: 293.4052s
+	speed: 0.0255s/iter; left time: 291.1345s
+	speed: 0.0255s/iter; left time: 288.5170s
+	speed: 0.0255s/iter; left time: 285.6919s
+	speed: 0.0256s/iter; left time: 283.5793s
+	speed: 0.0255s/iter; left time: 280.4874s
+	speed: 0.0255s/iter; left time: 278.1745s
+	speed: 0.0255s/iter; left time: 275.4497s
+	speed: 0.0255s/iter; left time: 272.8503s
+	speed: 0.0255s/iter; left time: 270.4844s
+	speed: 0.0255s/iter; left time: 268.0306s
+	speed: 0.0256s/iter; left time: 265.7408s
+	speed: 0.0256s/iter; left time: 263.2146s
+	speed: 0.0256s/iter; left time: 260.7032s
+	speed: 0.0255s/iter; left time: 257.8099s
+	speed: 0.0255s/iter; left time: 255.2150s
+	speed: 0.0255s/iter; left time: 252.7314s
+	speed: 0.0255s/iter; left time: 250.0610s
+	speed: 0.0255s/iter; left time: 247.1898s
+	speed: 0.0255s/iter; left time: 244.7826s
+	speed: 0.0255s/iter; left time: 242.2989s
+	speed: 0.0255s/iter; left time: 239.6169s
+	speed: 0.0255s/iter; left time: 236.9412s
+	speed: 0.0255s/iter; left time: 234.6101s
+	speed: 0.0255s/iter; left time: 231.9138s
+	speed: 0.0255s/iter; left time: 229.3566s
+	speed: 0.0255s/iter; left time: 226.7618s
+	speed: 0.0255s/iter; left time: 224.3543s
+	speed: 0.0255s/iter; left time: 221.6645s
+	speed: 0.0255s/iter; left time: 219.5300s
+	speed: 0.0255s/iter; left time: 217.0045s
+	speed: 0.0255s/iter; left time: 214.4511s
+	speed: 0.0255s/iter; left time: 211.6310s
+	speed: 0.0255s/iter; left time: 208.9739s
+	speed: 0.0255s/iter; left time: 206.2800s
+	speed: 0.0255s/iter; left time: 203.6751s
+	speed: 0.0255s/iter; left time: 201.2127s
+	speed: 0.0255s/iter; left time: 198.8165s
+	speed: 0.0255s/iter; left time: 196.2866s
+	speed: 0.0256s/iter; left time: 194.4614s
+	speed: 0.0255s/iter; left time: 191.4014s
+	speed: 0.0255s/iter; left time: 188.9167s
+	speed: 0.0256s/iter; left time: 186.5131s
+	speed: 0.0256s/iter; left time: 184.5016s
+	speed: 0.0255s/iter; left time: 181.3307s
+	speed: 0.0255s/iter; left time: 178.2416s
+	speed: 0.0255s/iter; left time: 175.9589s
+	speed: 0.0255s/iter; left time: 173.3453s
+	speed: 0.0255s/iter; left time: 170.8836s
+	speed: 0.0255s/iter; left time: 168.1692s
+	speed: 0.0255s/iter; left time: 165.5030s
+	speed: 0.0255s/iter; left time: 163.0947s
+	speed: 0.0255s/iter; left time: 160.5607s
+	speed: 0.0255s/iter; left time: 157.8939s
+	speed: 0.0255s/iter; left time: 155.3526s
+	speed: 0.0255s/iter; left time: 153.0812s
+	speed: 0.0255s/iter; left time: 150.4795s
+	speed: 0.0256s/iter; left time: 148.5149s
+	speed: 0.0257s/iter; left time: 146.2947s
+	speed: 0.0255s/iter; left time: 142.6814s
+	speed: 0.0255s/iter; left time: 139.9675s
+	speed: 0.0255s/iter; left time: 137.5409s
+	speed: 0.0255s/iter; left time: 134.8973s
+	speed: 0.0255s/iter; left time: 132.3330s
+	speed: 0.0255s/iter; left time: 130.1405s
+	speed: 0.0255s/iter; left time: 127.2279s
+	speed: 0.0255s/iter; left time: 124.7394s
+	speed: 0.0254s/iter; left time: 121.9393s
+	speed: 0.0254s/iter; left time: 119.4544s
+	speed: 0.0255s/iter; left time: 117.0995s
+	speed: 0.0255s/iter; left time: 114.6586s
+	speed: 0.0255s/iter; left time: 112.0825s
+	speed: 0.0255s/iter; left time: 109.4713s
+	speed: 0.0255s/iter; left time: 106.8857s
+	speed: 0.0255s/iter; left time: 104.3548s
+	speed: 0.0255s/iter; left time: 101.9514s
+	speed: 0.0255s/iter; left time: 99.4306s
+	speed: 0.0255s/iter; left time: 96.8413s
+	speed: 0.0255s/iter; left time: 94.2949s
+	speed: 0.0255s/iter; left time: 91.6218s
+	speed: 0.0254s/iter; left time: 89.0027s
+	speed: 0.0255s/iter; left time: 86.5089s
+	speed: 0.0255s/iter; left time: 84.1180s
+	speed: 0.0255s/iter; left time: 81.4714s
+	speed: 0.0255s/iter; left time: 78.9504s
+	speed: 0.0255s/iter; left time: 76.4496s
+	speed: 0.0255s/iter; left time: 73.8070s
+	speed: 0.0254s/iter; left time: 71.1958s
+	speed: 0.0254s/iter; left time: 68.6542s
+	speed: 0.0255s/iter; left time: 66.1670s
+	speed: 0.0255s/iter; left time: 63.5870s
+	speed: 0.0255s/iter; left time: 61.0997s
+	speed: 0.0255s/iter; left time: 58.5365s
+	speed: 0.0255s/iter; left time: 56.0230s
+	speed: 0.0255s/iter; left time: 53.4522s
+	speed: 0.0255s/iter; left time: 50.9344s
+	speed: 0.0255s/iter; left time: 48.3999s
+	speed: 0.0255s/iter; left time: 45.8381s
+	speed: 0.0255s/iter; left time: 43.2577s
+	speed: 0.0255s/iter; left time: 40.7119s
+	speed: 0.0254s/iter; left time: 38.1196s
+	speed: 0.0255s/iter; left time: 35.5906s
+	speed: 0.0255s/iter; left time: 33.0670s
+	speed: 0.0255s/iter; left time: 30.6080s
+	speed: 0.0255s/iter; left time: 27.9868s
+	speed: 0.0255s/iter; left time: 25.4087s
+	speed: 0.0255s/iter; left time: 22.8730s
+	speed: 0.0254s/iter; left time: 20.3059s
+	speed: 0.0254s/iter; left time: 17.7601s
+	speed: 0.0255s/iter; left time: 15.2553s
+	speed: 0.0255s/iter; left time: 12.7087s
+	speed: 0.0255s/iter; left time: 10.1501s
+	speed: 0.0255s/iter; left time: 7.5920s
+	speed: 0.0255s/iter; left time: 5.0505s
+	speed: 0.0255s/iter; left time: 2.5012s
+2025-11-02 09:31:01,246 - INFO - 训练完成!
+2025-11-02 09:31:01,246 - INFO - 开始测试模型...
+Epoch: 1, Cost time: 334.185s 
+Loading checkpoint from: checkpoints_e_layers_analysis/ring_e_layers5_20251102_092523/Ring_cleaned_1minut_20250928_170147_checkpoint_2025-11-02_09-31-01/model.pth
+Threshold : 0.9986141920089722
+2025-11-02 09:32:41,014 - INFO - 测试完成!
+pa_accuracy           : 0.9569
+pa_precision          : 0.4915
+pa_recall             : 0.6585
+pa_f_score            : 0.5629
+MCC_score             : 0.5471
+Affiliation precision : 0.5456
+Affiliation recall    : 0.8241
+R_AUC_ROC             : 0.6587
+R_AUC_PR              : 0.4882
+VUS_ROC               : 0.6669
+VUS_PR                : 0.4911
+Accuracy : 0.9569, Precision : 0.4915, Recall : 0.6585, F-score : 0.5629 
+Test results saved to: checkpoints_e_layers_analysis/ring_e_layers5_20251102_092523/Ring_cleaned_1minut_20250928_170147_checkpoint_2025-11-02_09-31-01/result.json
+
+================================================================================
+ANOMALY TRANSFORMER - PARAMETER ANALYSIS
+================================================================================
+Parameter to analyze: e_layers
+Parameter values: [1, 3, 5, 7]
+Datasets: ['contact', 'ring', 'pcb']
+Fixed parameters: {'num_epochs': 1, 'batch_size': 32, 'lr': 0.0001, 'win_size': 30, 'n_heads': 7, 'e_layers': 3, 'patch_size': '3,6,10', 'anormly_ratio': 3.0}
+================================================================================
+
+Working directory: /home/wanting/KDD2023-DCdetector
+
+
+Starting experiments...
+
+################################################################################
+# Experiment 1/12
+# Dataset: contact, e_layers: 1
+################################################################################
+
+
+================================================================================
+Running: contact | e_layers=1
+================================================================================
+Command: python run_custom_dataset.py --dataset Custom --data_path dataset/downsampleData_scratch_1minut/contact/contact_cleaned_1minut_20250928_172122.parquet --num_epochs 1 --win_size 30 --batch_size 32 --mode train --input_c 27 --output_c 27 --lr 0.0001 --anormly_ratio 3.0 --index 0 --patience 3 --patch_size 3,6,10 --n_heads 7 --d_model 256 --e_layers 1 --d_ff 512 --activation gelu --output_attention True --model_save_path checkpoints_e_layers_analysis/contact_e_layers1_20251102_085627
+================================================================================
+
+
+✓ Results: Precision=0.5552, Recall=0.7002, F-score=0.6193
+
+################################################################################
+# Experiment 2/12
+# Dataset: contact, e_layers: 3
+################################################################################
+
+
+================================================================================
+Running: contact | e_layers=3
+================================================================================
+Command: python run_custom_dataset.py --dataset Custom --data_path dataset/downsampleData_scratch_1minut/contact/contact_cleaned_1minut_20250928_172122.parquet --num_epochs 1 --win_size 30 --batch_size 32 --mode train --input_c 27 --output_c 27 --lr 0.0001 --anormly_ratio 3.0 --index 0 --patience 3 --patch_size 3,6,10 --n_heads 7 --d_model 256 --e_layers 3 --d_ff 512 --activation gelu --output_attention True --model_save_path checkpoints_e_layers_analysis/contact_e_layers3_20251102_085845
+================================================================================
+
+
+✓ Results: Precision=0.5477, Recall=0.6936, F-score=0.6121
+
+################################################################################
+# Experiment 3/12
+# Dataset: contact, e_layers: 5
+################################################################################
+
+
+================================================================================
+Running: contact | e_layers=5
+================================================================================
+Command: python run_custom_dataset.py --dataset Custom --data_path dataset/downsampleData_scratch_1minut/contact/contact_cleaned_1minut_20250928_172122.parquet --num_epochs 1 --win_size 30 --batch_size 32 --mode train --input_c 27 --output_c 27 --lr 0.0001 --anormly_ratio 3.0 --index 0 --patience 3 --patch_size 3,6,10 --n_heads 7 --d_model 256 --e_layers 5 --d_ff 512 --activation gelu --output_attention True --model_save_path checkpoints_e_layers_analysis/contact_e_layers5_20251102_090303
+================================================================================
+
+
+✓ Results: Precision=0.5434, Recall=0.6703, F-score=0.6002
+
+################################################################################
+# Experiment 4/12
+# Dataset: contact, e_layers: 7
+################################################################################
+
+
+================================================================================
+Running: contact | e_layers=7
+================================================================================
+Command: python run_custom_dataset.py --dataset Custom --data_path dataset/downsampleData_scratch_1minut/contact/contact_cleaned_1minut_20250928_172122.parquet --num_epochs 1 --win_size 30 --batch_size 32 --mode train --input_c 27 --output_c 27 --lr 0.0001 --anormly_ratio 3.0 --index 0 --patience 3 --patch_size 3,6,10 --n_heads 7 --d_model 256 --e_layers 7 --d_ff 512 --activation gelu --output_attention True --model_save_path checkpoints_e_layers_analysis/contact_e_layers7_20251102_090925
+================================================================================
+
+
+✓ Results: Precision=0.5452, Recall=0.6809, F-score=0.6055
+
+################################################################################
+# Experiment 5/12
+# Dataset: ring, e_layers: 1
+################################################################################
+
+
+================================================================================
+Running: ring | e_layers=1
+================================================================================
+Command: python run_custom_dataset.py --dataset Custom --data_path dataset/downsampleData_scratch_1minut/ring/Ring_cleaned_1minut_20250928_170147.parquet --num_epochs 1 --win_size 30 --batch_size 32 --mode train --input_c 28 --output_c 28 --lr 0.0001 --anormly_ratio 3.0 --index 0 --patience 3 --patch_size 3,6,10 --n_heads 7 --d_model 256 --e_layers 1 --d_ff 512 --activation gelu --output_attention True --model_save_path checkpoints_e_layers_analysis/ring_e_layers1_20251102_091750
+================================================================================
+
+
+✓ Results: Precision=0.4780, Recall=0.6286, F-score=0.5430
+
+################################################################################
+# Experiment 6/12
+# Dataset: ring, e_layers: 3
+################################################################################
+
+
+================================================================================
+Running: ring | e_layers=3
+================================================================================
+Command: python run_custom_dataset.py --dataset Custom --data_path dataset/downsampleData_scratch_1minut/ring/Ring_cleaned_1minut_20250928_170147.parquet --num_epochs 1 --win_size 30 --batch_size 32 --mode train --input_c 28 --output_c 28 --lr 0.0001 --anormly_ratio 3.0 --index 0 --patience 3 --patch_size 3,6,10 --n_heads 7 --d_model 256 --e_layers 3 --d_ff 512 --activation gelu --output_attention True --model_save_path checkpoints_e_layers_analysis/ring_e_layers3_20251102_092027
+================================================================================
+
+
+✓ Results: Precision=0.4791, Recall=0.6376, F-score=0.5471
+
+################################################################################
+# Experiment 7/12
+# Dataset: ring, e_layers: 5
+################################################################################
+
+
+================================================================================
+Running: ring | e_layers=5
+================================================================================
+Command: python run_custom_dataset.py --dataset Custom --data_path dataset/downsampleData_scratch_1minut/ring/Ring_cleaned_1minut_20250928_170147.parquet --num_epochs 1 --win_size 30 --batch_size 32 --mode train --input_c 28 --output_c 28 --lr 0.0001 --anormly_ratio 3.0 --index 0 --patience 3 --patch_size 3,6,10 --n_heads 7 --d_model 256 --e_layers 5 --d_ff 512 --activation gelu --output_attention True --model_save_path checkpoints_e_layers_analysis/ring_e_layers5_20251102_092523
+================================================================================
+
+
+✓ Results: Precision=0.4915, Recall=0.6585, F-score=0.5629
+
+################################################################################
+# Experiment 8/12
+# Dataset: ring, e_layers: 7
+################################################################################
+
+
+================================================================================
+/home/wanting/KDD2023-DCdetector/venv/lib/python3.12/site-packages/tsfresh/__init__.py:12: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+2025-11-02 09:32:43,285 - INFO - 开始使用自定义数据集运行DCdetector...
+2025-11-02 09:32:43,285 - INFO - 数据集: Custom
+2025-11-02 09:32:43,285 - INFO - 输入特征维度: 28
+2025-11-02 09:32:43,285 - INFO - 窗口大小: 30
+2025-11-02 09:32:43,285 - INFO - 批次大小: 32
+2025-11-02 09:32:44,880 - INFO - 开始训练模型...
+[onlyNormalData=True] 训练集过滤异常数据: 408309 行 -> 390335 行 (移除 17974 个异常样本)
+数据加载自: dataset/downsampleData_scratch_1minut/ring/Ring_cleaned_1minut_20250928_170147.parquet
+训练集形状: (390335, 28)
+验证集形状: (87495, 28)
+测试集形状: (87495, 28)
+特征维度: 28
+异常比例（行级）:
+- 训练集: 原始 4.40% -> 现有 0.00%
+- 验证集: 2.97%
+- 测试集: 4.20%
+[onlyNormalData=True] 训练集过滤异常数据: 408309 行 -> 390335 行 (移除 17974 个异常样本)
+数据加载自: dataset/downsampleData_scratch_1minut/ring/Ring_cleaned_1minut_20250928_170147.parquet
+训练集形状: (390335, 28)
+验证集形状: (87495, 28)
+测试集形状: (87495, 28)
+特征维度: 28
+异常比例（行级）:
+- 训练集: 原始 4.40% -> 现有 0.00%
+- 验证集: 2.97%
+- 测试集: 4.20%
+[onlyNormalData=True] 训练集过滤异常数据: 408309 行 -> 390335 行 (移除 17974 个异常样本)
+数据加载自: dataset/downsampleData_scratch_1minut/ring/Ring_cleaned_1minut_20250928_170147.parquet
+训练集形状: (390335, 28)
+验证集形状: (87495, 28)
+测试集形状: (87495, 28)
+特征维度: 28
+异常比例（行级）:
+- 训练集: 原始 4.40% -> 现有 0.00%
+- 验证集: 2.97%
+- 测试集: 4.20%
+[onlyNormalData=True] 训练集过滤异常数据: 408309 行 -> 390335 行 (移除 17974 个异常样本)
+数据加载自: dataset/downsampleData_scratch_1minut/ring/Ring_cleaned_1minut_20250928_170147.parquet
+训练集形状: (390335, 28)
+验证集形状: (87495, 28)
+测试集形状: (87495, 28)
+特征维度: 28
+异常比例（行级）:
+- 训练集: 原始 4.40% -> 现有 0.00%
+- 验证集: 2.97%
+- 测试集: 4.20%
+	speed: 0.0373s/iter; left time: 451.7995s
+	speed: 0.0343s/iter; left time: 411.2958s
+	speed: 0.0342s/iter; left time: 407.0800s
+	speed: 0.0342s/iter; left time: 403.4742s
+	speed: 0.0342s/iter; left time: 399.7897s
+	speed: 0.0341s/iter; left time: 395.8901s
+	speed: 0.0341s/iter; left time: 392.2052s
+	speed: 0.0340s/iter; left time: 387.6414s
+	speed: 0.0339s/iter; left time: 382.6801s
+	speed: 0.0340s/iter; left time: 380.6392s
+	speed: 0.0339s/iter; left time: 376.5411s
+	speed: 0.0341s/iter; left time: 374.6950s
+	speed: 0.0341s/iter; left time: 371.9355s
+	speed: 0.0341s/iter; left time: 368.5039s
+	speed: 0.0340s/iter; left time: 364.0818s
+	speed: 0.0341s/iter; left time: 361.2651s
+	speed: 0.0340s/iter; left time: 357.1556s
+	speed: 0.0341s/iter; left time: 355.0142s
+	speed: 0.0340s/iter; left time: 350.4530s
+	speed: 0.0342s/iter; left time: 348.5038s
+	speed: 0.0341s/iter; left time: 344.8067s
+	speed: 0.0342s/iter; left time: 341.8282s
+	speed: 0.0342s/iter; left time: 338.2408s
+	speed: 0.0342s/iter; left time: 334.7548s
+	speed: 0.0341s/iter; left time: 330.7221s
+	speed: 0.0342s/iter; left time: 327.9860s
+	speed: 0.0342s/iter; left time: 324.3615s
+	speed: 0.0342s/iter; left time: 321.0217s
+	speed: 0.0342s/iter; left time: 317.7634s
+	speed: 0.0341s/iter; left time: 314.1013s
+	speed: 0.0341s/iter; left time: 310.3918s
+	speed: 0.0341s/iter; left time: 306.7680s
+	speed: 0.0341s/iter; left time: 303.6996s
+	speed: 0.0341s/iter; left time: 300.2210s
+	speed: 0.0342s/iter; left time: 297.3144s
+	speed: 0.0340s/iter; left time: 292.5898s
+	speed: 0.0340s/iter; left time: 288.7751s
+	speed: 0.0340s/iter; left time: 285.2491s
+	speed: 0.0341s/iter; left time: 282.9018s
+	speed: 0.0341s/iter; left time: 279.6472s
+	speed: 0.0341s/iter; left time: 275.7885s
+	speed: 0.0342s/iter; left time: 273.1465s
+	speed: 0.0341s/iter; left time: 269.6151s
+	speed: 0.0342s/iter; left time: 266.3808s
+	speed: 0.0341s/iter; left time: 262.5974s
+	speed: 0.0341s/iter; left time: 258.9157s
+	speed: 0.0341s/iter; left time: 255.8037s
+	speed: 0.0339s/iter; left time: 250.7508s
+	speed: 0.0341s/iter; left time: 249.1473s
+	speed: 0.0340s/iter; left time: 244.9403s
+	speed: 0.0341s/iter; left time: 242.0887s
+	speed: 0.0341s/iter; left time: 238.4713s
+	speed: 0.0341s/iter; left time: 235.1647s
+	speed: 0.0341s/iter; left time: 232.0121s
+	speed: 0.0340s/iter; left time: 227.9908s
+	speed: 0.0340s/iter; left time: 224.5269s
+	speed: 0.0342s/iter; left time: 221.9335s
+	speed: 0.0341s/iter; left time: 218.3295s
+	speed: 0.0341s/iter; left time: 214.5912s
+	speed: 0.0341s/iter; left time: 211.3236s
+	speed: 0.0341s/iter; left time: 207.9297s
+	speed: 0.0341s/iter; left time: 204.6583s
+	speed: 0.0340s/iter; left time: 200.5250s
+	speed: 0.0340s/iter; left time: 197.2562s
+	speed: 0.0338s/iter; left time: 192.8156s
+	speed: 0.0339s/iter; left time: 189.9779s
+	speed: 0.0339s/iter; left time: 186.3455s
+	speed: 0.0340s/iter; left time: 183.6292s
+	speed: 0.0340s/iter; left time: 180.0499s
+	speed: 0.0339s/iter; left time: 176.2896s
+	speed: 0.0340s/iter; left time: 173.2164s
+	speed: 0.0340s/iter; left time: 169.8788s
+	speed: 0.0341s/iter; left time: 166.8956s
+	speed: 0.0340s/iter; left time: 163.1576s
+	speed: 0.0339s/iter; left time: 159.1500s
+	speed: 0.0339s/iter; left time: 155.9406s
+	speed: 0.0340s/iter; left time: 152.9767s
+	speed: 0.0339s/iter; left time: 149.2022s
+	speed: 0.0341s/iter; left time: 146.5515s
+	speed: 0.0339s/iter; left time: 142.5193s
+	speed: 0.0341s/iter; left time: 139.7749s
+	speed: 0.0341s/iter; left time: 136.1697s
+	speed: 0.0338s/iter; left time: 131.7003s
+	speed: 0.0338s/iter; left time: 128.5554s
+	speed: 0.0338s/iter; left time: 124.9893s
+	speed: 0.0339s/iter; left time: 122.1162s
+	speed: 0.0340s/iter; left time: 118.9261s
+	speed: 0.0340s/iter; left time: 115.5923s
+	speed: 0.0341s/iter; left time: 112.3530s
+	speed: 0.0340s/iter; left time: 108.7561s
+	speed: 0.0341s/iter; left time: 105.5291s
+	speed: 0.0339s/iter; left time: 101.6679s
+	speed: 0.0341s/iter; left time: 98.7429s
+	speed: 0.0341s/iter; left time: 95.2910s
+	speed: 0.0340s/iter; left time: 91.7866s
+	speed: 0.0341s/iter; left time: 88.6360s
+	speed: 0.0341s/iter; left time: 85.0609s
+	speed: 0.0341s/iter; left time: 81.7220s
+	speed: 0.0340s/iter; left time: 78.1819s
+	speed: 0.0340s/iter; left time: 74.6755s
+	speed: 0.0339s/iter; left time: 71.1660s
+	speed: 0.0340s/iter; left time: 67.9495s
+	speed: 0.0340s/iter; left time: 64.6105s
+	speed: 0.0338s/iter; left time: 60.8265s
+	speed: 0.0339s/iter; left time: 57.5791s
+	speed: 0.0341s/iter; left time: 54.5021s
+	speed: 0.0340s/iter; left time: 50.9904s
+	speed: 0.0339s/iter; left time: 47.4077s
+	speed: 0.0340s/iter; left time: 44.1866s
+	speed: 0.0341s/iter; left time: 40.8456s
+	speed: 0.0341s/iter; left time: 37.4290s
+	speed: 0.0340s/iter; left time: 33.9151s
+	speed: 0.0340s/iter; left time: 30.5108s
+	speed: 0.0338s/iter; left time: 26.9965s
+	speed: 0.0339s/iter; left time: 23.6735s
+	speed: 0.0339s/iter; left time: 20.2566s
+	speed: 0.0339s/iter; left time: 16.8987s
+	speed: 0.0337s/iter; left time: 13.4140s
+	speed: 0.0340s/iter; left time: 10.1207s
+	speed: 0.0340s/iter; left time: 6.7260s
+	speed: 0.0339s/iter; left time: 3.3239s
+2025-11-02 09:40:10,609 - INFO - 训练完成!
+2025-11-02 09:40:10,610 - INFO - 开始测试模型...
+Epoch: 1, Cost time: 445.705s 
+Loading checkpoint from: checkpoints_e_layers_analysis/ring_e_layers7_20251102_093241/Ring_cleaned_1minut_20250928_170147_checkpoint_2025-11-02_09-40-10/model.pth
+Threshold : 0.999902606010437
+2025-11-02 09:42:18,902 - INFO - 测试完成!
+pa_accuracy           : 0.9571
+pa_precision          : 0.4933
+pa_recall             : 0.6610
+pa_f_score            : 0.5650
+MCC_score             : 0.5493
+Affiliation precision : 0.5473
+Affiliation recall    : 0.8148
+R_AUC_ROC             : 0.6589
+R_AUC_PR              : 0.4886
+VUS_ROC               : 0.6655
+VUS_PR                : 0.4902
+Accuracy : 0.9571, Precision : 0.4933, Recall : 0.6610, F-score : 0.5650 
+Test results saved to: checkpoints_e_layers_analysis/ring_e_layers7_20251102_093241/Ring_cleaned_1minut_20250928_170147_checkpoint_2025-11-02_09-40-10/result.json
+/home/wanting/KDD2023-DCdetector/venv/lib/python3.12/site-packages/tsfresh/__init__.py:12: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+2025-11-02 09:42:21,147 - INFO - 开始使用自定义数据集运行DCdetector...
+2025-11-02 09:42:21,147 - INFO - 数据集: Custom
+2025-11-02 09:42:21,147 - INFO - 输入特征维度: 31
+2025-11-02 09:42:21,147 - INFO - 窗口大小: 30
+2025-11-02 09:42:21,147 - INFO - 批次大小: 32
+2025-11-02 09:42:22,868 - INFO - 开始训练模型...
+[onlyNormalData=True] 训练集过滤异常数据: 408340 行 -> 391922 行 (移除 16418 个异常样本)
+数据加载自: dataset/downsampleData_scratch_1minut/pcb/pcb_cleaned_1minut_20250928_161509.parquet
+训练集形状: (391922, 31)
+验证集形状: (87502, 31)
+测试集形状: (87502, 31)
+特征维度: 31
+异常比例（行级）:
+- 训练集: 原始 4.02% -> 现有 0.00%
+- 验证集: 1.52%
+- 测试集: 2.10%
+[onlyNormalData=True] 训练集过滤异常数据: 408340 行 -> 391922 行 (移除 16418 个异常样本)
+数据加载自: dataset/downsampleData_scratch_1minut/pcb/pcb_cleaned_1minut_20250928_161509.parquet
+训练集形状: (391922, 31)
+验证集形状: (87502, 31)
+测试集形状: (87502, 31)
+特征维度: 31
+异常比例（行级）:
+- 训练集: 原始 4.02% -> 现有 0.00%
+- 验证集: 1.52%
+- 测试集: 2.10%
+[onlyNormalData=True] 训练集过滤异常数据: 408340 行 -> 391922 行 (移除 16418 个异常样本)
+数据加载自: dataset/downsampleData_scratch_1minut/pcb/pcb_cleaned_1minut_20250928_161509.parquet
+训练集形状: (391922, 31)
+验证集形状: (87502, 31)
+测试集形状: (87502, 31)
+特征维度: 31
+异常比例（行级）:
+- 训练集: 原始 4.02% -> 现有 0.00%
+- 验证集: 1.52%
+- 测试集: 2.10%
+[onlyNormalData=True] 训练集过滤异常数据: 408340 行 -> 391922 行 (移除 16418 个异常样本)
+数据加载自: dataset/downsampleData_scratch_1minut/pcb/pcb_cleaned_1minut_20250928_161509.parquet
+训练集形状: (391922, 31)
+验证集形状: (87502, 31)
+测试集形状: (87502, 31)
+特征维度: 31
+异常比例（行级）:
+- 训练集: 原始 4.02% -> 现有 0.00%
+- 验证集: 1.52%
+- 测试集: 2.10%
+	speed: 0.0118s/iter; left time: 143.8217s
+	speed: 0.0085s/iter; left time: 102.1469s
+	speed: 0.0085s/iter; left time: 101.8669s
+	speed: 0.0085s/iter; left time: 100.1888s
+	speed: 0.0084s/iter; left time: 98.9555s
+	speed: 0.0084s/iter; left time: 98.2271s
+	speed: 0.0085s/iter; left time: 97.6279s
+	speed: 0.0085s/iter; left time: 96.9678s
+	speed: 0.0085s/iter; left time: 96.3472s
+	speed: 0.0085s/iter; left time: 95.6369s
+	speed: 0.0085s/iter; left time: 94.6411s
+	speed: 0.0085s/iter; left time: 93.4493s
+	speed: 0.0085s/iter; left time: 92.5999s
+	speed: 0.0085s/iter; left time: 91.9731s
+	speed: 0.0085s/iter; left time: 91.1638s
+	speed: 0.0085s/iter; left time: 90.3272s
+	speed: 0.0085s/iter; left time: 89.5624s
+	speed: 0.0085s/iter; left time: 88.4855s
+	speed: 0.0085s/iter; left time: 87.5020s
+	speed: 0.0085s/iter; left time: 86.7004s
+	speed: 0.0085s/iter; left time: 85.9259s
+	speed: 0.0085s/iter; left time: 84.9559s
+	speed: 0.0085s/iter; left time: 84.2164s
+	speed: 0.0085s/iter; left time: 83.2761s
+	speed: 0.0085s/iter; left time: 82.4512s
+	speed: 0.0085s/iter; left time: 81.6269s
+	speed: 0.0085s/iter; left time: 80.7727s
+	speed: 0.0085s/iter; left time: 80.0428s
+	speed: 0.0085s/iter; left time: 79.4063s
+	speed: 0.0085s/iter; left time: 78.2598s
+	speed: 0.0085s/iter; left time: 77.3708s
+	speed: 0.0085s/iter; left time: 76.6117s
+	speed: 0.0085s/iter; left time: 75.8309s
+	speed: 0.0085s/iter; left time: 75.0377s
+	speed: 0.0085s/iter; left time: 74.1332s
+	speed: 0.0085s/iter; left time: 73.2306s
+	speed: 0.0085s/iter; left time: 72.3255s
+	speed: 0.0085s/iter; left time: 71.4562s
+	speed: 0.0085s/iter; left time: 70.8214s
+	speed: 0.0085s/iter; left time: 69.9008s
+	speed: 0.0085s/iter; left time: 68.8721s
+	speed: 0.0085s/iter; left time: 68.0648s
+	speed: 0.0085s/iter; left time: 67.2253s
+	speed: 0.0085s/iter; left time: 66.4794s
+	speed: 0.0085s/iter; left time: 65.5498s
+	speed: 0.0085s/iter; left time: 64.6864s
+	speed: 0.0085s/iter; left time: 63.9147s
+	speed: 0.0085s/iter; left time: 63.1075s
+	speed: 0.0085s/iter; left time: 62.2770s
+	speed: 0.0085s/iter; left time: 61.4897s
+	speed: 0.0085s/iter; left time: 60.6520s
+	speed: 0.0085s/iter; left time: 59.8590s
+	speed: 0.0085s/iter; left time: 58.8731s
+	speed: 0.0085s/iter; left time: 57.9287s
+	speed: 0.0085s/iter; left time: 57.1139s
+	speed: 0.0085s/iter; left time: 56.5676s
+	speed: 0.0085s/iter; left time: 55.5022s
+	speed: 0.0085s/iter; left time: 54.5604s
+	speed: 0.0085s/iter; left time: 53.7427s
+	speed: 0.0085s/iter; left time: 52.9554s
+	speed: 0.0085s/iter; left time: 52.0513s
+	speed: 0.0085s/iter; left time: 51.2855s
+	speed: 0.0085s/iter; left time: 50.4443s
+	speed: 0.0085s/iter; left time: 49.5606s
+	speed: 0.0085s/iter; left time: 48.6624s
+	speed: 0.0085s/iter; left time: 47.7387s
+	speed: 0.0085s/iter; left time: 46.9114s
+	speed: 0.0085s/iter; left time: 46.0621s
+	speed: 0.0084s/iter; left time: 45.1761s
+	speed: 0.0084s/iter; left time: 44.3166s
+	speed: 0.0085s/iter; left time: 43.5129s
+	speed: 0.0085s/iter; left time: 42.6923s
+	speed: 0.0085s/iter; left time: 41.8430s
+	speed: 0.0085s/iter; left time: 41.0018s
+	speed: 0.0085s/iter; left time: 40.1763s
+	speed: 0.0085s/iter; left time: 39.3256s
+	speed: 0.0085s/iter; left time: 38.5295s
+	speed: 0.0085s/iter; left time: 37.6995s
+	speed: 0.0085s/iter; left time: 36.8657s
+	speed: 0.0085s/iter; left time: 35.9888s
+	speed: 0.0085s/iter; left time: 35.1370s
+	speed: 0.0085s/iter; left time: 34.2945s
+	speed: 0.0085s/iter; left time: 33.4138s
+	speed: 0.0085s/iter; left time: 32.5705s
+	speed: 0.0085s/iter; left time: 31.7693s
+	speed: 0.0086s/iter; left time: 31.2969s
+	speed: 0.0085s/iter; left time: 30.2244s
+	speed: 0.0086s/iter; left time: 29.6951s
+	speed: 0.0086s/iter; left time: 28.6305s
+	speed: 0.0084s/iter; left time: 27.4126s
+	speed: 0.0084s/iter; left time: 26.5843s
+	speed: 0.0085s/iter; left time: 25.7502s
+	speed: 0.0085s/iter; left time: 24.9026s
+	speed: 0.0085s/iter; left time: 24.0617s
+	speed: 0.0085s/iter; left time: 23.2447s
+	speed: 0.0085s/iter; left time: 22.3954s
+	speed: 0.0085s/iter; left time: 21.6888s
+	speed: 0.0086s/iter; left time: 21.0047s
+	speed: 0.0086s/iter; left time: 20.1690s
+	speed: 0.0085s/iter; left time: 19.2105s
+	speed: 0.0085s/iter; left time: 18.2142s
+	speed: 0.0086s/iter; left time: 17.6086s
+	speed: 0.0085s/iter; left time: 16.5252s
+	speed: 0.0084s/iter; left time: 15.6017s
+	speed: 0.0084s/iter; left time: 14.7339s
+	speed: 0.0085s/iter; left time: 13.9747s
+	speed: 0.0084s/iter; left time: 13.0495s
+	speed: 0.0084s/iter; left time: 12.2060s
+	speed: 0.0084s/iter; left time: 11.3811s
+	speed: 0.0085s/iter; left time: 10.5406s
+	speed: 0.0085s/iter; left time: 9.6995s
+	speed: 0.0085s/iter; left time: 8.8497s
+	speed: 0.0085s/iter; left time: 8.0065s
+	speed: 0.0084s/iter; left time: 7.1560s
+	speed: 0.0085s/iter; left time: 6.3141s
+	speed: 0.0085s/iter; left time: 5.4706s
+	speed: 0.0084s/iter; left time: 4.6197s
+	speed: 0.0084s/iter; left time: 3.7739s
+	speed: 0.0085s/iter; left time: 2.9342s
+	speed: 0.0085s/iter; left time: 2.0910s
+	speed: 0.0085s/iter; left time: 1.2436s
+	speed: 0.0085s/iter; left time: 0.3978s
+2025-11-02 09:44:14,812 - INFO - 训练完成!
+2025-11-02 09:44:14,813 - INFO - 开始测试模型...
+Epoch: 1, Cost time: 111.922s 
+Loading checkpoint from: checkpoints_e_layers_analysis/pcb_e_layers1_20251102_094219/pcb_cleaned_1minut_20250928_161509_checkpoint_2025-11-02_09-44-14/model.pth
+Threshold : 0.9381378638744353
+2025-11-02 09:44:59,978 - INFO - 测试完成!
+pa_accuracy           : 0.9626
+pa_precision          : 0.3049
+pa_recall             : 0.6084
+pa_f_score            : 0.4062
+MCC_score             : 0.4140
+Affiliation precision : 0.5228
+Affiliation recall    : 0.9029
+R_AUC_ROC             : 0.6190
+R_AUC_PR              : 0.3461
+VUS_ROC               : 0.6256
+VUS_PR                : 0.3494
+Accuracy : 0.9626, Precision : 0.3049, Recall : 0.6084, F-score : 0.4062 
+Test results saved to: checkpoints_e_layers_analysis/pcb_e_layers1_20251102_094219/pcb_cleaned_1minut_20250928_161509_checkpoint_2025-11-02_09-44-14/result.json
+/home/wanting/KDD2023-DCdetector/venv/lib/python3.12/site-packages/tsfresh/__init__.py:12: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+2025-11-02 09:45:02,267 - INFO - 开始使用自定义数据集运行DCdetector...
+2025-11-02 09:45:02,267 - INFO - 数据集: Custom
+2025-11-02 09:45:02,267 - INFO - 输入特征维度: 31
+2025-11-02 09:45:02,267 - INFO - 窗口大小: 30
+2025-11-02 09:45:02,267 - INFO - 批次大小: 32
+2025-11-02 09:45:03,983 - INFO - 开始训练模型...
+[onlyNormalData=True] 训练集过滤异常数据: 408340 行 -> 391922 行 (移除 16418 个异常样本)
+数据加载自: dataset/downsampleData_scratch_1minut/pcb/pcb_cleaned_1minut_20250928_161509.parquet
+训练集形状: (391922, 31)
+验证集形状: (87502, 31)
+测试集形状: (87502, 31)
+特征维度: 31
+异常比例（行级）:
+- 训练集: 原始 4.02% -> 现有 0.00%
+- 验证集: 1.52%
+- 测试集: 2.10%
+[onlyNormalData=True] 训练集过滤异常数据: 408340 行 -> 391922 行 (移除 16418 个异常样本)
+数据加载自: dataset/downsampleData_scratch_1minut/pcb/pcb_cleaned_1minut_20250928_161509.parquet
+训练集形状: (391922, 31)
+验证集形状: (87502, 31)
+测试集形状: (87502, 31)
+特征维度: 31
+异常比例（行级）:
+- 训练集: 原始 4.02% -> 现有 0.00%
+- 验证集: 1.52%
+- 测试集: 2.10%
+[onlyNormalData=True] 训练集过滤异常数据: 408340 行 -> 391922 行 (移除 16418 个异常样本)
+数据加载自: dataset/downsampleData_scratch_1minut/pcb/pcb_cleaned_1minut_20250928_161509.parquet
+训练集形状: (391922, 31)
+验证集形状: (87502, 31)
+测试集形状: (87502, 31)
+特征维度: 31
+异常比例（行级）:
+- 训练集: 原始 4.02% -> 现有 0.00%
+- 验证集: 1.52%
+- 测试集: 2.10%
+[onlyNormalData=True] 训练集过滤异常数据: 408340 行 -> 391922 行 (移除 16418 个异常样本)
+数据加载自: dataset/downsampleData_scratch_1minut/pcb/pcb_cleaned_1minut_20250928_161509.parquet
+训练集形状: (391922, 31)
+验证集形状: (87502, 31)
+测试集形状: (87502, 31)
+特征维度: 31
+异常比例（行级）:
+- 训练集: 原始 4.02% -> 现有 0.00%
+- 验证集: 1.52%
+- 测试集: 2.10%
+	speed: 0.0210s/iter; left time: 254.7441s
+	speed: 0.0178s/iter; left time: 213.9935s
+	speed: 0.0177s/iter; left time: 211.9918s
+	speed: 0.0177s/iter; left time: 209.4288s
+	speed: 0.0177s/iter; left time: 207.5506s
+	speed: 0.0177s/iter; left time: 206.0139s
+	speed: 0.0177s/iter; left time: 204.3590s
+	speed: 0.0177s/iter; left time: 202.4863s
+	speed: 0.0178s/iter; left time: 201.5346s
+	speed: 0.0177s/iter; left time: 199.4942s
+	speed: 0.0177s/iter; left time: 197.3465s
+	speed: 0.0177s/iter; left time: 195.7411s
+	speed: 0.0177s/iter; left time: 194.0620s
+	speed: 0.0177s/iter; left time: 192.1827s
+	speed: 0.0177s/iter; left time: 190.0013s
+	speed: 0.0177s/iter; left time: 188.8846s
+	speed: 0.0177s/iter; left time: 186.9180s
+	speed: 0.0177s/iter; left time: 185.1021s
+	speed: 0.0177s/iter; left time: 183.0965s
+	speed: 0.0177s/iter; left time: 181.2548s
+	speed: 0.0177s/iter; left time: 179.4365s
+	speed: 0.0177s/iter; left time: 177.6773s
+	speed: 0.0177s/iter; left time: 175.9332s
+	speed: 0.0177s/iter; left time: 174.0474s
+	speed: 0.0177s/iter; left time: 172.3359s
+	speed: 0.0177s/iter; left time: 170.5581s
+	speed: 0.0177s/iter; left time: 168.6859s
+	speed: 0.0176s/iter; left time: 166.6194s
+	speed: 0.0177s/iter; left time: 165.0846s
+	speed: 0.0177s/iter; left time: 163.5282s
+	speed: 0.0177s/iter; left time: 161.6219s
+	speed: 0.0177s/iter; left time: 160.1937s
+	speed: 0.0177s/iter; left time: 158.0475s
+	speed: 0.0176s/iter; left time: 156.1232s
+	speed: 0.0177s/iter; left time: 154.4103s
+	speed: 0.0177s/iter; left time: 152.7256s
+	speed: 0.0177s/iter; left time: 150.9981s
+	speed: 0.0177s/iter; left time: 149.2649s
+	speed: 0.0177s/iter; left time: 147.4225s
+	speed: 0.0177s/iter; left time: 145.6531s
+	speed: 0.0177s/iter; left time: 143.9651s
+	speed: 0.0177s/iter; left time: 142.2569s
+	speed: 0.0177s/iter; left time: 140.5063s
+	speed: 0.0177s/iter; left time: 138.7099s
+	speed: 0.0177s/iter; left time: 136.8979s
+	speed: 0.0177s/iter; left time: 135.3449s
+	speed: 0.0177s/iter; left time: 133.8423s
+	speed: 0.0177s/iter; left time: 131.9838s
+	speed: 0.0177s/iter; left time: 129.8201s
+	speed: 0.0177s/iter; left time: 127.9215s
+	speed: 0.0177s/iter; left time: 126.3095s
+	speed: 0.0177s/iter; left time: 124.6828s
+	speed: 0.0177s/iter; left time: 122.8283s
+	speed: 0.0177s/iter; left time: 121.0713s
+	speed: 0.0177s/iter; left time: 119.2736s
+	speed: 0.0177s/iter; left time: 117.5199s
+	speed: 0.0177s/iter; left time: 115.7490s
+	speed: 0.0177s/iter; left time: 113.9424s
+	speed: 0.0177s/iter; left time: 112.0737s
+	speed: 0.0177s/iter; left time: 110.3982s
+	speed: 0.0177s/iter; left time: 108.5933s
+	speed: 0.0177s/iter; left time: 106.8238s
+	speed: 0.0177s/iter; left time: 105.0681s
+	speed: 0.0177s/iter; left time: 103.2905s
+	speed: 0.0177s/iter; left time: 101.5087s
+	speed: 0.0177s/iter; left time: 99.8926s
+	speed: 0.0177s/iter; left time: 98.1261s
+	speed: 0.0177s/iter; left time: 96.2853s
+	speed: 0.0177s/iter; left time: 94.5160s
+	speed: 0.0177s/iter; left time: 92.7444s
+	speed: 0.0176s/iter; left time: 90.7706s
+	speed: 0.0177s/iter; left time: 89.1013s
+	speed: 0.0177s/iter; left time: 87.3262s
+	speed: 0.0176s/iter; left time: 85.5275s
+	speed: 0.0176s/iter; left time: 83.7573s
+	speed: 0.0176s/iter; left time: 81.9861s
+	speed: 0.0176s/iter; left time: 80.2099s
+	speed: 0.0177s/iter; left time: 78.5097s
+	speed: 0.0177s/iter; left time: 76.7706s
+	speed: 0.0177s/iter; left time: 75.0111s
+	speed: 0.0177s/iter; left time: 73.1985s
+	speed: 0.0177s/iter; left time: 71.4794s
+	speed: 0.0177s/iter; left time: 70.0176s
+	speed: 0.0176s/iter; left time: 67.8963s
+	speed: 0.0176s/iter; left time: 66.1246s
+	speed: 0.0177s/iter; left time: 64.4415s
+	speed: 0.0177s/iter; left time: 62.6730s
+	speed: 0.0177s/iter; left time: 60.9233s
+	speed: 0.0177s/iter; left time: 59.1389s
+	speed: 0.0177s/iter; left time: 57.4674s
+	speed: 0.0177s/iter; left time: 55.6097s
+	speed: 0.0177s/iter; left time: 53.8918s
+	speed: 0.0177s/iter; left time: 52.1057s
+	speed: 0.0177s/iter; left time: 50.3647s
+	speed: 0.0177s/iter; left time: 48.5231s
+	speed: 0.0177s/iter; left time: 46.8166s
+	speed: 0.0177s/iter; left time: 45.0132s
+	speed: 0.0177s/iter; left time: 43.2934s
+	speed: 0.0177s/iter; left time: 41.4606s
+	speed: 0.0177s/iter; left time: 39.7253s
+	speed: 0.0177s/iter; left time: 37.9668s
+	speed: 0.0177s/iter; left time: 36.2097s
+	speed: 0.0177s/iter; left time: 34.4346s
+	speed: 0.0177s/iter; left time: 32.6484s
+	speed: 0.0177s/iter; left time: 30.9088s
+	speed: 0.0177s/iter; left time: 29.1629s
+	speed: 0.0177s/iter; left time: 27.3873s
+	speed: 0.0177s/iter; left time: 25.6129s
+	speed: 0.0177s/iter; left time: 23.8327s
+	speed: 0.0177s/iter; left time: 22.0605s
+	speed: 0.0177s/iter; left time: 20.3054s
+	speed: 0.0177s/iter; left time: 18.5685s
+	speed: 0.0177s/iter; left time: 16.7971s
+	speed: 0.0177s/iter; left time: 15.0167s
+	speed: 0.0177s/iter; left time: 13.2284s
+	speed: 0.0177s/iter; left time: 11.4485s
+	speed: 0.0177s/iter; left time: 9.6818s
+	speed: 0.0177s/iter; left time: 7.9066s
+	speed: 0.0177s/iter; left time: 6.1446s
+	speed: 0.0177s/iter; left time: 4.3695s
+	speed: 0.0177s/iter; left time: 2.6036s
+	speed: 0.0177s/iter; left time: 0.8336s
+2025-11-02 09:48:56,255 - INFO - 训练完成!
+2025-11-02 09:48:56,255 - INFO - 开始测试模型...
+Epoch: 1, Cost time: 232.247s 
+Loading checkpoint from: checkpoints_e_layers_analysis/pcb_e_layers3_20251102_094500/pcb_cleaned_1minut_20250928_161509_checkpoint_2025-11-02_09-48-56/model.pth
+Threshold : 0.9974491000175476
+2025-11-02 09:50:10,265 - INFO - 测试完成!
+pa_accuracy           : 0.9635
+pa_precision          : 0.3184
+pa_recall             : 0.6471
+pa_f_score            : 0.4268
+MCC_score             : 0.4379
+Affiliation precision : 0.5068
+Affiliation recall    : 0.9013
+R_AUC_ROC             : 0.6223
+R_AUC_PR              : 0.3518
+VUS_ROC               : 0.6331
+VUS_PR                : 0.3597
+Accuracy : 0.9635, Precision : 0.3184, Recall : 0.6471, F-score : 0.4268 
+Test results saved to: checkpoints_e_layers_analysis/pcb_e_layers3_20251102_094500/pcb_cleaned_1minut_20250928_161509_checkpoint_2025-11-02_09-48-56/result.json
+/home/wanting/KDD2023-DCdetector/venv/lib/python3.12/site-packages/tsfresh/__init__.py:12: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+2025-11-02 09:50:12,543 - INFO - 开始使用自定义数据集运行DCdetector...
+2025-11-02 09:50:12,543 - INFO - 数据集: Custom
+2025-11-02 09:50:12,543 - INFO - 输入特征维度: 31
+2025-11-02 09:50:12,543 - INFO - 窗口大小: 30
+2025-11-02 09:50:12,543 - INFO - 批次大小: 32
+2025-11-02 09:50:14,267 - INFO - 开始训练模型...
+[onlyNormalData=True] 训练集过滤异常数据: 408340 行 -> 391922 行 (移除 16418 个异常样本)
+数据加载自: dataset/downsampleData_scratch_1minut/pcb/pcb_cleaned_1minut_20250928_161509.parquet
+训练集形状: (391922, 31)
+验证集形状: (87502, 31)
+测试集形状: (87502, 31)
+特征维度: 31
+异常比例（行级）:
+- 训练集: 原始 4.02% -> 现有 0.00%
+- 验证集: 1.52%
+- 测试集: 2.10%
+[onlyNormalData=True] 训练集过滤异常数据: 408340 行 -> 391922 行 (移除 16418 个异常样本)
+数据加载自: dataset/downsampleData_scratch_1minut/pcb/pcb_cleaned_1minut_20250928_161509.parquet
+训练集形状: (391922, 31)
+验证集形状: (87502, 31)
+测试集形状: (87502, 31)
+特征维度: 31
+异常比例（行级）:
+- 训练集: 原始 4.02% -> 现有 0.00%
+- 验证集: 1.52%
+- 测试集: 2.10%
+[onlyNormalData=True] 训练集过滤异常数据: 408340 行 -> 391922 行 (移除 16418 个异常样本)
+数据加载自: dataset/downsampleData_scratch_1minut/pcb/pcb_cleaned_1minut_20250928_161509.parquet
+训练集形状: (391922, 31)
+验证集形状: (87502, 31)
+测试集形状: (87502, 31)
+特征维度: 31
+异常比例（行级）:
+- 训练集: 原始 4.02% -> 现有 0.00%
+- 验证集: 1.52%
+- 测试集: 2.10%
+[onlyNormalData=True] 训练集过滤异常数据: 408340 行 -> 391922 行 (移除 16418 个异常样本)
+数据加载自: dataset/downsampleData_scratch_1minut/pcb/pcb_cleaned_1minut_20250928_161509.parquet
+训练集形状: (391922, 31)
+验证集形状: (87502, 31)
+测试集形状: (87502, 31)
+特征维度: 31
+异常比例（行级）:
+- 训练集: 原始 4.02% -> 现有 0.00%
+- 验证集: 1.52%
+- 测试集: 2.10%
+	speed: 0.0302s/iter; left time: 367.2743s
+	speed: 0.0271s/iter; left time: 325.9744s
+	speed: 0.0270s/iter; left time: 322.4159s
+	speed: 0.0269s/iter; left time: 318.8104s
+	speed: 0.0269s/iter; left time: 315.8172s
+	speed: 0.0269s/iter; left time: 313.5990s
+	speed: 0.0269s/iter; left time: 310.7466s
+	speed: 0.0269s/iter; left time: 307.9263s
+	speed: 0.0269s/iter; left time: 305.1468s
+	speed: 0.0269s/iter; left time: 302.1819s
+	speed: 0.0269s/iter; left time: 299.4018s
+	speed: 0.0269s/iter; left time: 296.6864s
+	speed: 0.0269s/iter; left time: 294.9649s
+	speed: 0.0269s/iter; left time: 291.8236s
+	speed: 0.0269s/iter; left time: 289.0014s
+	speed: 0.0269s/iter; left time: 286.5349s
+	speed: 0.0270s/iter; left time: 285.0155s
+	speed: 0.0269s/iter; left time: 281.1566s
+	speed: 0.0269s/iter; left time: 278.2272s
+	speed: 0.0269s/iter; left time: 275.5916s
+	speed: 0.0272s/iter; left time: 276.4522s
+	speed: 0.0270s/iter; left time: 271.4440s
+	speed: 0.0269s/iter; left time: 267.6656s
+	speed: 0.0269s/iter; left time: 264.5928s
+	speed: 0.0269s/iter; left time: 262.3370s
+	speed: 0.0269s/iter; left time: 259.4223s
+	speed: 0.0269s/iter; left time: 256.6436s
+	speed: 0.0269s/iter; left time: 254.0364s
+	speed: 0.0269s/iter; left time: 251.2392s
+	speed: 0.0269s/iter; left time: 248.7490s
+	speed: 0.0269s/iter; left time: 245.8485s
+	speed: 0.0269s/iter; left time: 243.0099s
+	speed: 0.0269s/iter; left time: 240.3056s
+	speed: 0.0269s/iter; left time: 237.9759s
+	speed: 0.0269s/iter; left time: 235.4554s
+	speed: 0.0269s/iter; left time: 232.5743s
+	speed: 0.0269s/iter; left time: 230.2313s
+	speed: 0.0269s/iter; left time: 226.8342s
+	speed: 0.0268s/iter; left time: 223.9644s
+	speed: 0.0269s/iter; left time: 221.4960s
+	speed: 0.0269s/iter; left time: 218.7814s
+	speed: 0.0269s/iter; left time: 216.1944s
+	speed: 0.0269s/iter; left time: 213.4406s
+	speed: 0.0269s/iter; left time: 210.7785s
+	speed: 0.0269s/iter; left time: 208.2373s
+	speed: 0.0268s/iter; left time: 204.8830s
+	speed: 0.0269s/iter; left time: 202.7420s
+	speed: 0.0269s/iter; left time: 200.1532s
+	speed: 0.0269s/iter; left time: 197.3433s
+	speed: 0.0269s/iter; left time: 194.8870s
+	speed: 0.0269s/iter; left time: 192.1417s
+	speed: 0.0269s/iter; left time: 189.4725s
+	speed: 0.0269s/iter; left time: 186.8818s
+	speed: 0.0269s/iter; left time: 184.0850s
+	speed: 0.0269s/iter; left time: 181.2441s
+	speed: 0.0268s/iter; left time: 178.3972s
+	speed: 0.0269s/iter; left time: 175.8124s
+	speed: 0.0269s/iter; left time: 173.1041s
+	speed: 0.0269s/iter; left time: 170.5491s
+	speed: 0.0269s/iter; left time: 167.7489s
+	speed: 0.0268s/iter; left time: 164.7889s
+	speed: 0.0269s/iter; left time: 162.3692s
+	speed: 0.0268s/iter; left time: 159.5982s
+	speed: 0.0268s/iter; left time: 156.9043s
+	speed: 0.0269s/iter; left time: 154.5069s
+	speed: 0.0269s/iter; left time: 151.6841s
+	speed: 0.0269s/iter; left time: 149.0111s
+	speed: 0.0269s/iter; left time: 146.3578s
+	speed: 0.0269s/iter; left time: 143.7457s
+	speed: 0.0269s/iter; left time: 141.0537s
+	speed: 0.0269s/iter; left time: 138.2574s
+	speed: 0.0269s/iter; left time: 135.5997s
+	speed: 0.0269s/iter; left time: 132.9836s
+	speed: 0.0269s/iter; left time: 130.2656s
+	speed: 0.0270s/iter; left time: 128.0372s
+	speed: 0.0269s/iter; left time: 124.8413s
+	speed: 0.0269s/iter; left time: 122.1475s
+	speed: 0.0268s/iter; left time: 119.3717s
+	speed: 0.0268s/iter; left time: 116.6614s
+	speed: 0.0268s/iter; left time: 113.9132s
+	speed: 0.0268s/iter; left time: 111.2478s
+	speed: 0.0268s/iter; left time: 108.5528s
+	speed: 0.0269s/iter; left time: 105.9909s
+	speed: 0.0269s/iter; left time: 103.3211s
+	speed: 0.0269s/iter; left time: 100.6537s
+	speed: 0.0269s/iter; left time: 97.9940s
+	speed: 0.0269s/iter; left time: 95.3186s
+	speed: 0.0268s/iter; left time: 92.5357s
+	speed: 0.0269s/iter; left time: 89.9432s
+	speed: 0.0269s/iter; left time: 87.2971s
+	speed: 0.0269s/iter; left time: 84.5443s
+	speed: 0.0269s/iter; left time: 81.8503s
+	speed: 0.0269s/iter; left time: 79.1569s
+	speed: 0.0269s/iter; left time: 76.5094s
+	speed: 0.0269s/iter; left time: 73.8158s
+	speed: 0.0269s/iter; left time: 71.1428s
+	speed: 0.0269s/iter; left time: 68.5002s
+	speed: 0.0269s/iter; left time: 65.8121s
+	speed: 0.0269s/iter; left time: 63.2326s
+	speed: 0.0269s/iter; left time: 60.3940s
+	speed: 0.0269s/iter; left time: 57.7112s
+	speed: 0.0269s/iter; left time: 54.9772s
+	speed: 0.0269s/iter; left time: 52.3334s
+	speed: 0.0269s/iter; left time: 49.6542s
+	speed: 0.0269s/iter; left time: 46.9674s
+	speed: 0.0269s/iter; left time: 44.2685s
+	speed: 0.0268s/iter; left time: 41.3867s
+	speed: 0.0268s/iter; left time: 38.8092s
+	speed: 0.0268s/iter; left time: 36.1333s
+	speed: 0.0268s/iter; left time: 33.4433s
+	speed: 0.0268s/iter; left time: 30.7291s
+	speed: 0.0268s/iter; left time: 28.0590s
+	speed: 0.0268s/iter; left time: 25.3349s
+	speed: 0.0268s/iter; left time: 22.7244s
+	speed: 0.0270s/iter; left time: 20.1330s
+	speed: 0.0269s/iter; left time: 17.3743s
+	speed: 0.0268s/iter; left time: 14.6602s
+	speed: 0.0268s/iter; left time: 12.0001s
+	speed: 0.0269s/iter; left time: 9.3285s
+	speed: 0.0269s/iter; left time: 6.6345s
+	speed: 0.0269s/iter; left time: 3.9514s
+	speed: 0.0268s/iter; left time: 1.2606s
+2025-11-02 09:56:06,671 - INFO - 训练完成!
+2025-11-02 09:56:06,671 - INFO - 开始测试模型...
+Epoch: 1, Cost time: 352.379s 
+Loading checkpoint from: checkpoints_e_layers_analysis/pcb_e_layers5_20251102_095010/pcb_cleaned_1minut_20250928_161509_checkpoint_2025-11-02_09-56-06/model.pth
+Threshold : 0.9999902248382568
+2025-11-02 09:57:51,351 - INFO - 测试完成!
+pa_accuracy           : 0.9648
+pa_precision          : 0.3382
+pa_recall             : 0.7053
+pa_f_score            : 0.4572
+MCC_score             : 0.4734
+Affiliation precision : 0.5137
+Affiliation recall    : 0.9055
+R_AUC_ROC             : 0.6310
+R_AUC_PR              : 0.3693
+VUS_ROC               : 0.6422
+VUS_PR                : 0.3780
+Accuracy : 0.9648, Precision : 0.3382, Recall : 0.7053, F-score : 0.4572 
+Test results saved to: checkpoints_e_layers_analysis/pcb_e_layers5_20251102_095010/pcb_cleaned_1minut_20250928_161509_checkpoint_2025-11-02_09-56-06/result.json
+/home/wanting/KDD2023-DCdetector/venv/lib/python3.12/site-packages/tsfresh/__init__.py:12: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+2025-11-02 09:57:53,601 - INFO - 开始使用自定义数据集运行DCdetector...
+2025-11-02 09:57:53,602 - INFO - 数据集: Custom
+2025-11-02 09:57:53,602 - INFO - 输入特征维度: 31
+2025-11-02 09:57:53,602 - INFO - 窗口大小: 30
+2025-11-02 09:57:53,602 - INFO - 批次大小: 32
+2025-11-02 09:57:55,313 - INFO - 开始训练模型...
+[onlyNormalData=True] 训练集过滤异常数据: 408340 行 -> 391922 行 (移除 16418 个异常样本)
+数据加载自: dataset/downsampleData_scratch_1minut/pcb/pcb_cleaned_1minut_20250928_161509.parquet
+训练集形状: (391922, 31)
+验证集形状: (87502, 31)
+测试集形状: (87502, 31)
+特征维度: 31
+异常比例（行级）:
+- 训练集: 原始 4.02% -> 现有 0.00%
+- 验证集: 1.52%
+- 测试集: 2.10%
+[onlyNormalData=True] 训练集过滤异常数据: 408340 行 -> 391922 行 (移除 16418 个异常样本)
+数据加载自: dataset/downsampleData_scratch_1minut/pcb/pcb_cleaned_1minut_20250928_161509.parquet
+训练集形状: (391922, 31)
+验证集形状: (87502, 31)
+测试集形状: (87502, 31)
+特征维度: 31
+异常比例（行级）:
+- 训练集: 原始 4.02% -> 现有 0.00%
+- 验证集: 1.52%
+- 测试集: 2.10%
+[onlyNormalData=True] 训练集过滤异常数据: 408340 行 -> 391922 行 (移除 16418 个异常样本)
+数据加载自: dataset/downsampleData_scratch_1minut/pcb/pcb_cleaned_1minut_20250928_161509.parquet
+训练集形状: (391922, 31)
+验证集形状: (87502, 31)
+测试集形状: (87502, 31)
+特征维度: 31
+异常比例（行级）:
+- 训练集: 原始 4.02% -> 现有 0.00%
+- 验证集: 1.52%
+- 测试集: 2.10%
+[onlyNormalData=True] 训练集过滤异常数据: 408340 行 -> 391922 行 (移除 16418 个异常样本)
+数据加载自: dataset/downsampleData_scratch_1minut/pcb/pcb_cleaned_1minut_20250928_161509.parquet
+训练集形状: (391922, 31)
+验证集形状: (87502, 31)
+测试集形状: (87502, 31)
+特征维度: 31
+异常比例（行级）:
+- 训练集: 原始 4.02% -> 现有 0.00%
+- 验证集: 1.52%
+- 测试集: 2.10%
+	speed: 0.0394s/iter; left time: 478.6231s
+	speed: 0.0361s/iter; left time: 435.2201s
+	speed: 0.0362s/iter; left time: 432.1348s
+	speed: 0.0361s/iter; left time: 428.1785s
+	speed: 0.0361s/iter; left time: 424.0304s
+	speed: 0.0361s/iter; left time: 420.5966s
+	speed: 0.0361s/iter; left time: 417.0357s
+	speed: 0.0361s/iter; left time: 413.7946s
+	speed: 0.0361s/iter; left time: 409.8095s
+	speed: 0.0361s/iter; left time: 405.5372s
+	speed: 0.0361s/iter; left time: 402.6010s
+	speed: 0.0361s/iter; left time: 399.3218s
+	speed: 0.0361s/iter; left time: 395.1588s
+	speed: 0.0361s/iter; left time: 391.2764s
+	speed: 0.0360s/iter; left time: 387.3879s
+	speed: 0.0361s/iter; left time: 383.9092s
+	speed: 0.0363s/iter; left time: 382.8341s
+	speed: 0.0360s/iter; left time: 376.1657s
+	speed: 0.0360s/iter; left time: 372.7200s
+	speed: 0.0361s/iter; left time: 369.7633s
+	speed: 0.0361s/iter; left time: 366.1743s
+	speed: 0.0359s/iter; left time: 360.9200s
+	speed: 0.0359s/iter; left time: 357.3968s
+	speed: 0.0361s/iter; left time: 355.0110s
+	speed: 0.0361s/iter; left time: 351.7023s
+	speed: 0.0361s/iter; left time: 347.9866s
+	speed: 0.0360s/iter; left time: 343.7311s
+	speed: 0.0361s/iter; left time: 340.9200s
+	speed: 0.0360s/iter; left time: 336.5811s
+	speed: 0.0360s/iter; left time: 333.3424s
+	speed: 0.0360s/iter; left time: 329.7105s
+	speed: 0.0360s/iter; left time: 325.9630s
+	speed: 0.0360s/iter; left time: 322.4939s
+	speed: 0.0360s/iter; left time: 318.3512s
+	speed: 0.0359s/iter; left time: 314.4206s
+	speed: 0.0360s/iter; left time: 311.2877s
+	speed: 0.0360s/iter; left time: 307.9135s
+	speed: 0.0361s/iter; left time: 304.5992s
+	speed: 0.0360s/iter; left time: 300.4094s
+	speed: 0.0360s/iter; left time: 296.9196s
+	speed: 0.0361s/iter; left time: 293.9221s
+	speed: 0.0360s/iter; left time: 289.3984s
+	speed: 0.0360s/iter; left time: 286.0308s
+	speed: 0.0360s/iter; left time: 282.8183s
+	speed: 0.0358s/iter; left time: 276.9773s
+	speed: 0.0359s/iter; left time: 274.4196s
+	speed: 0.0360s/iter; left time: 271.9102s
+	speed: 0.0359s/iter; left time: 266.9753s
+	speed: 0.0356s/iter; left time: 261.5889s
+	speed: 0.0358s/iter; left time: 259.5147s
+	speed: 0.0359s/iter; left time: 256.4448s
+	speed: 0.0359s/iter; left time: 252.6422s
+	speed: 0.0359s/iter; left time: 249.3259s
+	speed: 0.0360s/iter; left time: 246.4465s
+	speed: 0.0360s/iter; left time: 243.0732s
+	speed: 0.0358s/iter; left time: 237.8210s
+	speed: 0.0359s/iter; left time: 234.8603s
+	speed: 0.0359s/iter; left time: 231.5498s
+	speed: 0.0359s/iter; left time: 228.0295s
+	speed: 0.0359s/iter; left time: 224.1818s
+	speed: 0.0360s/iter; left time: 221.0075s
+	speed: 0.0359s/iter; left time: 216.8935s
+	speed: 0.0360s/iter; left time: 214.2962s
+	speed: 0.0359s/iter; left time: 210.0717s
+	speed: 0.0359s/iter; left time: 206.1995s
+	speed: 0.0359s/iter; left time: 202.8490s
+	speed: 0.0360s/iter; left time: 199.6783s
+	speed: 0.0360s/iter; left time: 196.1884s
+	speed: 0.0358s/iter; left time: 191.6774s
+	speed: 0.0359s/iter; left time: 188.3055s
+	speed: 0.0359s/iter; left time: 184.6213s
+	speed: 0.0359s/iter; left time: 181.3718s
+	speed: 0.0358s/iter; left time: 177.2536s
+	speed: 0.0359s/iter; left time: 173.8395s
+	speed: 0.0358s/iter; left time: 169.7062s
+	speed: 0.0361s/iter; left time: 167.6117s
+	speed: 0.0359s/iter; left time: 163.1455s
+	speed: 0.0359s/iter; left time: 159.6670s
+	speed: 0.0360s/iter; left time: 156.5999s
+	speed: 0.0360s/iter; left time: 152.9131s
+	speed: 0.0360s/iter; left time: 149.2415s
+	speed: 0.0360s/iter; left time: 145.7660s
+	speed: 0.0360s/iter; left time: 142.0992s
+	speed: 0.0360s/iter; left time: 138.6150s
+	speed: 0.0361s/iter; left time: 135.0923s
+	speed: 0.0360s/iter; left time: 131.4646s
+	speed: 0.0359s/iter; left time: 127.4816s
+	speed: 0.0358s/iter; left time: 123.3315s
+	speed: 0.0359s/iter; left time: 120.0625s
+	speed: 0.0359s/iter; left time: 116.6444s
+	speed: 0.0360s/iter; left time: 113.2268s
+	speed: 0.0358s/iter; left time: 109.2146s
+	speed: 0.0358s/iter; left time: 105.5746s
+	speed: 0.0360s/iter; left time: 102.4435s
+	speed: 0.0359s/iter; left time: 98.6732s
+	speed: 0.0360s/iter; left time: 95.1722s
+	speed: 0.0360s/iter; left time: 91.6089s
+	speed: 0.0359s/iter; left time: 87.7796s
+	speed: 0.0359s/iter; left time: 84.3344s
+	speed: 0.0360s/iter; left time: 80.9036s
+	speed: 0.0360s/iter; left time: 77.3498s
+	speed: 0.0360s/iter; left time: 73.6519s
+	speed: 0.0360s/iter; left time: 70.1114s
+	speed: 0.0359s/iter; left time: 66.3844s
+	speed: 0.0359s/iter; left time: 62.7345s
+	speed: 0.0360s/iter; left time: 59.2733s
+	speed: 0.0360s/iter; left time: 55.6519s
+	speed: 0.0360s/iter; left time: 52.0412s
+	speed: 0.0360s/iter; left time: 48.4678s
+	speed: 0.0359s/iter; left time: 44.7706s
+	speed: 0.0360s/iter; left time: 41.2723s
+	speed: 0.0360s/iter; left time: 37.7378s
+	speed: 0.0359s/iter; left time: 34.0394s
+	speed: 0.0359s/iter; left time: 30.4235s
+	speed: 0.0359s/iter; left time: 26.8250s
+	speed: 0.0360s/iter; left time: 23.2681s
+	speed: 0.0360s/iter; left time: 19.6746s
+	speed: 0.0358s/iter; left time: 16.0168s
+	speed: 0.0358s/iter; left time: 12.4250s
+	speed: 0.0358s/iter; left time: 8.8537s
+	speed: 0.0359s/iter; left time: 5.2759s
+	speed: 0.0357s/iter; left time: 1.6797s
+2025-11-02 10:05:47,057 - INFO - 训练完成!
+2025-11-02 10:05:47,058 - INFO - 开始测试模型...
+Epoch: 1, Cost time: 471.719s 
+Loading checkpoint from: checkpoints_e_layers_analysis/pcb_e_layers7_20251102_095751/pcb_cleaned_1minut_20250928_161509_checkpoint_2025-11-02_10-05-47/model.pth
+Threshold : 1.0
+2025-11-02 10:08:02,680 - INFO - 测试完成!
+pa_accuracy           : 0.9790
+pa_precision          : 0.0000
+pa_recall             : 0.0000
+pa_f_score            : 0.0000
+MCC_score             : nan
+Affiliation precision : nan
+Affiliation recall    : 0.0000
+R_AUC_ROC             : 0.5261
+R_AUC_PR              : 0.5591
+VUS_ROC               : 0.5246
+VUS_PR                : 0.5559
+Accuracy : 0.9790, Precision : 0.0000, Recall : 0.0000, F-score : 0.0000 
+Test results saved to: checkpoints_e_layers_analysis/pcb_e_layers7_20251102_095751/pcb_cleaned_1minut_20250928_161509_checkpoint_2025-11-02_10-05-47/result.json
+Running: ring | e_layers=7
+================================================================================
+Command: python run_custom_dataset.py --dataset Custom --data_path dataset/downsampleData_scratch_1minut/ring/Ring_cleaned_1minut_20250928_170147.parquet --num_epochs 1 --win_size 30 --batch_size 32 --mode train --input_c 28 --output_c 28 --lr 0.0001 --anormly_ratio 3.0 --index 0 --patience 3 --patch_size 3,6,10 --n_heads 7 --d_model 256 --e_layers 7 --d_ff 512 --activation gelu --output_attention True --model_save_path checkpoints_e_layers_analysis/ring_e_layers7_20251102_093241
+================================================================================
+
+
+✓ Results: Precision=0.4933, Recall=0.6610, F-score=0.5650
+
+################################################################################
+# Experiment 9/12
+# Dataset: pcb, e_layers: 1
+################################################################################
+
+
+================================================================================
+Running: pcb | e_layers=1
+================================================================================
+Command: python run_custom_dataset.py --dataset Custom --data_path dataset/downsampleData_scratch_1minut/pcb/pcb_cleaned_1minut_20250928_161509.parquet --num_epochs 1 --win_size 30 --batch_size 32 --mode train --input_c 31 --output_c 31 --lr 0.0001 --anormly_ratio 3.0 --index 0 --patience 3 --patch_size 3,6,10 --n_heads 7 --d_model 256 --e_layers 1 --d_ff 512 --activation gelu --output_attention True --model_save_path checkpoints_e_layers_analysis/pcb_e_layers1_20251102_094219
+================================================================================
+
+
+✓ Results: Precision=0.3049, Recall=0.6084, F-score=0.4062
+
+################################################################################
+# Experiment 10/12
+# Dataset: pcb, e_layers: 3
+################################################################################
+
+
+================================================================================
+Running: pcb | e_layers=3
+================================================================================
+Command: python run_custom_dataset.py --dataset Custom --data_path dataset/downsampleData_scratch_1minut/pcb/pcb_cleaned_1minut_20250928_161509.parquet --num_epochs 1 --win_size 30 --batch_size 32 --mode train --input_c 31 --output_c 31 --lr 0.0001 --anormly_ratio 3.0 --index 0 --patience 3 --patch_size 3,6,10 --n_heads 7 --d_model 256 --e_layers 3 --d_ff 512 --activation gelu --output_attention True --model_save_path checkpoints_e_layers_analysis/pcb_e_layers3_20251102_094500
+================================================================================
+
+
+✓ Results: Precision=0.3184, Recall=0.6471, F-score=0.4268
+
+################################################################################
+# Experiment 11/12
+# Dataset: pcb, e_layers: 5
+################################################################################
+
+
+================================================================================
+Running: pcb | e_layers=5
+================================================================================
+Command: python run_custom_dataset.py --dataset Custom --data_path dataset/downsampleData_scratch_1minut/pcb/pcb_cleaned_1minut_20250928_161509.parquet --num_epochs 1 --win_size 30 --batch_size 32 --mode train --input_c 31 --output_c 31 --lr 0.0001 --anormly_ratio 3.0 --index 0 --patience 3 --patch_size 3,6,10 --n_heads 7 --d_model 256 --e_layers 5 --d_ff 512 --activation gelu --output_attention True --model_save_path checkpoints_e_layers_analysis/pcb_e_layers5_20251102_095010
+================================================================================
+
+
+✓ Results: Precision=0.3382, Recall=0.7053, F-score=0.4572
+
+################################################################################
+# Experiment 12/12
+# Dataset: pcb, e_layers: 7
+################################################################################
+
+
+================================================================================
+Running: pcb | e_layers=7
+================================================================================
+Command: python run_custom_dataset.py --dataset Custom --data_path dataset/downsampleData_scratch_1minut/pcb/pcb_cleaned_1minut_20250928_161509.parquet --num_epochs 1 --win_size 30 --batch_size 32 --mode train --input_c 31 --output_c 31 --lr 0.0001 --anormly_ratio 3.0 --index 0 --patience 3 --patch_size 3,6,10 --n_heads 7 --d_model 256 --e_layers 7 --d_ff 512 --activation gelu --output_attention True --model_save_path checkpoints_e_layers_analysis/pcb_e_layers7_20251102_095751
+================================================================================
+
+
+✓ Results: Precision=0.0000, Recall=0.0000, F-score=0.0000
+
+Saving results...
+Results saved to JSON: experiments/results/e_layers_results.json
+
+Generating plots...
+
+================================================================================
+Plot saved:
+  PNG: experiments/results/e_layers_f1_scores.png
+  PDF: experiments/results/e_layers_f1_scores.pdf
+================================================================================
+
+
+================================================================================
+ANALYSIS COMPLETE!
+================================================================================
+All results saved in: experiments/results
+================================================================================
+

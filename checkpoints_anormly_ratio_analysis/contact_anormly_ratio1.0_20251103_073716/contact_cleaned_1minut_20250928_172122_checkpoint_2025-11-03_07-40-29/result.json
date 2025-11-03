@@ -1,0 +1,22 @@
+{
+  "threshold": 1.0,
+  "metrics": {
+    "pa_accuracy": 0.9492931547619048,
+    "pa_precision": 0.0,
+    "pa_recall": 0.0,
+    "pa_f_score": 0.0,
+    "MCC_score": NaN,
+    "Affiliation precision": NaN,
+    "Affiliation recall": 0.0,
+    "R_AUC_ROC": 0.5483871216236555,
+    "R_AUC_PR": 0.6091146225538101,
+    "VUS_ROC": 0.5453896472505269,
+    "VUS_PR": 0.602768652618845
+  },
+  "summary": {
+    "accuracy": 0.9492931547619048,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f_score": 0.0
+  }
+}
