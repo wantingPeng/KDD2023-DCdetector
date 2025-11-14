@@ -196,10 +196,10 @@ def print_results_table(results, patch_size_order):
 
 if __name__ == "__main__":
     # 结果文件路径
-    results_path = '/home/wanting/KDD2023-DCdetector/experiments/results/patch_size_results.json'
+    results_path = 'experiments/results_pca/patch_size_results.json'
     
     # 输出目录
-    output_dir = '/home/wanting/KDD2023-DCdetector/experiments/results'
+    output_dir = '/home/wanting/KDD2023-DCdetector/experiments/results_pca'
     
     print("="*80)
     print("Patch Size 参数分析结果可视化")

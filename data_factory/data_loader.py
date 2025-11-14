@@ -10,6 +10,7 @@ import numbers
 import math
 import pandas as pd
 from sklearn.preprocessing import StandardScaler
+from sklearn.decomposition import PCA
 import pickle
 
 
@@ -507,14 +508,18 @@ class CustomSegLoader(object):
     可通过修改类内参数控制训练集异常处理策略：
     - downsample=False: 是否通过下采样正常样本，将训练集异常比例调整到20%
     - onlyNormalData=True: 是否仅保留训练集中的正常数据（过滤掉所有异常标签）
+    - use_pca=False: 是否使用PCA降维（仅在训练集上fit，对val/test仅transform）
+    - pca_n_components=None: PCA降维维度（整数=具体维度，0-1浮点数=保留方差比例，None=保留所有成分）
     
     注意：验证集和测试集始终保持原始分布，不受这两个参数影响。
+    PCA仅在训练集上拟合，对验证集和测试集仅进行transform。
     """
     def __init__(self, data_path, win_size, step, mode="train"):
         self.mode = mode
         self.step = step
         self.win_size = win_size
         self.scaler = StandardScaler()
+        self.pca = None
 
         # 直接使用传入的 Parquet 完整路径
         if not (isinstance(data_path, str) and data_path.endswith('.parquet') and os.path.isfile(data_path)):
@@ -549,6 +554,8 @@ class CustomSegLoader(object):
         # 控制参数
         downsample = False  # 是否通过下采样调整异常比例到20%
         onlyNormalData = True  # 是否仅保留训练集中的正常数据（标签=0）
+        use_pca = True  # 是否使用PCA降维（仅在训练集上fit，对val/test仅transform）
+        pca_n_components = 10  # PCA降维维度：整数=具体维度，0-1浮点数=保留方差比例，None=保留所有成分
         
         # 参数冲突检查
         if downsample and onlyNormalData:
@@ -609,6 +616,29 @@ class CustomSegLoader(object):
         self.train = self.scaler.transform(train_X)
         self.val = self.scaler.transform(val_X)
         self.test = self.scaler.transform(test_X)
+        
+        # PCA降维（仅在训练集上拟合，对val/test仅transform）
+        # 注意：PCA只改变特征维度（列），不改变时间维度（行），因此不会影响标签对应关系
+        if use_pca:
+            print(f"\n[PCA降维] 启用")
+            print(f"  n_components={pca_n_components}")
+            print(f"  PCA前特征维度: {self.train.shape[1]}")
+            
+            # 初始化并仅在训练集上拟合PCA
+            self.pca = PCA(n_components=pca_n_components)
+            self.pca.fit(self.train)
+            
+            # 对所有集合进行transform（保持时间维度不变，只改变特征维度）
+            self.train = self.pca.transform(self.train)
+            self.val = self.pca.transform(self.val)
+            self.test = self.pca.transform(self.test)
+            
+            print(f"  PCA后特征维度: {self.train.shape[1]}")
+            print(f"  解释方差比（前10个）: {self.pca.explained_variance_ratio_[:min(10, len(self.pca.explained_variance_ratio_))]}")
+            print(f"  累积解释方差: {np.sum(self.pca.explained_variance_ratio_):.4f}")
+            print(f"  时间点数量: train={self.train.shape[0]}, val={self.val.shape[0]}, test={self.test.shape[0]} (未改变)")
+            print(f"[PCA降维] 完成")
+
 
         # 打印数据形状与异常比例
         print(f"数据加载自: {parquet_file}")

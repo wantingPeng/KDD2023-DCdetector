@@ -32,7 +32,7 @@ PARAM_VALUES = {
     'n_heads': [1, 3, 5,7,9,11],
     'e_layers': [1,3,5,7],
     'anormly_ratio': [1.0, 2.0, 3.0, 4.0, 5.0, 6.0],
-    'patch_size': ['3', '3,6', '3,6,10'],
+    'patch_size': ['3', '3,6', '3,6,10','3,6,10,15'],
     'd_model': [128, 256, 512,1024]
 }
 
@@ -42,14 +42,14 @@ FIXED_PARAMS = {
     'batch_size': 32,
     'lr': 1e-4,
     'win_size': 30,
-    'n_heads': 7,
+    'n_heads': 1,
     'e_layers': 3,
     'patch_size': '3,6,10',
     'anormly_ratio': 3.0
 }
 
 # Output configuration
-OUTPUT_DIR = 'experiments/results'
+OUTPUT_DIR = 'experiments/results_pca'
 PLOT_STYLE = 'seaborn-v0_8-darkgrid'
 
 # ============================================================================
@@ -59,18 +59,18 @@ PLOT_STYLE = 'seaborn-v0_8-darkgrid'
 DATASET_CONFIGS = {
      'contact': {
          'data_path': 'dataset/downsampleData_scratch_1minut/contact/contact_cleaned_1minut_20250928_172122.parquet',
-         'input_c': 27,
-         'output_c': 27,
+         'input_c': 10,
+         'output_c': 10,
      },
     'ring': {
         'data_path': 'dataset/downsampleData_scratch_1minut/ring/Ring_cleaned_1minut_20250928_170147.parquet',
-        'input_c': 28,
-        'output_c': 28,
+        'input_c': 10,
+        'output_c': 10,
     },
      'pcb': {
          'data_path': 'dataset/downsampleData_scratch_1minut/pcb/pcb_cleaned_1minut_20250928_161509.parquet',
-         'input_c': 31,
-         'output_c': 31,
+         'input_c': 10,
+         'output_c': 10,
      }
 }
 
@@ -118,7 +118,7 @@ def run_single_experiment(dataset_name, param_name, param_value, fixed_params):
     
     # Create unique model save path
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    model_save_path = f'checkpoints_{param_name}_analysis/{dataset_name}_{param_name}{param_value}_{timestamp}'
+    model_save_path = f'checkpoints2_{param_name}_analysis/{dataset_name}_{param_name}{param_value}_{timestamp}'
     
     # Build parameters dictionary
     params = fixed_params.copy()

@@ -19,7 +19,7 @@ python run_custom_dataset.py \
     --output_c 27 \
     --batch_size 32 \
     --lr 1e-4 \
-    --num_epochs 1 \
+    --num_epochs 10 \
     --patience 3 \
     --anormly_ratio 3.0 \
     --mode train \
