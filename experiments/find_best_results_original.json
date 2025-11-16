@@ -1,0 +1,27 @@
+{
+  "checkpoint_dir": "experiments/checkpoints/original",
+  "timestamp": "20251116_090832",
+  "best_results": {
+    "contact": {
+      "file_path": "experiments/checkpoints/original/checkpoints_d_model_analysis/contact_d_model256_20251103_125720/contact_cleaned_1minut_20250928_172122_checkpoint_2025-11-03_13-04-28/result.json",
+      "precision": 0.5599462881258392,
+      "recall": 0.7138664710198093,
+      "f_score": 0.6276069662438185,
+      "accuracy": 0.9570436507936508
+    },
+    "ring": {
+      "file_path": "experiments/checkpoints/original/checkpoints_patch_size_analysis/ring_patch_size3,6,10_20251103_064111/Ring_cleaned_1minut_20250928_170147_checkpoint_2025-11-03_06-47-13/result.json",
+      "precision": 0.4958958958958959,
+      "recall": 0.6734638390429581,
+      "f_score": 0.5711979707137093,
+      "accuracy": 0.9574290293040293
+    },
+    "pcb": {
+      "file_path": "experiments/checkpoints/original/checkpoints_d_model_analysis/pcb_d_model128_20251103_142630/pcb_cleaned_1minut_20250928_161509_checkpoint_2025-11-03_14-35-03/result.json",
+      "precision": 0.33980582524271846,
+      "recall": 0.724400871459695,
+      "f_score": 0.46260869565217394,
+      "accuracy": 0.9646291208791209
+    }
+  }
+}

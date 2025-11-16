@@ -21,16 +21,16 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 # ============================================================================
 
 # Select which parameter to analyze (choose one: 'win_size', 'k', 'anormly_ratio')
-PARAM_TO_ANALYZE = 'd_model'  # Change this to 'k' or 'anormly_ratio' for other analyses
+PARAM_TO_ANALYZE = 'e_layers'  # Change this to 'k' or 'anormly_ratio' for other analyses
 
 # Datasets to test
-DATASETS = ['contact', 'ring', 'pcb']
+DATASETS = ['contact','ring','pcb']
 
 # Parameter values to test (modify based on PARAM_TO_ANALYZE)
 PARAM_VALUES = {
     'win_size': [30, 60, 90, 120, 150],
     'n_heads': [1, 3, 5,7,9,11],
-    'e_layers': [1,3,5,7],
+    'e_layers': [3,5,7,9,11],
     'anormly_ratio': [1.0, 2.0, 3.0, 4.0, 5.0, 6.0],
     'patch_size': ['3', '3,6', '3,6,10','3,6,10,15'],
     'd_model': [128, 256, 512,1024]
@@ -49,12 +49,30 @@ FIXED_PARAMS = {
 }
 
 # Output configuration
-OUTPUT_DIR = 'experiments/results_pca'
+OUTPUT_DIR = 'experiments/results1'
 PLOT_STYLE = 'seaborn-v0_8-darkgrid'
 
 # ============================================================================
 # DATASET CONFIGURATIONS
 # ============================================================================
+
+# DATASET_CONFIGS = {
+#      'contact': {
+#          'data_path': 'dataset/downsampleData_scratch_1minut/contact/contact_cleaned_1minut_20250928_172122.parquet',
+#          'input_c': 27,
+#          'output_c': 27,
+#      },
+#     'ring': {
+#         'data_path': 'dataset/downsampleData_scratch_1minut/ring/Ring_cleaned_1minut_20250928_170147.parquet',
+#         'input_c': 28,
+#         'output_c': 28,
+#     },
+#      'pcb': {
+#          'data_path': 'dataset/downsampleData_scratch_1minut/pcb/pcb_cleaned_1minut_20250928_161509.parquet',
+#          'input_c': 31,
+#          'output_c': 31,
+#      }
+# }
 
 DATASET_CONFIGS = {
      'contact': {
@@ -118,7 +136,7 @@ def run_single_experiment(dataset_name, param_name, param_value, fixed_params):
     
     # Create unique model save path
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    model_save_path = f'checkpoints2_{param_name}_analysis/{dataset_name}_{param_name}{param_value}_{timestamp}'
+    model_save_path = f'checkpoints2_{param_name}_analysis/{dataset_name}_{param_name}{param_value}_{timestamp}_pca'
     
     # Build parameters dictionary
     params = fixed_params.copy()
