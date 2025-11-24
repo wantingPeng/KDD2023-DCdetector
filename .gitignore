@@ -5,3 +5,6 @@ __pycache__/
 dataset/
 checkpoints
 experiments/checkpoints
+experiments/logs
+*.json
+*.pth

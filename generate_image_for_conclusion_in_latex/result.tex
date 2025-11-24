@@ -1,0 +1,120 @@
+\section{Summary of Experimental Results}
+
+
+\begin{table}[htbp]
+    \centering
+    \caption{Machine Learning Models Performance (F1 Diff = Statistical F1 - Downsampling F1).}
+    \begin{tabular}{l|l|ccc|ccc|c}
+        \hline
+        \multirow{2}{*}{Model} & \multirow{2}{*}{Dataset} & \multicolumn{3}{c|}{Original Dataset} & \multicolumn{3}{c|}{Statistical Features (1024s)} & \multirow{2}{*}{F1 Diff} \\
+        \cline{3-8}
+        & & F1 & Precision & Recall & F1 & Precision & Recall & \\
+        \hline
+        \multirow{3}{*}{Random Forest} & Contact & 0.4775 & 0.5452 & 0.4248 & 0.4995 & 0.6128 & 0.4216 & +0.0220 \\
+                                       & Ring    & 0.4693 & 0.3985 & 0.5707 & 0.4363 & 0.4443 & 0.4286 & -0.0330 \\
+                                       & PCB     & 0.3123 & 0.2792 & 0.3543 & 0.3164 & 0.4320 & 0.2496 & +0.0041 \\
+        \hline
+        \multirow{3}{*}{XGBoost} & Contact & 0.5279 & 0.5819 & 0.4830 & 0.5030 & 0.5500 & 0.4630 & -0.0249 \\
+                                 & Ring    & 0.4121 & 0.3488 & 0.5035 & 0.4260 & 0.3730 & 0.4980 & +0.0139 \\
+                                 & PCB     & 0.3156 & 0.3421 & 0.2930 & 0.3320 & 0.3250 & 0.3390 & +0.0164 \\
+        \hline
+    \end{tabular}
+    \label{tab:ml_performance}
+\end{table}
+
+\begin{table}[htbp]
+    \centering
+    \caption{Deep Learning Models Performance (F1 Diff = PCA F1 - Original F1).}
+    \begin{tabular}{l|l|ccc|ccc|c}
+        \hline
+        \multirow{2}{*}{Model} & \multirow{2}{*}{Dataset} & \multicolumn{3}{c|}{Original Dataset} & \multicolumn{3}{c|}{PCA Dataset} & \multirow{2}{*}{F1 Diff} \\
+        \cline{3-8}
+        & & F1 & Precision & Recall & F1 & Precision & Recall & \\
+        \hline
+        \multirow{3}{*}{PatchTST} & Contact & 0.5635 & 0.5017 & 0.6427 & 0.5561 & 0.5065 & 0.6165 & -0.0074 \\
+                                  & Ring    & 0.5266 & 0.4591 & 0.6175 & 0.5224 & 0.4424 & 0.6378 & -0.0042 \\
+                                  & PCB     & 0.3990 & 0.3148 & 0.5447 & 0.3988 & 0.3228 & 0.5218 & -0.0002 \\
+        \hline
+        \multirow{3}{*}{DCdetector} & Contact & 0.6276 & 0.5599 & 0.7139 & 0.6325 & 0.5529 & 0.7391 & +0.0049 \\
+                                    & Ring    & 0.5712 & 0.4959 & 0.6735 & 0.5402 & 0.5015 & 0.5854 & -0.0310 \\
+                                    & PCB     & 0.4626 & 0.3398 & 0.7244 & 0.4085 & 0.3052 & 0.6176 & -0.0541 \\
+        \hline
+        \multirow{3}{*}{Anomaly-Transformer} & Contact & 0.6176 & 0.5316 & 0.7369 & 0.6176 & 0.5345 & 0.7312 & 0.0000 \\
+                                             & Ring    & 0.5561 & 0.4666 & 0.6881 & 0.5371 & 0.4597 & 0.6457 & -0.0190 \\
+                                             & PCB     & 0.4233 & 0.3044 &0.6944 & 0.4192 & 0.3023 & 0.6836 & +0.0069 \\
+        \hline
+        \multirow{3}{*}{DLinear}  & Contact & 0.5294 & 0.4751 & 0.5977 & 0.5195 & 0.4644 & 0.5894 & -0.0099 \\
+                                  & Ring    & 0.5492 & 0.5018 & 0.6066 & 0.5571 & 0.5390 & 0.5764 & +0.0079 \\
+                                  & PCB     & 0.4944 & 0.4234 & 0.5942 & 0.5037 & 0.4341 & 0.5997 & +0.0093 \\
+        \hline
+    \end{tabular}
+    \label{tab:dl_performance}
+\end{table}
+
+
+\subsubsection{Best Performing Models by Dataset}
+
+\paragraph{Contact Dataset.}
+Original: DCdetector (F1: 0.6276). PCA: DCdetector (F1: 0.6325).
+
+\paragraph{Ring Dataset.}
+Original: DCdetector (F1: 0.5712). PCA: DLinear (F1: 0.5571).
+
+\paragraph{PCB Dataset.}
+Original: DLinear (F1: 0.4944). PCA: DLinear (F1: 0.5037).
+
+\paragraph{DCdetector Performance and Contrastive Learning Advantage.}
+DCdetector achieves the highest F1-scores on Contact dataset for both original (0.6276) and PCA-transformed (0.6325) versions, and leads on Ring dataset with original data (0.5712). This performance on Contact dataset can be attributed to several factors rooted in the model's architectural principles. DCdetector employs dual-attention contrastive representation learning, which relies on contrasting normal and anomalous patterns to learn discriminative features. The Contact dataset's relatively higher anomaly ratio (5-6\%) provides sufficient positive samples for effective contrastive learning, enabling the model to better distinguish between normal and anomalous temporal patterns. However, DCdetector shows substantial performance degradation on PCA-transformed data. This degradation can be explained by DCdetector's architecture relies on high-dimensional feature interactions to capture complex temporal patterns, and PCA's dimensionality reduction eliminates subtle but discriminative features that are crucial for detecting rare anomalies in severely imbalanced datasets.
+
+\paragraph{DLinear Performance and Linear Decomposition Advantage.}
+DLinear behaves differently from the two transformer-based models: while it is not the best on Contact (F1 = 0.5294), it becomes competitive on Ring (0.5492) and achieves the best scores on PCB (0.4944 on original, 0.5037 after PCA). Its architecture decomposes each series into trend and residual components via moving averages and then applies a simple linear mapping. On the PCB test dataset, where anomaly ratios are around 2\% and the t-SNE plot shows heavy overlap between classes, complex non-linear models risk overfitting subtle noise patterns that do not generalize, whereas DLinear's linear bias acts as a strong regularizer and yields more stable decision boundaries, reflected in relatively balanced precision (0.4234) and recall (0.5942). The fact that PCA further improves DLinear on Ring and PCB (F1 Diff of $+0.0079$ and $+0.0093$) but slightly harms Contact ($-0.0099$) suggests that for the more challenging, highly overlapping datasets, removing noisy and redundant dimensions makes the linear assumptions more accurate, while on the easier Contact dataset some useful non-linear structure is lost by projection.
+
+
+
+
+
+
+\subsection{Performance Visualization}
+
+This subsection presents visual comparisons of model performance across different datasets and evaluation metrics. The figures illustrate the trade-offs between precision and recall, as well as the overall F1-score performance for each model on both original and PCA-transformed datasets.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.95\textwidth]{conclusion/contact_metrics_comparison.png}
+    \caption{Performance comparison of four models on Contact dataset. Left panel shows results on original dataset, right panel shows results on PCA-transformed dataset.}
+    \label{fig:contact_metrics}
+\end{figure}
+
+
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.95\textwidth]{conclusion/ring_metrics_comparison.png}
+    \caption{Performance comparison of four models on Ring dataset. Left panel shows results on original dataset, right panel shows results on PCA-transformed dataset.}
+    \label{fig:ring_metrics}
+\end{figure}
+
+
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.95\textwidth]{conclusion/pcb_metrics_comparison.png}
+    \caption{Performance comparison of four models on PCB dataset. Left panel shows results on original dataset, right panel shows results on PCA-transformed dataset.}
+    \label{fig:pcb_metrics}
+\end{figure}
+
+
+\subsubsection{Precision-Recall Trade-offs}
+\paragraph{High Recall Models.}
+Anomaly-Transformer and DCdetector consistently achieve higher recall values, often exceeding 0.65. On the Contact dataset, both models achieve recall above 0.71, making them suitable for applications where detecting all anomalies is critical, even at the cost of increased false positives. The high recall characteristic is particularly valuable in manufacturing quality control where missing defects can lead to costly downstream issues.
+
+\paragraph{Balanced Performance.}
+DLinear demonstrates more balanced precision-recall characteristics, with precision values ranging from 0.4234 to 0.5390. This balance makes it suitable for applications with relatively equal costs for false positives and false negatives. The model's consistent performance across metrics suggests stable decision boundaries.
+
+\paragraph{Precision Challenges.}
+All models show lower precision compared to recall, particularly on the PCB dataset where precision values drop to 0.2978-0.3398. This indicates that while models can identify most anomalies (high recall), they also generate substantial false alarms (low precision). This pattern suggests that normal patterns in manufacturing data exhibit considerable variability, making it challenging to distinguish from anomalous behavior.
+
+
+\paragraph{Application-Specific Deployment.}
+In scenarios where missing defects is extremely costly (e.g., safety-critical components), high-recall models like Anomaly-Transformer and DCdetector are preferred despite higher false positive rates. For applications with balanced costs or limited inspection capacity, balanced models like DLinear on PCA-transformed data offer more practical trade-offs.
+

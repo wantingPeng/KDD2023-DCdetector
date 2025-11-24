@@ -44,7 +44,14 @@ def plot_patch_size_results(results_path, output_dir=None):
     
     # 定义 patch_size 的顺序（从简单到复杂）
     # 这样可以保证横坐标是有意义的顺序，而不是字母序
-    patch_size_order = []
+    desired_order = [
+        "3",
+        "6",
+        "10",
+        "15",
+        "[3, 6]",
+        "[3, 6, 10]",
+    ]
     all_patch_sizes = set()
     
     # 收集所有的 patch_size 值
@@ -52,9 +59,10 @@ def plot_patch_size_results(results_path, output_dir=None):
         for patch_size in dataset_results.keys():
             all_patch_sizes.add(patch_size)
     
-    # 按照 patch_size 的复杂度排序（逗号数量）
-    patch_size_order = sorted(all_patch_sizes, 
-                              key=lambda x: (len(x.split(',')), x))
+    # 按指定顺序排列，并附加任何未在 desired_order 中的值
+    patch_size_order = [ps for ps in desired_order if ps in all_patch_sizes]
+    remaining_patch_sizes = sorted(all_patch_sizes - set(patch_size_order))
+    patch_size_order.extend(remaining_patch_sizes)
     
     print(f"Patch size 顺序: {patch_size_order}")
     
@@ -196,10 +204,10 @@ def print_results_table(results, patch_size_order):
 
 if __name__ == "__main__":
     # 结果文件路径
-    results_path = 'experiments/plot_patch_size_result.py'
+    results_path = 'exp/results1/patch_size_results.json'
     
     # 输出目录
-    output_dir = 'experiments/results1_pca'
+    output_dir = 'exp/results1'
     
     print("="*80)
     print("Patch Size 参数分析结果可视化")

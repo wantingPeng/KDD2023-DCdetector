@@ -22,13 +22,13 @@ python run_custom_dataset.py \
     --num_epochs 10 \
     --patience 3 \
     --anormly_ratio 3.0 \
-    --mode train \
+    --mode test \
     --index 0 \
     --patch_size 3,6,10 \
-    --n_heads 3 \
+    --n_heads 7 \
     --d_model 256 \
     --e_layers 3 \
     --d_ff 512 \
     --activation gelu \
     --output_attention True \
-    #--checkpoint_dir "checkpoints/pcb_cleaned_1minut_20250928_161509_checkpoint_2025-10-28_08-51-23"
+    --checkpoint_dir "experiments/checkpoints/original/checkpoints_d_model_analysis/contact_d_model256_20251103_125720/contact_cleaned_1minut_20250928_172122_checkpoint_2025-11-03_13-04-28"

@@ -1,0 +1,878 @@
+
+
+
+2025-11-21 12:56:47
+================ Hyperparameters ===============
+anormly_ratio: 1.0
+batch_size: 256
+d_model: 256
+data_path: PSM
+dataset: PSM
+device_ids: [0, 1, 2, 3]
+devices: 0,1,2,3
+e_layers: 3
+gpu: 0
+index: 137
+input_c: 25
+k: 3
+loss_fuc: MSE
+lr: 0.0001
+mode: train
+model_save_path: checkpoints
+n_heads: 1
+num_epochs: 3
+output_c: 25
+patch_size: [1, 3, 5]
+rec_timeseries: True
+use_gpu: True
+use_multi_gpu: True
+win_size: 60
+====================  Train  ===================
+
+
+
+2025-11-21 13:26:00
+================ Hyperparameters ===============
+anormly_ratio: 1.0
+batch_size: 256
+d_model: 256
+data_path: PSM
+dataset: PSM
+device_ids: [0, 1, 2, 3]
+devices: 0,1,2,3
+e_layers: 3
+gpu: 0
+index: 137
+input_c: 25
+k: 3
+loss_fuc: MSE
+lr: 0.0001
+mode: train
+model_save_path: checkpoints
+n_heads: 1
+num_epochs: 3
+output_c: 25
+patch_size: [1, 3, 5]
+rec_timeseries: True
+use_gpu: True
+use_multi_gpu: True
+win_size: 60
+====================  Train  ===================
+
+
+
+2025-11-21 13:36:15
+================ Hyperparameters ===============
+anormly_ratio: 1.0
+batch_size: 256
+d_model: 256
+data_path: PSM
+dataset: PSM
+device_ids: [0, 1, 2, 3]
+devices: 0,1,2,3
+e_layers: 3
+gpu: 0
+index: 137
+input_c: 25
+k: 3
+loss_fuc: MSE
+lr: 0.0001
+mode: train
+model_save_path: checkpoints
+n_heads: 1
+num_epochs: 3
+output_c: 25
+patch_size: [1, 3, 5]
+rec_timeseries: True
+use_gpu: True
+use_multi_gpu: True
+win_size: 60
+====================  Train  ===================
+	speed: 0.1926s/iter; left time: 174.4741s
+	speed: 0.1807s/iter; left time: 145.6763s
+	speed: 0.1831s/iter; left time: 129.2418s
+Epoch: 1, Cost time: 88.500s 
+	speed: 0.5117s/iter; left time: 292.1713s
+
+
+
+2025-11-21 13:38:14
+================ Hyperparameters ===============
+anormly_ratio: 1.0
+batch_size: 256
+d_model: 256
+data_path: PSM
+dataset: PSM
+device_ids: [0, 1, 2, 3]
+devices: 0,1,2,3
+e_layers: 3
+gpu: 0
+index: 137
+input_c: 25
+k: 3
+loss_fuc: MSE
+lr: 0.0001
+mode: train
+model_save_path: checkpoints
+n_heads: 1
+num_epochs: 3
+output_c: 25
+patch_size: [1, 3, 5]
+rec_timeseries: True
+use_gpu: True
+use_multi_gpu: True
+win_size: 60
+====================  Train  ===================
+
+
+
+2025-11-21 13:39:22
+================ Hyperparameters ===============
+anormly_ratio: 1.0
+batch_size: 256
+d_model: 256
+data_path: PSM
+dataset: PSM
+device_ids: [0, 1, 2, 3]
+devices: 0,1,2,3
+e_layers: 3
+gpu: 0
+index: 137
+input_c: 25
+k: 3
+loss_fuc: MSE
+lr: 0.0001
+mode: train
+model_save_path: checkpoints
+n_heads: 1
+num_epochs: 3
+output_c: 25
+patch_size: [1, 3, 5]
+rec_timeseries: True
+use_gpu: True
+use_multi_gpu: True
+win_size: 60
+====================  Train  ===================
+	speed: 0.1959s/iter; left time: 177.4813s
+	speed: 0.1828s/iter; left time: 147.3144s
+	speed: 0.1798s/iter; left time: 126.9359s
+Epoch: 1, Loss: 0.000000
+Epoch: 1, Vali Loss1 (prior-series): 0.000000, Vali Loss2 (prior+series): nan
+Epoch: 1, Cost time: 88.782s 
+	speed: 0.5125s/iter; left time: 292.6402s
+	speed: 0.1829s/iter; left time: 86.1549s
+
+
+
+2025-11-21 13:41:45
+================ Hyperparameters ===============
+anormly_ratio: 1.0
+batch_size: 256
+d_model: 256
+data_path: PSM
+dataset: PSM
+device_ids: [0, 1, 2, 3]
+devices: 0,1,2,3
+e_layers: 3
+gpu: 0
+index: 137
+input_c: 25
+k: 3
+loss_fuc: MSE
+lr: 0.0001
+mode: train
+model_save_path: checkpoints
+n_heads: 1
+num_epochs: 3
+output_c: 25
+patch_size: [1, 3, 5]
+rec_timeseries: True
+use_gpu: True
+use_multi_gpu: True
+win_size: 60
+====================  Train  ===================
+	speed: 0.1805s/iter; left time: 66.9570s
+Epoch: 2, Loss: 0.000000
+Epoch: 2, Vali Loss1 (prior-series): 0.000000, Vali Loss2 (prior+series): nan
+Epoch: 2, Cost time: 87.584s 
+	speed: 0.5150s/iter; left time: 121.5297s
+	speed: 0.1806s/iter; left time: 24.5589s
+
+
+
+2025-11-21 13:43:15
+================ Hyperparameters ===============
+anormly_ratio: 1.0
+batch_size: 256
+d_model: 256
+data_path: PSM
+dataset: PSM
+device_ids: [0, 1, 2, 3]
+devices: 0,1,2,3
+e_layers: 3
+gpu: 0
+index: 137
+input_c: 25
+k: 3
+loss_fuc: MSE
+lr: 0.0001
+mode: train
+model_save_path: checkpoints
+n_heads: 1
+num_epochs: 3
+output_c: 25
+patch_size: [1, 3, 5]
+rec_timeseries: True
+use_gpu: True
+use_multi_gpu: True
+win_size: 60
+====================  Train  ===================
+tensor(3.1315, device='cuda:0', grad_fn=<DivBackward0>) tensor(3.1315, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(3.1774, device='cuda:0', grad_fn=<DivBackward0>) tensor(3.1774, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(3.2509, device='cuda:0', grad_fn=<DivBackward0>) tensor(3.2509, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(3.2774, device='cuda:0', grad_fn=<DivBackward0>) tensor(3.2774, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(3.3522, device='cuda:0', grad_fn=<DivBackward0>) tensor(3.3522, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(3.4027, device='cuda:0', grad_fn=<DivBackward0>) tensor(3.4027, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(3.4831, device='cuda:0', grad_fn=<DivBackward0>) tensor(3.4831, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(3.5651, device='cuda:0', grad_fn=<DivBackward0>) tensor(3.5651, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(3.6100, device='cuda:0', grad_fn=<DivBackward0>) tensor(3.6100, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(3.7173, device='cuda:0', grad_fn=<DivBackward0>) tensor(3.7173, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(3.7431, device='cuda:0', grad_fn=<DivBackward0>) tensor(3.7431, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(3.7705, device='cuda:0', grad_fn=<DivBackward0>) tensor(3.7705, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(3.8743, device='cuda:0', grad_fn=<DivBackward0>) tensor(3.8743, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(3.9272, device='cuda:0', grad_fn=<DivBackward0>) tensor(3.9272, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(4.0092, device='cuda:0', grad_fn=<DivBackward0>) tensor(4.0092, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(4.0433, device='cuda:0', grad_fn=<DivBackward0>) tensor(4.0433, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(4.0858, device='cuda:0', grad_fn=<DivBackward0>) tensor(4.0858, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(4.1261, device='cuda:0', grad_fn=<DivBackward0>) tensor(4.1261, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(4.1806, device='cuda:0', grad_fn=<DivBackward0>) tensor(4.1806, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(4.2001, device='cuda:0', grad_fn=<DivBackward0>) tensor(4.2001, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(4.2840, device='cuda:0', grad_fn=<DivBackward0>) tensor(4.2840, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(4.3172, device='cuda:0', grad_fn=<DivBackward0>) tensor(4.3172, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(4.3872, device='cuda:0', grad_fn=<DivBackward0>) tensor(4.3872, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(4.4316, device='cuda:0', grad_fn=<DivBackward0>) tensor(4.4316, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(4.4814, device='cuda:0', grad_fn=<DivBackward0>) tensor(4.4814, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(4.5085, device='cuda:0', grad_fn=<DivBackward0>) tensor(4.5085, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(4.5540, device='cuda:0', grad_fn=<DivBackward0>) tensor(4.5540, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(4.6161, device='cuda:0', grad_fn=<DivBackward0>) tensor(4.6161, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(4.5989, device='cuda:0', grad_fn=<DivBackward0>) tensor(4.5989, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(4.7429, device='cuda:0', grad_fn=<DivBackward0>) tensor(4.7429, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(4.7459, device='cuda:0', grad_fn=<DivBackward0>) tensor(4.7459, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(4.7784, device='cuda:0', grad_fn=<DivBackward0>) tensor(4.7784, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(4.7859, device='cuda:0', grad_fn=<DivBackward0>) tensor(4.7859, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(4.8898, device='cuda:0', grad_fn=<DivBackward0>) tensor(4.8898, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(4.9456, device='cuda:0', grad_fn=<DivBackward0>) tensor(4.9456, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(4.9856, device='cuda:0', grad_fn=<DivBackward0>) tensor(4.9856, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(5.0086, device='cuda:0', grad_fn=<DivBackward0>) tensor(5.0086, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(5.0628, device='cuda:0', grad_fn=<DivBackward0>) tensor(5.0628, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(5.1484, device='cuda:0', grad_fn=<DivBackward0>) tensor(5.1484, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(5.1592, device='cuda:0', grad_fn=<DivBackward0>) tensor(5.1592, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(5.2068, device='cuda:0', grad_fn=<DivBackward0>) tensor(5.2068, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(5.2550, device='cuda:0', grad_fn=<DivBackward0>) tensor(5.2550, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(5.2997, device='cuda:0', grad_fn=<DivBackward0>) tensor(5.2997, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(5.3318, device='cuda:0', grad_fn=<DivBackward0>) tensor(5.3318, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(5.4490, device='cuda:0', grad_fn=<DivBackward0>) tensor(5.4490, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(5.4463, device='cuda:0', grad_fn=<DivBackward0>) tensor(5.4463, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(5.5300, device='cuda:0', grad_fn=<DivBackward0>) tensor(5.5300, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(5.5256, device='cuda:0', grad_fn=<DivBackward0>) tensor(5.5256, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(5.6368, device='cuda:0', grad_fn=<DivBackward0>) tensor(5.6368, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(5.6306, device='cuda:0', grad_fn=<DivBackward0>) tensor(5.6306, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(5.6748, device='cuda:0', grad_fn=<DivBackward0>) tensor(5.6748, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(5.7139, device='cuda:0', grad_fn=<DivBackward0>) tensor(5.7139, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(5.7600, device='cuda:0', grad_fn=<DivBackward0>) tensor(5.7600, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(5.8298, device='cuda:0', grad_fn=<DivBackward0>) tensor(5.8298, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(5.9231, device='cuda:0', grad_fn=<DivBackward0>) tensor(5.9231, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(5.8997, device='cuda:0', grad_fn=<DivBackward0>) tensor(5.8997, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(5.9379, device='cuda:0', grad_fn=<DivBackward0>) tensor(5.9379, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(6.0042, device='cuda:0', grad_fn=<DivBackward0>) tensor(6.0042, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(6.0586, device='cuda:0', grad_fn=<DivBackward0>) tensor(6.0586, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(6.0745, device='cuda:0', grad_fn=<DivBackward0>) tensor(6.0745, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(6.1051, device='cuda:0', grad_fn=<DivBackward0>) tensor(6.1051, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(6.2121, device='cuda:0', grad_fn=<DivBackward0>) tensor(6.2121, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(6.1989, device='cuda:0', grad_fn=<DivBackward0>) tensor(6.1989, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(6.2536, device='cuda:0', grad_fn=<DivBackward0>) tensor(6.2536, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(6.3259, device='cuda:0', grad_fn=<DivBackward0>) tensor(6.3259, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(6.3458, device='cuda:0', grad_fn=<DivBackward0>) tensor(6.3458, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(6.4048, device='cuda:0', grad_fn=<DivBackward0>) tensor(6.4048, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(6.4505, device='cuda:0', grad_fn=<DivBackward0>) tensor(6.4505, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(6.4796, device='cuda:0', grad_fn=<DivBackward0>) tensor(6.4796, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(6.5084, device='cuda:0', grad_fn=<DivBackward0>) tensor(6.5084, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(6.5284, device='cuda:0', grad_fn=<DivBackward0>) tensor(6.5284, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(6.6367, device='cuda:0', grad_fn=<DivBackward0>) tensor(6.6367, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(6.6490, device='cuda:0', grad_fn=<DivBackward0>) tensor(6.6490, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(6.7012, device='cuda:0', grad_fn=<DivBackward0>) tensor(6.7012, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(6.7483, device='cuda:0', grad_fn=<DivBackward0>) tensor(6.7483, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(6.7802, device='cuda:0', grad_fn=<DivBackward0>) tensor(6.7802, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(6.8566, device='cuda:0', grad_fn=<DivBackward0>) tensor(6.8566, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(6.8997, device='cuda:0', grad_fn=<DivBackward0>) tensor(6.8997, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(6.9456, device='cuda:0', grad_fn=<DivBackward0>) tensor(6.9456, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(6.9766, device='cuda:0', grad_fn=<DivBackward0>) tensor(6.9766, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(6.9951, device='cuda:0', grad_fn=<DivBackward0>) tensor(6.9951, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(7.0301, device='cuda:0', grad_fn=<DivBackward0>) tensor(7.0301, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(7.0874, device='cuda:0', grad_fn=<DivBackward0>) tensor(7.0874, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(7.1109, device='cuda:0', grad_fn=<DivBackward0>) tensor(7.1109, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(7.2113, device='cuda:0', grad_fn=<DivBackward0>) tensor(7.2113, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(7.1971, device='cuda:0', grad_fn=<DivBackward0>) tensor(7.1971, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(7.2587, device='cuda:0', grad_fn=<DivBackward0>) tensor(7.2587, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(7.3597, device='cuda:0', grad_fn=<DivBackward0>) tensor(7.3597, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(7.4082, device='cuda:0', grad_fn=<DivBackward0>) tensor(7.4082, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(7.4000, device='cuda:0', grad_fn=<DivBackward0>) tensor(7.4000, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(7.5091, device='cuda:0', grad_fn=<DivBackward0>) tensor(7.5091, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(7.5007, device='cuda:0', grad_fn=<DivBackward0>) tensor(7.5007, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(7.5933, device='cuda:0', grad_fn=<DivBackward0>) tensor(7.5933, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(7.6392, device='cuda:0', grad_fn=<DivBackward0>) tensor(7.6392, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(7.6875, device='cuda:0', grad_fn=<DivBackward0>) tensor(7.6875, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(7.7170, device='cuda:0', grad_fn=<DivBackward0>) tensor(7.7170, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(7.7262, device='cuda:0', grad_fn=<DivBackward0>) tensor(7.7262, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(7.7766, device='cuda:0', grad_fn=<DivBackward0>) tensor(7.7766, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(7.8434, device='cuda:0', grad_fn=<DivBackward0>) tensor(7.8434, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(7.9379, device='cuda:0', grad_fn=<DivBackward0>) tensor(7.9379, device='cuda:0', grad_fn=<DivBackward0>)
+	speed: 0.1998s/iter; left time: 181.0112s
+tensor(7.9562, device='cuda:0', grad_fn=<DivBackward0>) tensor(7.9562, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(8.0262, device='cuda:0', grad_fn=<DivBackward0>) tensor(8.0262, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(8.0679, device='cuda:0', grad_fn=<DivBackward0>) tensor(8.0679, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(8.1109, device='cuda:0', grad_fn=<DivBackward0>) tensor(8.1109, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(8.1614, device='cuda:0', grad_fn=<DivBackward0>) tensor(8.1614, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(8.1984, device='cuda:0', grad_fn=<DivBackward0>) tensor(8.1984, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(8.2704, device='cuda:0', grad_fn=<DivBackward0>) tensor(8.2704, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(8.3247, device='cuda:0', grad_fn=<DivBackward0>) tensor(8.3247, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(8.3729, device='cuda:0', grad_fn=<DivBackward0>) tensor(8.3729, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(8.3935, device='cuda:0', grad_fn=<DivBackward0>) tensor(8.3935, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(8.4720, device='cuda:0', grad_fn=<DivBackward0>) tensor(8.4720, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(8.5129, device='cuda:0', grad_fn=<DivBackward0>) tensor(8.5129, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(8.5919, device='cuda:0', grad_fn=<DivBackward0>) tensor(8.5919, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(8.6429, device='cuda:0', grad_fn=<DivBackward0>) tensor(8.6429, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(8.6421, device='cuda:0', grad_fn=<DivBackward0>) tensor(8.6421, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(8.7230, device='cuda:0', grad_fn=<DivBackward0>) tensor(8.7230, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(8.8350, device='cuda:0', grad_fn=<DivBackward0>) tensor(8.8350, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(8.8659, device='cuda:0', grad_fn=<DivBackward0>) tensor(8.8659, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(8.9468, device='cuda:0', grad_fn=<DivBackward0>) tensor(8.9468, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(8.9978, device='cuda:0', grad_fn=<DivBackward0>) tensor(8.9978, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(9.0589, device='cuda:0', grad_fn=<DivBackward0>) tensor(9.0589, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(9.1362, device='cuda:0', grad_fn=<DivBackward0>) tensor(9.1362, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(9.1817, device='cuda:0', grad_fn=<DivBackward0>) tensor(9.1817, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(9.2209, device='cuda:0', grad_fn=<DivBackward0>) tensor(9.2209, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(9.3001, device='cuda:0', grad_fn=<DivBackward0>) tensor(9.3001, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(9.3729, device='cuda:0', grad_fn=<DivBackward0>) tensor(9.3729, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(9.3792, device='cuda:0', grad_fn=<DivBackward0>) tensor(9.3792, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(9.5683, device='cuda:0', grad_fn=<DivBackward0>) tensor(9.5683, device='cuda:0', grad_fn=<DivBackward0>)
+
+
+
+2025-11-21 13:44:26
+================ Hyperparameters ===============
+anormly_ratio: 1.0
+batch_size: 256
+d_model: 256
+data_path: PSM
+dataset: PSM
+device_ids: [0, 1, 2, 3]
+devices: 0,1,2,3
+e_layers: 3
+gpu: 0
+index: 137
+input_c: 25
+k: 3
+loss_fuc: MSE
+lr: 0.0001
+mode: train
+model_save_path: checkpoints
+n_heads: 1
+num_epochs: 3
+output_c: 25
+patch_size: [1, 3, 5]
+rec_timeseries: True
+use_gpu: True
+use_multi_gpu: True
+win_size: 60
+====================  Train  ===================
+tensor(3.1685, device='cuda:0', grad_fn=<DivBackward0>) tensor(3.1685, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(3.1816, device='cuda:0', grad_fn=<DivBackward0>) tensor(3.1816, device='cuda:0', grad_fn=<DivBackward0>)
+tensor(3.2161, device='cuda:0', grad_fn=<DivBackward0>) tensor(3.2161, device='cuda:0', grad_fn=<DivBackward0>)
+
+
+
+2025-11-21 13:45:29
+================ Hyperparameters ===============
+anormly_ratio: 1.0
+batch_size: 256
+d_model: 256
+data_path: PSM
+dataset: PSM
+device_ids: [0, 1, 2, 3]
+devices: 0,1,2,3
+e_layers: 3
+gpu: 0
+index: 137
+input_c: 25
+k: 3
+loss_fuc: MSE
+lr: 0.0001
+mode: train
+model_save_path: checkpoints
+n_heads: 1
+num_epochs: 3
+output_c: 25
+patch_size: [1, 3, 5]
+rec_timeseries: True
+use_gpu: True
+use_multi_gpu: True
+win_size: 60
+====================  Train  ===================
+3.0952861309051514 3.0952861309051514
+3.117177963256836 3.117177963256836
+3.15883469581604 3.15883469581604
+3.205810785293579 3.205810785293579
+3.264209508895874 3.264209508895874
+3.341430425643921 3.341430425643921
+3.388169288635254 3.388169288635254
+3.4666531085968018 3.4666531085968018
+3.544004440307617 3.544004440307617
+3.5957298278808594 3.5957298278808594
+3.68137526512146 3.68137526512146
+3.7510321140289307 3.7510321140289307
+3.815260171890259 3.815260171890259
+3.8798840045928955 3.8798840045928955
+3.8761966228485107 3.8761966228485107
+3.995800495147705 3.995800495147705
+4.058670997619629 4.058670997619629
+4.083920955657959 4.083920955657959
+4.187587261199951 4.187587261199951
+4.2626519203186035 4.2626519203186035
+4.302304744720459 4.302304744720459
+4.335604190826416 4.335604190826416
+4.381899356842041 4.381899356842041
+4.483607769012451 4.483607769012451
+4.504703044891357 4.504703044891357
+4.526203632354736 4.526203632354736
+4.5890092849731445 4.5890092849731445
+4.669275283813477 4.669275283813477
+4.709944248199463 4.709944248199463
+4.826389312744141 4.826389312744141
+4.826934814453125 4.826934814453125
+4.880711078643799 4.880711078643799
+4.911740779876709 4.911740779876709
+4.962647438049316 4.962647438049316
+5.002450942993164 5.002450942993164
+5.09708833694458 5.09708833694458
+5.069090366363525 5.069090366363525
+5.100966930389404 5.100966930389404
+5.180246353149414 5.180246353149414
+5.207398414611816 5.207398414611816
+5.271836280822754 5.271836280822754
+5.318497657775879 5.318497657775879
+5.334282875061035 5.334282875061035
+5.369378566741943 5.369378566741943
+5.484740734100342 5.484740734100342
+5.539155960083008 5.539155960083008
+5.57451868057251 5.57451868057251
+5.618759632110596 5.618759632110596
+5.687719821929932 5.687719821929932
+5.663581848144531 5.663581848144531
+5.696939945220947 5.696939945220947
+5.748851776123047 5.748851776123047
+5.79112434387207 5.79112434387207
+5.852400302886963 5.852400302886963
+5.9469733238220215 5.9469733238220215
+6.009609699249268 6.009609699249268
+6.080341815948486 6.080341815948486
+6.118416786193848 6.118416786193848
+6.24453592300415 6.24453592300415
+6.194661617279053 6.194661617279053
+6.2628607749938965 6.2628607749938965
+6.305428504943848 6.305428504943848
+6.283636569976807 6.283636569976807
+6.320068359375 6.320068359375
+6.4149298667907715 6.4149298667907715
+6.44525671005249 6.44525671005249
+6.5516862869262695 6.5516862869262695
+6.507931709289551 6.507931709289551
+6.6257500648498535 6.6257500648498535
+6.624091625213623 6.624091625213623
+6.70452880859375 6.70452880859375
+6.728263854980469 6.728263854980469
+6.788818359375 6.788818359375
+6.778965473175049 6.778965473175049
+6.831957817077637 6.831957817077637
+6.876331329345703 6.876331329345703
+6.915746688842773 6.915746688842773
+6.923722267150879 6.923722267150879
+6.984525203704834 6.984525203704834
+7.040022373199463 7.040022373199463
+7.143272399902344 7.143272399902344
+7.073922157287598 7.073922157287598
+7.157210350036621 7.157210350036621
+
+
+
+2025-11-21 13:49:04
+================ Hyperparameters ===============
+anormly_ratio: 1.0
+batch_size: 256
+d_model: 256
+data_path: PSM
+dataset: PSM
+device_ids: [0, 1, 2, 3]
+devices: 0,1,2,3
+e_layers: 3
+gpu: 0
+index: 137
+input_c: 25
+k: 3
+loss_fuc: MSE
+lr: 0.0001
+mode: train
+model_save_path: checkpoints
+n_heads: 1
+num_epochs: 1
+output_c: 25
+patch_size: [1, 3, 5]
+rec_timeseries: True
+use_gpu: True
+use_multi_gpu: True
+win_size: 60
+====================  Train  ===================
+	speed: 0.1883s/iter; left time: 44.4330s
+	speed: 0.1852s/iter; left time: 25.1915s
+	speed: 0.1805s/iter; left time: 6.4998s
+Epoch: 1, Loss: 0.000000
+Epoch: 1, Vali Loss1 (prior-series): 0.000000, Vali Loss2 (prior+series): nan
+Epoch: 1, Cost time: 88.588s 
+
+
+
+2025-11-21 13:56:05
+================ Hyperparameters ===============
+anormly_ratio: 1.0
+batch_size: 256
+d_model: 256
+data_path: PSM
+dataset: PSM
+device_ids: [0, 1, 2, 3]
+devices: 0,1,2,3
+e_layers: 3
+gpu: 0
+index: 137
+input_c: 25
+k: 3
+loss_fuc: MSE
+lr: 0.0001
+mode: train
+model_save_path: checkpoints
+n_heads: 1
+num_epochs: 1
+output_c: 25
+patch_size: [1, 3, 5]
+rec_timeseries: True
+use_gpu: True
+use_multi_gpu: True
+win_size: 60
+====================  Train  ===================
+
+
+
+2025-11-21 13:56:28
+================ Hyperparameters ===============
+anormly_ratio: 1.0
+batch_size: 256
+d_model: 256
+data_path: PSM
+dataset: PSM
+device_ids: [0, 1, 2, 3]
+devices: 0,1,2,3
+e_layers: 3
+gpu: 0
+index: 137
+input_c: 25
+k: 3
+loss_fuc: MSE
+lr: 0.0001
+mode: train
+model_save_path: checkpoints
+n_heads: 1
+num_epochs: 1
+output_c: 25
+patch_size: [1, 3, 5]
+rec_timeseries: True
+use_gpu: True
+use_multi_gpu: True
+win_size: 60
+====================  Train  ===================
+
+
+
+2025-11-21 13:59:11
+================ Hyperparameters ===============
+anormly_ratio: 1.0
+batch_size: 256
+d_model: 256
+data_path: PSM
+dataset: PSM
+device_ids: [0, 1, 2, 3]
+devices: 0,1,2,3
+e_layers: 3
+gpu: 0
+index: 137
+input_c: 25
+k: 3
+loss_fuc: MSE
+lr: 0.0001
+mode: train
+model_save_path: checkpoints
+n_heads: 1
+num_epochs: 1
+output_c: 25
+patch_size: [1, 3, 5]
+rec_timeseries: True
+use_gpu: True
+use_multi_gpu: True
+win_size: 60
+====================  Train  ===================
+	speed: 0.1863s/iter; left time: 43.9592s
+	speed: 0.1721s/iter; left time: 23.4040s
+	speed: 0.1737s/iter; left time: 6.2546s
+Epoch: 1, Loss: 0.000000
+Epoch: 1, Vali Loss1 (prior-series): 0.000000, Vali Loss2 (prior+series): nan
+Epoch: 1, Cost time: 85.056s 
+Threshold : 0.9997944235801697
+pa_accuracy           : 0.9876
+pa_precision          : 0.9714
+pa_recall             : 0.9792
+pa_f_score            : 0.9753
+MCC_score             : 0.9670
+Affiliation precision : 0.5516
+Affiliation recall    : 0.7986
+R_AUC_ROC             : 0.8984
+R_AUC_PR              : 0.9167
+VUS_ROC               : 0.8594
+VUS_PR                : 0.8875
+Accuracy : 0.9876, Precision : 0.9714, Recall : 0.9792, F-score : 0.9753 
+
+
+
+2025-11-21 14:03:58
+================ Hyperparameters ===============
+anormly_ratio: 1.0
+batch_size: 256
+d_model: 256
+data_path: PSM
+dataset: PSM
+device_ids: [0, 1, 2, 3]
+devices: 0,1,2,3
+e_layers: 3
+gpu: 0
+index: 137
+input_c: 25
+k: 3
+loss_fuc: MSE
+lr: 0.0001
+mode: train
+model_save_path: checkpoints
+n_heads: 1
+num_epochs: 1
+output_c: 25
+patch_size: [1, 3, 5]
+rec_timeseries: True
+use_gpu: True
+use_multi_gpu: True
+win_size: 60
+====================  Train  ===================
+	speed: 0.1852s/iter; left time: 43.7123s
+	speed: 0.1738s/iter; left time: 23.6431s
+	speed: 0.1744s/iter; left time: 6.2784s
+Epoch: 1, Loss: 0.000000
+Epoch: 1, Vali Loss1 (prior-series): 0.000000, Vali Loss2 (prior+series): nan
+Epoch: 1, Cost time: 84.863s 
+Threshold : 0.9998757839202881
+pa_accuracy           : 0.9868
+pa_precision          : 0.9698
+pa_recall             : 0.9777
+pa_f_score            : 0.9737
+MCC_score             : 0.9649
+Affiliation precision : 0.5322
+Affiliation recall    : 0.7704
+R_AUC_ROC             : 0.9184
+R_AUC_PR              : 0.9306
+VUS_ROC               : 0.8495
+VUS_PR                : 0.8796
+Accuracy : 0.9868, Precision : 0.9698, Recall : 0.9777, F-score : 0.9737 
+
+
+
+2025-11-21 14:07:12
+================ Hyperparameters ===============
+anormly_ratio: 1.0
+batch_size: 256
+d_model: 256
+data_path: PSM
+dataset: PSM
+device_ids: [0, 1, 2, 3]
+devices: 0,1,2,3
+e_layers: 3
+gpu: 0
+index: 137
+input_c: 25
+k: 3
+loss_fuc: MSE
+lr: 0.0001
+mode: train
+model_save_path: checkpoints
+n_heads: 1
+num_epochs: 1
+output_c: 25
+patch_size: [1, 3, 5]
+rec_timeseries: True
+use_gpu: True
+use_multi_gpu: True
+win_size: 60
+====================  Train  ===================
+	speed: 0.1854s/iter; left time: 43.7572s
+	speed: 0.1733s/iter; left time: 23.5709s
+	speed: 0.1717s/iter; left time: 6.1828s
+Epoch: 1, Loss: 0.000000
+Epoch: 1, Vali Loss1 (prior-series): 0.000000, Vali Loss2 (prior+series): nan
+Epoch: 1, Cost time: 85.008s 
+Threshold : 0.9999997615814209
+pa_accuracy           : 0.9853
+pa_precision          : 0.9719
+pa_recall             : 0.9693
+pa_f_score            : 0.9706
+MCC_score             : 0.9608
+Affiliation precision : 0.5081
+Affiliation recall    : 0.7445
+R_AUC_ROC             : 0.8330
+R_AUC_PR              : 0.8696
+VUS_ROC               : 0.8119
+VUS_PR                : 0.8532
+Accuracy : 0.9853, Precision : 0.9719, Recall : 0.9693, F-score : 0.9706 
+
+
+
+2025-11-22 06:08:46
+================ Hyperparameters ===============
+anormly_ratio: 1.0
+batch_size: 256
+d_model: 256
+data_path: PSM
+dataset: PSM
+device_ids: [0, 1, 2, 3]
+devices: 0,1,2,3
+e_layers: 3
+gpu: 0
+index: 137
+input_c: 25
+k: 3
+loss_fuc: MSE
+lr: 0.0001
+mode: train
+model_save_path: checkpoints
+n_heads: 1
+num_epochs: 1
+output_c: 25
+patch_size: [1, 3, 5]
+rec_timeseries: True
+use_gpu: True
+use_multi_gpu: True
+win_size: 60
+====================  Train  ===================
+	speed: 0.3572s/iter; left time: 84.3028s
+	speed: 0.3409s/iter; left time: 46.3602s
+	speed: 0.3408s/iter; left time: 12.2686s
+Epoch: 1, Loss: 0.00e+00
+
+
+
+2025-11-22 06:18:46
+================ Hyperparameters ===============
+anormly_ratio: 1.0
+batch_size: 256
+d_model: 256
+data_path: PSM
+dataset: PSM
+device_ids: [0, 1, 2, 3]
+devices: 0,1,2,3
+e_layers: 3
+gpu: 0
+index: 137
+input_c: 25
+k: 3
+loss_fuc: MSE
+lr: 0.0001
+mode: train
+model_save_path: checkpoints
+n_heads: 1
+num_epochs: 1
+output_c: 25
+patch_size: [1, 3, 5]
+rec_timeseries: True
+use_gpu: True
+use_multi_gpu: True
+win_size: 60
+====================  Train  ===================
+
+
+
+2025-11-22 06:19:18
+================ Hyperparameters ===============
+anormly_ratio: 1.0
+batch_size: 256
+d_model: 256
+data_path: PSM
+dataset: PSM
+device_ids: [0, 1, 2, 3]
+devices: 0,1,2,3
+e_layers: 3
+gpu: 0
+index: 137
+input_c: 25
+k: 3
+loss_fuc: MSE
+lr: 0.0001
+mode: train
+model_save_path: checkpoints
+n_heads: 1
+num_epochs: 1
+output_c: 25
+patch_size: [1, 3, 5]
+rec_timeseries: True
+use_gpu: True
+use_multi_gpu: True
+win_size: 60
+====================  Train  ===================
+	speed: 0.3733s/iter; left time: 88.1057s
+
+
+
+2025-11-22 06:20:18
+================ Hyperparameters ===============
+anormly_ratio: 1.0
+batch_size: 256
+d_model: 256
+data_path: PSM
+dataset: PSM
+device_ids: [0, 1, 2, 3]
+devices: 0,1,2,3
+e_layers: 3
+gpu: 0
+index: 137
+input_c: 25
+k: 3
+loss_fuc: MSE
+lr: 0.0001
+mode: train
+model_save_path: checkpoints
+n_heads: 1
+num_epochs: 1
+output_c: 25
+patch_size: [3]
+rec_timeseries: True
+use_gpu: True
+use_multi_gpu: True
+win_size: 60
+====================  Train  ===================
+	speed: 0.1201s/iter; left time: 28.3388s
+	speed: 0.1059s/iter; left time: 14.4038s
+	speed: 0.1039s/iter; left time: 3.7401s
+Epoch: 1, Loss: 0.00e+00
+Epoch: 1, Vali Loss1 (prior-series): 0.000000, Vali Loss2 (prior+series): nan
+Epoch: 1, Cost time: 56.817s 

@@ -21,76 +21,83 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 # ============================================================================
 
 # Select which parameter to analyze (choose one: 'win_size', 'k', 'anormly_ratio')
-PARAM_TO_ANALYZE = 'e_layers'  # Change this to 'k' or 'anormly_ratio' for other analyses
+PARAM_TO_ANALYZE = 'win_size'  # Change this to 'k' or 'anormly_ratio' for other analyses
 
 # Datasets to test
-DATASETS = ['contact','ring','pcb']
+DATASETS = ['pcb']
 
 # Parameter values to test (modify based on PARAM_TO_ANALYZE)
 PARAM_VALUES = {
     'win_size': [30, 60, 90, 120, 150],
-    'n_heads': [1, 3, 5,7,9,11],
+    'n_heads': [1, 3, 5,7,9],
     'e_layers': [3,5,7,9,11],
     'anormly_ratio': [1.0, 2.0, 3.0, 4.0, 5.0, 6.0],
-    'patch_size': ['3', '3,6', '3,6,10','3,6,10,15'],
+    'patch_size': ['3', '6','10','15','3,6', '3,6,10'],
     'd_model': [128, 256, 512,1024]
 }
-
+# PARAM_VALUES = {
+#     'win_size': [120,150],
+#     'n_heads': [1, 3, 5,7,9,11],
+#     'e_layers': [9,11],
+#     'anormly_ratio': [1.0, 2.0],
+#     'patch_size': [ '3', '6','10','15'],
+#     'd_model': [128, 256, 512,1024]
+# }
 # Fixed parameters (used when not being analyzed)
 FIXED_PARAMS = {
-    'num_epochs': 1,
+    'num_epochs': 5,
     'batch_size': 32,
     'lr': 1e-4,
     'win_size': 30,
     'n_heads': 1,
     'e_layers': 3,
-    'patch_size': '3,6,10',
+    'patch_size': '3,6',
     'anormly_ratio': 3.0
 }
 
 # Output configuration
-OUTPUT_DIR = 'experiments/results1'
+OUTPUT_DIR = 'exp/results_original'
 PLOT_STYLE = 'seaborn-v0_8-darkgrid'
 
 # ============================================================================
 # DATASET CONFIGURATIONS
 # ============================================================================
 
-# DATASET_CONFIGS = {
-#      'contact': {
-#          'data_path': 'dataset/downsampleData_scratch_1minut/contact/contact_cleaned_1minut_20250928_172122.parquet',
-#          'input_c': 27,
-#          'output_c': 27,
-#      },
-#     'ring': {
-#         'data_path': 'dataset/downsampleData_scratch_1minut/ring/Ring_cleaned_1minut_20250928_170147.parquet',
-#         'input_c': 28,
-#         'output_c': 28,
-#     },
-#      'pcb': {
-#          'data_path': 'dataset/downsampleData_scratch_1minut/pcb/pcb_cleaned_1minut_20250928_161509.parquet',
-#          'input_c': 31,
-#          'output_c': 31,
-#      }
-# }
-
 DATASET_CONFIGS = {
      'contact': {
          'data_path': 'dataset/downsampleData_scratch_1minut/contact/contact_cleaned_1minut_20250928_172122.parquet',
-         'input_c': 10,
-         'output_c': 10,
+         'input_c': 27,
+         'output_c': 27,
      },
     'ring': {
         'data_path': 'dataset/downsampleData_scratch_1minut/ring/Ring_cleaned_1minut_20250928_170147.parquet',
-        'input_c': 10,
-        'output_c': 10,
+        'input_c': 28,
+        'output_c': 28,
     },
      'pcb': {
          'data_path': 'dataset/downsampleData_scratch_1minut/pcb/pcb_cleaned_1minut_20250928_161509.parquet',
-         'input_c': 10,
-         'output_c': 10,
+         'input_c': 31,
+         'output_c': 31,
      }
 }
+
+# DATASET_CONFIGS = {
+#      'contact': {
+#          'data_path': 'dataset/downsampleData_scratch_1minut/contact/contact_cleaned_1minut_20250928_172122.parquet',
+#          'input_c': 10,
+#          'output_c': 10,
+#      },
+#     'ring': {
+#         'data_path': 'dataset/downsampleData_scratch_1minut/ring/Ring_cleaned_1minut_20250928_170147.parquet',
+#         'input_c': 10,
+#         'output_c': 10,
+#     },
+#      'pcb': {
+#          'data_path': 'dataset/downsampleData_scratch_1minut/pcb/pcb_cleaned_1minut_20250928_161509.parquet',
+#          'input_c': 10,
+#          'output_c': 10,
+#      }
+# }
 
 # Plot styling
 PLOT_CONFIG = {
@@ -136,7 +143,7 @@ def run_single_experiment(dataset_name, param_name, param_value, fixed_params):
     
     # Create unique model save path
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    model_save_path = f'checkpoints2_{param_name}_analysis/{dataset_name}_{param_name}{param_value}_{timestamp}_pca'
+    model_save_path = f'checkpoints_{param_name}_pcaDatasets_2/{dataset_name}_{param_name}{param_value}_{timestamp}'
     
     # Build parameters dictionary
     params = fixed_params.copy()
@@ -326,26 +333,6 @@ def plot_results(results, param_name, output_dir=OUTPUT_DIR):
             all_param_vals.append(pv)
             all_f1_scores.append(metrics['f_score'] * 100)
     
-    # Ensure x-axis always shows configured parameter values
-    configured_param_vals = PARAM_VALUES.get(param_name, [])
-    if configured_param_vals:
-        # Convert configured values to same type as experiment outputs when possible
-        normalized_config_vals = []
-        for val in configured_param_vals:
-            if isinstance(val, (int, float)):
-                normalized_config_vals.append(val)
-            else:
-                try:
-                    # Attempt numeric conversion (covers cases like "10")
-                    numeric_val = float(val)
-                    # Cast back to int if it represents an integer value
-                    if numeric_val.is_integer():
-                        numeric_val = int(numeric_val)
-                    normalized_config_vals.append(numeric_val)
-                except (TypeError, ValueError):
-                    normalized_config_vals.append(val)
-        all_param_vals.extend(normalized_config_vals)
-
     if all_param_vals:
         x_min, x_max = min(all_param_vals), max(all_param_vals)
         x_range = x_max - x_min

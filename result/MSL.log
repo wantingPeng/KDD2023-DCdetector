@@ -1,0 +1,121 @@
+
+
+
+2025-11-21 14:37:18
+================ Hyperparameters ===============
+anormly_ratio: 1.0
+batch_size: 64
+d_model: 256
+data_path: MSL
+dataset: MSL
+device_ids: [0, 1, 2, 3]
+devices: 0,1,2,3
+e_layers: 3
+gpu: 0
+index: 137
+input_c: 55
+k: 3
+loss_fuc: MSE
+lr: 0.0001
+mode: train
+model_save_path: checkpoints
+n_heads: 1
+num_epochs: 3
+output_c: 55
+patch_size: [3, 5]
+rec_timeseries: True
+use_gpu: True
+use_multi_gpu: True
+win_size: 90
+====================  Train  ===================
+	speed: 0.0839s/iter; left time: 220.3853s
+	speed: 0.0750s/iter; left time: 189.5674s
+	speed: 0.0718s/iter; left time: 174.4376s
+	speed: 0.0769s/iter; left time: 178.9864s
+	speed: 0.0770s/iter; left time: 171.5619s
+	speed: 0.0724s/iter; left time: 154.1656s
+	speed: 0.0774s/iter; left time: 156.9202s
+	speed: 0.0680s/iter; left time: 131.0911s
+	speed: 0.0752s/iter; left time: 137.4042s
+Epoch: 1, Loss: 0.000000
+Epoch: 1, Vali Loss1 (prior-series): 0.000000, Vali Loss2 (prior+series): nan
+Epoch: 1, Cost time: 111.037s 
+	speed: 0.5122s/iter; left time: 880.5472s
+	speed: 0.0752s/iter; left time: 121.7193s
+	speed: 0.0771s/iter; left time: 117.0954s
+	speed: 0.0723s/iter; left time: 102.5611s
+	speed: 0.0773s/iter; left time: 101.9566s
+	speed: 0.0727s/iter; left time: 88.6178s
+	speed: 0.0772s/iter; left time: 86.3691s
+	speed: 0.0725s/iter; left time: 73.9107s
+	speed: 0.0706s/iter; left time: 64.8690s
+Epoch: 2, Loss: 0.000000
+Epoch: 2, Vali Loss1 (prior-series): 0.000000, Vali Loss2 (prior+series): nan
+Epoch: 2, Cost time: 110.676s 
+	speed: 0.5038s/iter; left time: 408.0420s
+	speed: 0.0770s/iter; left time: 54.6847s
+	speed: 0.0771s/iter; left time: 47.0443s
+	speed: 0.0743s/iter; left time: 37.8854s
+	speed: 0.0748s/iter; left time: 30.6742s
+	speed: 0.0772s/iter; left time: 23.9346s
+	speed: 0.0771s/iter; left time: 16.2006s
+	speed: 0.0751s/iter; left time: 8.2613s
+	speed: 0.0679s/iter; left time: 0.6790s
+Epoch: 3, Loss: 0.000000
+Epoch: 3, Vali Loss1 (prior-series): 0.000000, Vali Loss2 (prior+series): nan
+Epoch: 3, Cost time: 110.801s 
+
+
+
+2025-11-21 14:45:00
+================ Hyperparameters ===============
+anormly_ratio: 1.0
+batch_size: 64
+d_model: 256
+data_path: MSL
+dataset: MSL
+device_ids: [0, 1, 2, 3]
+devices: 0,1,2,3
+e_layers: 3
+gpu: 0
+index: 137
+input_c: 55
+k: 3
+loss_fuc: MSE
+lr: 0.0001
+mode: train
+model_save_path: checkpoints
+n_heads: 1
+num_epochs: 1
+output_c: 55
+patch_size: [3, 5]
+rec_timeseries: True
+use_gpu: True
+use_multi_gpu: True
+win_size: 90
+====================  Train  ===================
+	speed: 0.0838s/iter; left time: 67.8696s
+	speed: 0.0768s/iter; left time: 54.5436s
+	speed: 0.0646s/iter; left time: 39.3991s
+	speed: 0.0640s/iter; left time: 32.6593s
+	speed: 0.0637s/iter; left time: 26.1295s
+	speed: 0.0608s/iter; left time: 18.8448s
+	speed: 0.0424s/iter; left time: 8.8973s
+	speed: 0.0424s/iter; left time: 4.6658s
+	speed: 0.0473s/iter; left time: 0.4730s
+Epoch: 1, Loss: 0.000000
+Epoch: 1, Vali Loss1 (prior-series): 0.000000, Vali Loss2 (prior+series): nan
+Epoch: 1, Cost time: 81.964s 
+Threshold : 0.38850838869810145
+pa_accuracy           : 0.9864
+pa_precision          : 0.9211
+pa_recall             : 0.9573
+pa_f_score            : 0.9389
+MCC_score             : 0.9315
+Affiliation precision : 0.5069
+Affiliation recall    : 0.9659
+R_AUC_ROC             : 0.9060
+R_AUC_PR              : 0.8848
+VUS_ROC               : 0.8905
+VUS_PR                : 0.8712
+Accuracy : 0.9864, Precision : 0.9211, Recall : 0.9573, F-score : 0.9389 
