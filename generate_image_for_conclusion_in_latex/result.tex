@@ -6,7 +6,7 @@
     \caption{Machine Learning Models Performance (F1 Diff = Statistical F1 - Downsampling F1).}
     \begin{tabular}{l|l|ccc|ccc|c}
         \hline
-        \multirow{2}{*}{Model} & \multirow{2}{*}{Dataset} & \multicolumn{3}{c|}{Original Dataset} & \multicolumn{3}{c|}{Statistical Features (1024s)} & \multirow{2}{*}{F1 Diff} \\
+        \multirow{2}{*}{Model} & \multirow{2}{*}{Dataset} & \multicolumn{3}{c|}{1-min Downsampling} & \multicolumn{3}{c|}{Statistical Features (1024s)} & \multirow{2}{*}{F1 Diff} \\
         \cline{3-8}
         & & F1 & Precision & Recall & F1 & Precision & Recall & \\
         \hline
@@ -31,17 +31,17 @@
         \cline{3-8}
         & & F1 & Precision & Recall & F1 & Precision & Recall & \\
         \hline
-        \multirow{3}{*}{PatchTST} & Contact & 0.5635 & 0.5017 & 0.6427 & 0.5561 & 0.5065 & 0.6165 & -0.0074 \\
-                                  & Ring    & 0.5266 & 0.4591 & 0.6175 & 0.5224 & 0.4424 & 0.6378 & -0.0042 \\
+        \multirow{3}{*}{PatchTST} & Contact & 0.5606 & 0.6071 & 0.5207 & 0.5561 & 0.5065 & 0.6165 & -0.0045 \\
+                                  & Ring    & 0.5110 & 0.4463 & 0.5976 & 0.5224 & 0.4424 & 0.6378 & +0.0114 \\
                                   & PCB     & 0.3990 & 0.3148 & 0.5447 & 0.3988 & 0.3228 & 0.5218 & -0.0002 \\
         \hline
-        \multirow{3}{*}{DCdetector} & Contact & 0.6276 & 0.5599 & 0.7139 & 0.6325 & 0.5529 & 0.7391 & +0.0049 \\
-                                    & Ring    & 0.5712 & 0.4959 & 0.6735 & 0.5402 & 0.5015 & 0.5854 & -0.0310 \\
-                                    & PCB     & 0.4626 & 0.3398 & 0.7244 & 0.4085 & 0.3052 & 0.6176 & -0.0541 \\
+        \multirow{3}{*}{DCdetector} & Contact & 0.6299 & 0.5614 & 0.7173 & 0.6235 & 0.5535 & 0.7139 & -0.0064 \\
+                                    & Ring    & 0.5850 & 0.5053 & 0.6944 & 0.5561 & 0.5127 & 0.6074 & -0.0289 \\
+                                    & PCB     & 0.4594 & 0.3389 & 0.7130 & 0.4286 & 0.3189 & 0.6536 & -0.0308 \\
         \hline
         \multirow{3}{*}{Anomaly-Transformer} & Contact & 0.6176 & 0.5316 & 0.7369 & 0.6176 & 0.5345 & 0.7312 & 0.0000 \\
                                              & Ring    & 0.5561 & 0.4666 & 0.6881 & 0.5371 & 0.4597 & 0.6457 & -0.0190 \\
-                                             & PCB     & 0.4233 & 0.3044 &0.6944 & 0.4192 & 0.3023 & 0.6836 & +0.0069 \\
+                                             & PCB     & 0.4233 & 0.3044 & 0.6944 & 0.4192 & 0.3023 & 0.6836 & -0.0041 \\
         \hline
         \multirow{3}{*}{DLinear}  & Contact & 0.5294 & 0.4751 & 0.5977 & 0.5195 & 0.4644 & 0.5894 & -0.0099 \\
                                   & Ring    & 0.5492 & 0.5018 & 0.6066 & 0.5571 & 0.5390 & 0.5764 & +0.0079 \\
@@ -55,19 +55,19 @@
 \subsubsection{Best Performing Models by Dataset}
 
 \paragraph{Contact Dataset.}
-Original: DCdetector (F1: 0.6276). PCA: DCdetector (F1: 0.6325).
+Original: DCdetector (F1: 0.6299). PCA: DCdetector (F1: 0.6235).
 
 \paragraph{Ring Dataset.}
-Original: DCdetector (F1: 0.5712). PCA: DLinear (F1: 0.5571).
+Original: DCdetector (F1: 0.5850). PCA: DLinear (F1: 0.5571).
 
 \paragraph{PCB Dataset.}
 Original: DLinear (F1: 0.4944). PCA: DLinear (F1: 0.5037).
 
 \paragraph{DCdetector Performance and Contrastive Learning Advantage.}
-DCdetector achieves the highest F1-scores on Contact dataset for both original (0.6276) and PCA-transformed (0.6325) versions, and leads on Ring dataset with original data (0.5712). This performance on Contact dataset can be attributed to several factors rooted in the model's architectural principles. DCdetector employs dual-attention contrastive representation learning, which relies on contrasting normal and anomalous patterns to learn discriminative features. The Contact dataset's relatively higher anomaly ratio (5-6\%) provides sufficient positive samples for effective contrastive learning, enabling the model to better distinguish between normal and anomalous temporal patterns. However, DCdetector shows substantial performance degradation on PCA-transformed data. This degradation can be explained by DCdetector's architecture relies on high-dimensional feature interactions to capture complex temporal patterns, and PCA's dimensionality reduction eliminates subtle but discriminative features that are crucial for detecting rare anomalies in severely imbalanced datasets.
+DCdetector achieves the highest F1-scores on Contact dataset for both original (0.6299) and PCA-transformed (0.6235) versions, and leads on Ring dataset with original data (0.5850). This performance on Contact dataset can be attributed to several factors rooted in the model's architectural principles. DCdetector employs dual-attention contrastive representation learning, which relies on contrasting normal and anomalous patterns to learn discriminative features. The Contact dataset's relatively higher anomaly ratio (5-6\%) provides sufficient positive samples for effective contrastive learning, enabling the model to better distinguish between normal and anomalous temporal patterns. However, DCdetector shows substantial performance degradation on PCA-transformed data. This degradation can be explained by DCdetector's architecture relies on high-dimensional feature interactions to capture complex temporal patterns, and PCA's dimensionality reduction eliminates subtle but discriminative features that are crucial for detecting rare anomalies in severely imbalanced datasets.
 
 \paragraph{DLinear Performance and Linear Decomposition Advantage.}
-DLinear behaves differently from the two transformer-based models: while it is not the best on Contact (F1 = 0.5294), it becomes competitive on Ring (0.5492) and achieves the best scores on PCB (0.4944 on original, 0.5037 after PCA). Its architecture decomposes each series into trend and residual components via moving averages and then applies a simple linear mapping. On the PCB test dataset, where anomaly ratios are around 2\% and the t-SNE plot shows heavy overlap between classes, complex non-linear models risk overfitting subtle noise patterns that do not generalize, whereas DLinear's linear bias acts as a strong regularizer and yields more stable decision boundaries, reflected in relatively balanced precision (0.4234) and recall (0.5942). The fact that PCA further improves DLinear on Ring and PCB (F1 Diff of $+0.0079$ and $+0.0093$) but slightly harms Contact ($-0.0099$) suggests that for the more challenging, highly overlapping datasets, removing noisy and redundant dimensions makes the linear assumptions more accurate, while on the easier Contact dataset some useful non-linear structure is lost by projection.
+DLinear behaves differently from the two transformer-based models: while it is not the best on Contact (F1 = 0.5294), it becomes competitive on Ring (0.5492) and achieves the best scores on PCB (0.4944 on original, 0.5037 after PCA). Its architecture decomposes each series into trend and residual components via moving averages and then applies a simple linear mapping. On the PCB test dataset, where anomaly ratios are around 2\% and the t-SNE plot shows heavy overlap between classes, complex non-linear models risk overfitting subtle noise patterns that do not generalize, whereas DLinear's linear bias acts as a strong regularizer and yields more stable decision boundaries, reflected in relatively balanced precision (0.4234) and recall (0.5942). The fact that PCA further improves DLinear on Ring and PCB (F1 Diff of +0.0079 and +0.0093) but slightly harms Contact ($-0.0099$) suggests that for the more challenging, highly overlapping datasets, removing noisy and redundant dimensions makes the linear assumptions more accurate, while on the easier Contact dataset some useful non-linear structure is lost by projection.
 
 
 
@@ -115,6 +115,17 @@ DLinear demonstrates more balanced precision-recall characteristics, with precis
 All models show lower precision compared to recall, particularly on the PCB dataset where precision values drop to 0.2978-0.3398. This indicates that while models can identify most anomalies (high recall), they also generate substantial false alarms (low precision). This pattern suggests that normal patterns in manufacturing data exhibit considerable variability, making it challenging to distinguish from anomalous behavior.
 
 
-\paragraph{Application-Specific Deployment.}
-In scenarios where missing defects is extremely costly (e.g., safety-critical components), high-recall models like Anomaly-Transformer and DCdetector are preferred despite higher false positive rates. For applications with balanced costs or limited inspection capacity, balanced models like DLinear on PCA-transformed data offer more practical trade-offs.
+\section{Key Contributions}
+
+\textbf{First Part}
+
+This thesis investigates anomaly detection for industrial energy time series using a comprehensive empirical study that spans classical machine learning, deep learning, and linear modeling paradigms. The research is grounded in real-world production data from three manufacturing stations (Kontaktieren, PCB, Ringmontage) within an industrial assembly line, encompassing over 32 million sensor measurements per station collected over a 14-month period. The primary objectives of this work are threefold:
+
+Since this is a previously unused and unexplored dataset, I first conducted a series of preliminary analyses, including t-SNE visualization, PCA decomposition, and anomaly duration statistics. These analyses helped me understand the underlying structure, distribution characteristics, and temporal behavior of the data. The results provide an essential foundation for selecting appropriate modeling strategies and for guiding subsequent methodological development in this research, then developed a systematic data preprocessing and feature engineering pipeline tailored to the unique characteristics of industrial energy time series. This includes minute-level temporal downsampling aligned with the typical duration of anomaly events, and the design of window-based statistical features that capture both time-domain and frequency-domain temporal patterns.
+
+\textbf{Second Part} 
+I explored a wide range of models and selected three representative and successfully implemented architectures for detailed study: PatchTST, Anomaly Transformer,Dlinear and DCdetector. Building on the theoretical foundations presented in the original papers, I further clarified and elaborated the underlying principles and core mechanisms of these models.
+
+It is worth noting that the original publications of these models are highly academic and often contain abstract formulations that can be difficult for readers to interpret directly. Through my own study and understanding as a reader and practitioner, I re-examined these abstract concepts and provided more intuitive explanations to bridge the gap between theory and practical comprehension. This ensures that the theoretical sections in my thesis are not merely copied from the original papers; instead, they reflect my own interpretation, insight, and effort to make the models’ ideas more accessible to readers in the context of my research.
+
 
