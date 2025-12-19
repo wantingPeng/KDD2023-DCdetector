@@ -5,7 +5,7 @@ from einops import rearrange
 from .attn import DAC_structure, AttentionLayer
 from .embed import DataEmbedding, TokenEmbedding
 from .RevIN import RevIN
-from .DISH import DISH
+from .Extended_RevIN import Extended_RevIN
 # 使用自定义flatten函数替代tkinter._flatten
 def _flatten(lst):
     """展平嵌套列表"""
@@ -70,10 +70,10 @@ class DCdetector(nn.Module):
         series_patch_mean = []
         prior_patch_mean = []
         #revin_layer = RevIN(num_features=M)
-        dish_layer = DISH(num_features=M)
+        Extended_RevIN_layer = Extended_RevIN(num_features=M)
         
         # Instance Normalization Operation
-        x = dish_layer(x, 'norm')
+        x = Extended_RevIN_layer(x, 'norm')
         x_ori = self.embedding_window_size(x)
         # Mutil-scale Patching Operation 
         for patch_index, patchsize in enumerate(self.patch_size):

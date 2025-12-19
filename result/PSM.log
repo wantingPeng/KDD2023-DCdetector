@@ -876,3 +876,177 @@ win_size: 60
 Epoch: 1, Loss: 0.00e+00
 Epoch: 1, Vali Loss1 (prior-series): 0.000000, Vali Loss2 (prior+series): nan
 Epoch: 1, Cost time: 56.817s 
+
+
+
+2025-12-11 21:15:48
+================ Hyperparameters ===============
+anormly_ratio: 1.0
+batch_size: 256
+d_model: 256
+data_path: PSM
+dataset: PSM
+device_ids: [0, 1, 2, 3]
+devices: 0,1,2,3
+e_layers: 3
+gpu: 0
+index: 137
+input_c: 25
+k: 3
+loss_fuc: MSE
+lr: 0.0001
+mode: train
+model_save_path: checkpoints
+n_heads: 1
+num_epochs: 1
+output_c: 25
+patch_size: [3]
+rec_timeseries: True
+use_gpu: True
+use_multi_gpu: True
+win_size: 60
+====================  Train  ===================
+	speed: 0.0610s/iter; left time: 14.3971s
+	speed: 0.0531s/iter; left time: 7.2213s
+	speed: 0.0531s/iter; left time: 1.9104s
+Epoch: 1, Loss: 0.00e+00
+Epoch: 1, Vali Loss1 (prior-series): 0.000000, Vali Loss2 (prior+series): nan
+Epoch: 1, Cost time: 30.379s 
+Threshold : 0.8663492977619154
+Accuracy : 0.7444, Precision : 0.2276, Recall : 0.0093, F-score : 0.0178 
+pa_accuracy           : 0.9837
+pa_precision          : 0.9685
+pa_recall             : 0.9663
+pa_f_score            : 0.9674
+MCC_score             : 0.9565
+Affiliation precision : 0.5417
+Affiliation recall    : 0.7910
+R_AUC_ROC             : 0.8826
+R_AUC_PR              : 0.9041
+VUS_ROC               : 0.8392
+VUS_PR                : 0.8717
+Accuracy : 0.9837, Precision : 0.9685, Recall : 0.9663, F-score : 0.9674 
+
+
+
+2025-12-11 21:21:59
+================ Hyperparameters ===============
+anormly_ratio: 1.0
+batch_size: 256
+d_model: 256
+data_path: PSM
+dataset: PSM
+device_ids: [0, 1, 2, 3]
+devices: 0,1,2,3
+e_layers: 3
+gpu: 0
+index: 137
+input_c: 25
+k: 3
+loss_fuc: MSE
+lr: 0.0001
+mode: train
+model_save_path: checkpoints
+n_heads: 1
+num_epochs: 3
+output_c: 25
+patch_size: [3]
+rec_timeseries: True
+use_gpu: True
+use_multi_gpu: True
+win_size: 60
+====================  Train  ===================
+	speed: 0.0693s/iter; left time: 62.7504s
+	speed: 0.0529s/iter; left time: 42.6732s
+	speed: 0.0530s/iter; left time: 37.4065s
+Epoch: 1, Loss: 0.00e+00
+Epoch: 1, Vali Loss1 (prior-series): 0.000000, Vali Loss2 (prior+series): nan
+Epoch: 1, Cost time: 31.171s 
+	speed: 0.1903s/iter; left time: 108.6338s
+	speed: 0.0531s/iter; left time: 24.9930s
+	speed: 0.0531s/iter; left time: 19.6846s
+Epoch: 2, Loss: 0.00e+00
+Epoch: 2, Vali Loss1 (prior-series): 0.000000, Vali Loss2 (prior+series): nan
+Epoch: 2, Cost time: 27.003s 
+	speed: 0.1529s/iter; left time: 36.0949s
+	speed: 0.0525s/iter; left time: 7.1417s
+	speed: 0.0525s/iter; left time: 1.8914s
+Epoch: 3, Loss: 0.00e+00
+Epoch: 3, Vali Loss1 (prior-series): 0.000000, Vali Loss2 (prior+series): nan
+Epoch: 3, Cost time: 28.278s 
+Threshold : 0.8749915337562522
+Accuracy : 0.7450, Precision : 0.2523, Recall : 0.0101, F-score : 0.0194 
+pa_accuracy           : 0.9873
+pa_precision          : 0.9703
+pa_recall             : 0.9791
+pa_f_score            : 0.9747
+MCC_score             : 0.9662
+Affiliation precision : 0.5161
+Affiliation recall    : 0.7627
+R_AUC_ROC             : 0.8981
+R_AUC_PR              : 0.9160
+VUS_ROC               : 0.8577
+VUS_PR                : 0.8858
+Accuracy : 0.9873, Precision : 0.9703, Recall : 0.9791, F-score : 0.9747 
+
+
+
+2025-12-11 21:54:11
+================ Hyperparameters ===============
+anormly_ratio: 1.0
+batch_size: 256
+d_model: 256
+data_path: PSM
+dataset: PSM
+device_ids: [0, 1, 2, 3]
+devices: 0,1,2,3
+e_layers: 3
+gpu: 0
+index: 137
+input_c: 25
+k: 3
+loss_fuc: MSE
+lr: 0.0001
+mode: train
+model_save_path: checkpoints
+n_heads: 1
+num_epochs: 3
+output_c: 25
+patch_size: [3]
+rec_timeseries: True
+use_gpu: True
+use_multi_gpu: True
+win_size: 60
+====================  Train  ===================
+	speed: 0.0360s/iter; left time: 32.5897s
+	speed: 0.0300s/iter; left time: 24.1694s
+	speed: 0.0298s/iter; left time: 21.0723s
+Epoch: 1, Loss: 0.00e+00
+Epoch: 1, Vali Loss1 (prior-series): 0.000000, Vali Loss2 (prior+series): nan
+Epoch: 1, Cost time: 15.520s 
+	speed: 0.0903s/iter; left time: 51.5752s
+	speed: 0.0299s/iter; left time: 14.0608s
+	speed: 0.0299s/iter; left time: 11.0824s
+Epoch: 2, Loss: 0.00e+00
+Epoch: 2, Vali Loss1 (prior-series): 0.000000, Vali Loss2 (prior+series): nan
+Epoch: 2, Cost time: 15.014s 
+	speed: 0.0908s/iter; left time: 21.4270s
+	speed: 0.0301s/iter; left time: 4.0926s
+	speed: 0.0301s/iter; left time: 1.0838s
+Epoch: 3, Loss: 0.00e+00
+Epoch: 3, Vali Loss1 (prior-series): 0.000000, Vali Loss2 (prior+series): nan
+Epoch: 3, Cost time: 15.121s 
+Threshold : 0.6335260200500383
+Accuracy : 0.7438, Precision : 0.2427, Recall : 0.0116, F-score : 0.0222 
+pa_accuracy           : 0.9844
+pa_precision          : 0.9641
+pa_recall             : 0.9740
+pa_f_score            : 0.9690
+MCC_score             : 0.9586
+Affiliation precision : 0.5269
+Affiliation recall    : 0.8111
+R_AUC_ROC             : 0.9263
+R_AUC_PR              : 0.9343
+VUS_ROC               : 0.8640
+VUS_PR                : 0.8881
+Accuracy : 0.9844, Precision : 0.9641, Recall : 0.9740, F-score : 0.9690 

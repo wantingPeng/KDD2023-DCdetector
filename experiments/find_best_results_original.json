@@ -1,6 +1,6 @@
 {
   "checkpoint_dir": "checkpoint_original",
-  "timestamp": "20251124_145039",
+  "timestamp": "20251218_230520",
   "best_results": {
     "contact": {
       "file_path": "checkpoint_original/checkpoints_e_layers_oiginalDatasets/contact_e_layers7_20251121_181504/contact_cleaned_1minut_20250928_172122_checkpoint_2025-11-21_18-25-11/result.json",
@@ -10,11 +10,11 @@
       "accuracy": 0.9572544642857143
     },
     "ring": {
-      "file_path": "checkpoint_original/checkpoints_d_model_oiginalDatasets/ring_d_model256_20251122_100023/Ring_cleaned_1minut_20250928_170147_checkpoint_2025-11-22_10-06-09/result.json",
-      "precision": 0.5053423031262366,
-      "recall": 0.6943991299619359,
-      "f_score": 0.5849748053137883,
-      "accuracy": 0.9585164835164836
+      "file_path": "checkpoint_original/checkpoints_e_layers_oiginalDatasets/ring_e_layers9_20251122_004553/Ring_cleaned_1minut_20250928_170147_checkpoint_2025-11-22_01-02-35/result.json",
+      "precision": 0.49595580982442294,
+      "recall": 0.6835236541598695,
+      "f_score": 0.5748256545101178,
+      "accuracy": 0.9574290293040293
     },
     "pcb": {
       "file_path": "checkpoint_original/checkpoints_patch_size_oiginalDatasets/pcb_patch_size15_20251122_180712/pcb_cleaned_1minut_20250928_161509_checkpoint_2025-11-22_18-16-23/result.json",

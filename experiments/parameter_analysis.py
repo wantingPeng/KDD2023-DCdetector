@@ -21,7 +21,7 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 # ============================================================================
 
 # Select which parameter to analyze (choose one: 'win_size', 'k', 'anormly_ratio')
-PARAM_TO_ANALYZE = 'win_size'  # Change this to 'k' or 'anormly_ratio' for other analyses
+PARAM_TO_ANALYZE = 'd_model'  # Change this to 'k' or 'anormly_ratio' for other analyses
 
 # Datasets to test
 DATASETS = ['pcb']
@@ -45,7 +45,7 @@ PARAM_VALUES = {
 # }
 # Fixed parameters (used when not being analyzed)
 FIXED_PARAMS = {
-    'num_epochs': 5,
+    'num_epochs': 3,
     'batch_size': 32,
     'lr': 1e-4,
     'win_size': 30,
@@ -56,7 +56,7 @@ FIXED_PARAMS = {
 }
 
 # Output configuration
-OUTPUT_DIR = 'exp/results_original'
+OUTPUT_DIR = 'exp/results_original_d_model_analysis'
 PLOT_STYLE = 'seaborn-v0_8-darkgrid'
 
 # ============================================================================
@@ -143,7 +143,7 @@ def run_single_experiment(dataset_name, param_name, param_value, fixed_params):
     
     # Create unique model save path
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    model_save_path = f'checkpoints_{param_name}_pcaDatasets_2/{dataset_name}_{param_name}{param_value}_{timestamp}'
+    model_save_path = f'checkpoints_{param_name}_analysis/{dataset_name}_{param_name}{param_value}_{timestamp}'
     
     # Build parameters dictionary
     params = fixed_params.copy()
@@ -173,7 +173,7 @@ def run_single_experiment(dataset_name, param_name, param_value, fixed_params):
         '--patience', '3',
         '--patch_size', patch_size_arg,
         '--n_heads', str(params['n_heads']),
-        '--d_model', '256',
+        '--d_model', str(params['d_model']),
         '--e_layers', str(params['e_layers']),
         '--d_ff', '512',
         '--activation', 'gelu',
@@ -506,7 +506,7 @@ def plot_only_mode(param_name):
 
 if __name__ == '__main__':
     # Set to True to only regenerate plots from existing results
-    PLOT_ONLY = False
+    PLOT_ONLY = True
     
     if PLOT_ONLY:
         plot_only_mode(PARAM_TO_ANALYZE)

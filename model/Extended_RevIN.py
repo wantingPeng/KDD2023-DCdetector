@@ -3,18 +3,18 @@ import torch.nn as nn
 import torch.nn.functional as F
 
 
-class DISH(nn.Module):
+class Extended_RevIN(nn.Module):
     def __init__(self, num_features: int, eps=1e-5, affine=True, n_moments=4):
         """
-        DISH: DIstribution SHift normalization
+        Extended_RevIN: Extended RevIN normalization
         An extension of RevIN that handles higher-order moments of the distribution
         
         :param num_features: the number of features or channels
         :param eps: a value added for numerical stability
-        :param affine: if True, DISH has learnable affine parameters
+        :param affine: if True, Extended_RevIN has learnable affine parameters
         :param n_moments: number of moments to normalize (2: mean+var, 3: +skewness, 4: +kurtosis)
         """
-        super(DISH, self).__init__()
+        super(Extended_RevIN, self).__init__()
         self.num_features = num_features
         self.eps = eps
         self.affine = affine
@@ -34,7 +34,7 @@ class DISH(nn.Module):
         return x
     
     def _init_params(self):
-        # Initialize DISH affine parameters for each feature
+        # Initialize Extended_RevIN affine parameters for each feature
         self.affine_weight = torch.ones(self.num_features)
         self.affine_bias = torch.zeros(self.num_features)
         

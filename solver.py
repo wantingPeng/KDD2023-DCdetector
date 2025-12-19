@@ -355,13 +355,12 @@ class Solver(object):
 
         pred = (test_energy > thresh).astype(int)
         gt = test_labels.astype(int)
-        
+
         matrix = [self.index]
         scores_simple = combine_all_evaluation_scores(pred, gt, test_energy)
         for key, value in scores_simple.items():
             matrix.append(value)
             print('{0:21} : {1:0.4f}'.format(key, value))
-
         anomaly_state = False
         for i in range(len(gt)):
             if gt[i] == 1 and pred[i] == 1 and not anomaly_state:
@@ -385,6 +384,7 @@ class Solver(object):
 
         pred = np.array(pred)
         gt = np.array(gt)
+
 
         from sklearn.metrics import precision_recall_fscore_support
         from sklearn.metrics import accuracy_score

@@ -1,6 +1,6 @@
 {
   "checkpoint_dir": "checkpoint_pca",
-  "timestamp": "20251124_144436",
+  "timestamp": "20251218_230555",
   "best_results": {
     "contact": {
       "file_path": "checkpoint_pca/checkpoints_patch_size_analysis_pca/contact_patch_size3_20251120_172059_pca/contact_cleaned_1minut_20250928_172122_checkpoint_2025-11-20_17-22-17/result.json",
