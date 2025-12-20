@@ -406,7 +406,10 @@ class Solver(object):
                     "f_score": float(f_score)
                 }
             }
-            result_path = os.path.join(ckpt_dir, "result.json")
+            if self.mode == 'test':
+                result_path = os.path.join('KDD2023-DCdetector\results', "testresult.json")
+            else:
+                result_path = os.path.join(ckpt_dir, "result.json")
             with open(result_path, 'w', encoding='utf-8') as f:
                 json.dump(result_payload, f, ensure_ascii=False, indent=2)
             print(f"Test results saved to: {result_path}")
